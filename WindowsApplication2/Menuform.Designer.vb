@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Menuform
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,12 +20,15 @@ Partial Class Menuform
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim Animation2 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation1 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Menuform))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.BunifuImageButton2 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
@@ -39,18 +42,17 @@ Partial Class Menuform
         Me.btnmenu = New Bunifu.Framework.UI.BunifuImageButton()
         Me.pcb1 = New System.Windows.Forms.PictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.dtg = New System.Windows.Forms.DataGridView()
-        Me.BunifuImageButton2 = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.tranlogo = New BunifuAnimatorNS.BunifuTransition(Me.components)
+        Me.tranpanel = New BunifuAnimatorNS.BunifuTransition(Me.components)
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1.SuspendLayout()
+        CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlMenu.SuspendLayout()
         Me.Panel4.SuspendLayout()
         CType(Me.btnmenu, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pcb1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel3.SuspendLayout()
-        CType(Me.dtg, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -65,14 +67,34 @@ Partial Class Menuform
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel1)
         Me.Panel1.Controls.Add(Me.BunifuImageButton1)
+        Me.tranpanel.SetDecoration(Me.Panel1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranlogo.SetDecoration(Me.Panel1, BunifuAnimatorNS.DecorationType.None)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1000, 50)
         Me.Panel1.TabIndex = 0
         '
+        'BunifuImageButton2
+        '
+        Me.BunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.tranpanel.SetDecoration(Me.BunifuImageButton2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranlogo.SetDecoration(Me.BunifuImageButton2, BunifuAnimatorNS.DecorationType.None)
+        Me.BunifuImageButton2.ErrorImage = Nothing
+        Me.BunifuImageButton2.Image = CType(resources.GetObject("BunifuImageButton2.Image"), System.Drawing.Image)
+        Me.BunifuImageButton2.ImageActive = Nothing
+        Me.BunifuImageButton2.Location = New System.Drawing.Point(922, 10)
+        Me.BunifuImageButton2.Name = "BunifuImageButton2"
+        Me.BunifuImageButton2.Size = New System.Drawing.Size(30, 30)
+        Me.BunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton2.TabIndex = 3
+        Me.BunifuImageButton2.TabStop = False
+        Me.BunifuImageButton2.Zoom = 10
+        '
         'PictureBox1
         '
+        Me.tranlogo.SetDecoration(Me.PictureBox1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.PictureBox1, BunifuAnimatorNS.DecorationType.None)
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(15, 3)
         Me.PictureBox1.Name = "PictureBox1"
@@ -84,6 +106,8 @@ Partial Class Menuform
         'BunifuCustomLabel1
         '
         Me.BunifuCustomLabel1.AutoSize = True
+        Me.tranlogo.SetDecoration(Me.BunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.BunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Times New Roman", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel1.ForeColor = System.Drawing.Color.Silver
         Me.BunifuCustomLabel1.Location = New System.Drawing.Point(77, 15)
@@ -95,6 +119,8 @@ Partial Class Menuform
         'BunifuImageButton1
         '
         Me.BunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.tranpanel.SetDecoration(Me.BunifuImageButton1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranlogo.SetDecoration(Me.BunifuImageButton1, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuImageButton1.ErrorImage = Nothing
         Me.BunifuImageButton1.Image = CType(resources.GetObject("BunifuImageButton1.Image"), System.Drawing.Image)
         Me.BunifuImageButton1.ImageActive = Nothing
@@ -112,6 +138,8 @@ Partial Class Menuform
         Me.pnlMenu.Controls.Add(Me.Panel4)
         Me.pnlMenu.Controls.Add(Me.btnmenu)
         Me.pnlMenu.Controls.Add(Me.pcb1)
+        Me.tranpanel.SetDecoration(Me.pnlMenu, BunifuAnimatorNS.DecorationType.None)
+        Me.tranlogo.SetDecoration(Me.pnlMenu, BunifuAnimatorNS.DecorationType.None)
         Me.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.pnlMenu.Location = New System.Drawing.Point(0, 50)
         Me.pnlMenu.Name = "pnlMenu"
@@ -125,9 +153,12 @@ Partial Class Menuform
         Me.Panel4.Controls.Add(Me.BunifuFlatButton2)
         Me.Panel4.Controls.Add(Me.BunifuFlatButton3)
         Me.Panel4.Controls.Add(Me.BunifuFlatButton4)
-        Me.Panel4.Location = New System.Drawing.Point(12, 130)
+        Me.tranpanel.SetDecoration(Me.Panel4, BunifuAnimatorNS.DecorationType.None)
+        Me.tranlogo.SetDecoration(Me.Panel4, BunifuAnimatorNS.DecorationType.None)
+        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel4.Location = New System.Drawing.Point(0, 97)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(199, 250)
+        Me.Panel4.Size = New System.Drawing.Size(237, 453)
         Me.Panel4.TabIndex = 4
         '
         'BunifuFlatButton5
@@ -139,6 +170,8 @@ Partial Class Menuform
         Me.BunifuFlatButton5.BorderRadius = 0
         Me.BunifuFlatButton5.ButtonText = "Inbox"
         Me.BunifuFlatButton5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.tranpanel.SetDecoration(Me.BunifuFlatButton5, BunifuAnimatorNS.DecorationType.None)
+        Me.tranlogo.SetDecoration(Me.BunifuFlatButton5, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuFlatButton5.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton5.Iconcolor = System.Drawing.Color.Transparent
         Me.BunifuFlatButton5.Iconimage = CType(resources.GetObject("BunifuFlatButton5.Iconimage"), System.Drawing.Image)
@@ -152,13 +185,13 @@ Partial Class Menuform
         Me.BunifuFlatButton5.IconVisible = True
         Me.BunifuFlatButton5.IconZoom = 50.0R
         Me.BunifuFlatButton5.IsTab = False
-        Me.BunifuFlatButton5.Location = New System.Drawing.Point(3, 211)
+        Me.BunifuFlatButton5.Location = New System.Drawing.Point(13, 211)
         Me.BunifuFlatButton5.Name = "BunifuFlatButton5"
         Me.BunifuFlatButton5.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.BunifuFlatButton5.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.BunifuFlatButton5.OnHoverTextColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuFlatButton5.selected = False
-        Me.BunifuFlatButton5.Size = New System.Drawing.Size(193, 36)
+        Me.BunifuFlatButton5.Size = New System.Drawing.Size(218, 36)
         Me.BunifuFlatButton5.TabIndex = 6
         Me.BunifuFlatButton5.Text = "Inbox"
         Me.BunifuFlatButton5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -173,6 +206,8 @@ Partial Class Menuform
         Me.BunifuFlatButton1.BorderRadius = 0
         Me.BunifuFlatButton1.ButtonText = "Home"
         Me.BunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.tranpanel.SetDecoration(Me.BunifuFlatButton1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranlogo.SetDecoration(Me.BunifuFlatButton1, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent
         Me.BunifuFlatButton1.Iconimage = CType(resources.GetObject("BunifuFlatButton1.Iconimage"), System.Drawing.Image)
@@ -186,17 +221,17 @@ Partial Class Menuform
         Me.BunifuFlatButton1.IconVisible = True
         Me.BunifuFlatButton1.IconZoom = 50.0R
         Me.BunifuFlatButton1.IsTab = False
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(3, 3)
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(13, 3)
         Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
         Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.BunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuFlatButton1.selected = False
-        Me.BunifuFlatButton1.Size = New System.Drawing.Size(193, 33)
+        Me.BunifuFlatButton1.Size = New System.Drawing.Size(218, 33)
         Me.BunifuFlatButton1.TabIndex = 2
         Me.BunifuFlatButton1.Text = "Home"
         Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
+        Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.Silver
         Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'BunifuFlatButton2
@@ -207,6 +242,8 @@ Partial Class Menuform
         Me.BunifuFlatButton2.BorderRadius = 0
         Me.BunifuFlatButton2.ButtonText = "         Facebook"
         Me.BunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.tranpanel.SetDecoration(Me.BunifuFlatButton2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranlogo.SetDecoration(Me.BunifuFlatButton2, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent
         Me.BunifuFlatButton2.Iconimage = CType(resources.GetObject("BunifuFlatButton2.Iconimage"), System.Drawing.Image)
@@ -220,13 +257,13 @@ Partial Class Menuform
         Me.BunifuFlatButton2.IconVisible = True
         Me.BunifuFlatButton2.IconZoom = 50.0R
         Me.BunifuFlatButton2.IsTab = False
-        Me.BunifuFlatButton2.Location = New System.Drawing.Point(3, 51)
+        Me.BunifuFlatButton2.Location = New System.Drawing.Point(12, 51)
         Me.BunifuFlatButton2.Name = "BunifuFlatButton2"
         Me.BunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.BunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.BunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuFlatButton2.selected = False
-        Me.BunifuFlatButton2.Size = New System.Drawing.Size(193, 36)
+        Me.BunifuFlatButton2.Size = New System.Drawing.Size(218, 36)
         Me.BunifuFlatButton2.TabIndex = 3
         Me.BunifuFlatButton2.Text = "         Facebook"
         Me.BunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -241,6 +278,8 @@ Partial Class Menuform
         Me.BunifuFlatButton3.BorderRadius = 0
         Me.BunifuFlatButton3.ButtonText = "Linked"
         Me.BunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.tranpanel.SetDecoration(Me.BunifuFlatButton3, BunifuAnimatorNS.DecorationType.None)
+        Me.tranlogo.SetDecoration(Me.BunifuFlatButton3, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent
         Me.BunifuFlatButton3.Iconimage = CType(resources.GetObject("BunifuFlatButton3.Iconimage"), System.Drawing.Image)
@@ -254,13 +293,13 @@ Partial Class Menuform
         Me.BunifuFlatButton3.IconVisible = True
         Me.BunifuFlatButton3.IconZoom = 50.0R
         Me.BunifuFlatButton3.IsTab = False
-        Me.BunifuFlatButton3.Location = New System.Drawing.Point(3, 104)
+        Me.BunifuFlatButton3.Location = New System.Drawing.Point(13, 104)
         Me.BunifuFlatButton3.Name = "BunifuFlatButton3"
         Me.BunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.BunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.BunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuFlatButton3.selected = False
-        Me.BunifuFlatButton3.Size = New System.Drawing.Size(193, 35)
+        Me.BunifuFlatButton3.Size = New System.Drawing.Size(218, 35)
         Me.BunifuFlatButton3.TabIndex = 4
         Me.BunifuFlatButton3.Text = "Linked"
         Me.BunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -275,6 +314,8 @@ Partial Class Menuform
         Me.BunifuFlatButton4.BorderRadius = 0
         Me.BunifuFlatButton4.ButtonText = "Twitter"
         Me.BunifuFlatButton4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.tranpanel.SetDecoration(Me.BunifuFlatButton4, BunifuAnimatorNS.DecorationType.None)
+        Me.tranlogo.SetDecoration(Me.BunifuFlatButton4, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuFlatButton4.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton4.Iconcolor = System.Drawing.Color.Transparent
         Me.BunifuFlatButton4.Iconimage = CType(resources.GetObject("BunifuFlatButton4.Iconimage"), System.Drawing.Image)
@@ -288,13 +329,13 @@ Partial Class Menuform
         Me.BunifuFlatButton4.IconVisible = True
         Me.BunifuFlatButton4.IconZoom = 50.0R
         Me.BunifuFlatButton4.IsTab = False
-        Me.BunifuFlatButton4.Location = New System.Drawing.Point(3, 155)
+        Me.BunifuFlatButton4.Location = New System.Drawing.Point(13, 155)
         Me.BunifuFlatButton4.Name = "BunifuFlatButton4"
         Me.BunifuFlatButton4.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.BunifuFlatButton4.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.BunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.BunifuFlatButton4.selected = False
-        Me.BunifuFlatButton4.Size = New System.Drawing.Size(193, 36)
+        Me.BunifuFlatButton4.Size = New System.Drawing.Size(218, 36)
         Me.BunifuFlatButton4.TabIndex = 5
         Me.BunifuFlatButton4.Text = "Twitter"
         Me.BunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -304,6 +345,8 @@ Partial Class Menuform
         'btnmenu
         '
         Me.btnmenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.tranpanel.SetDecoration(Me.btnmenu, BunifuAnimatorNS.DecorationType.None)
+        Me.tranlogo.SetDecoration(Me.btnmenu, BunifuAnimatorNS.DecorationType.None)
         Me.btnmenu.ErrorImage = Nothing
         Me.btnmenu.Image = CType(resources.GetObject("btnmenu.Image"), System.Drawing.Image)
         Me.btnmenu.ImageActive = Nothing
@@ -318,6 +361,8 @@ Partial Class Menuform
         '
         'pcb1
         '
+        Me.tranlogo.SetDecoration(Me.pcb1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.pcb1, BunifuAnimatorNS.DecorationType.None)
         Me.pcb1.Image = CType(resources.GetObject("pcb1.Image"), System.Drawing.Image)
         Me.pcb1.Location = New System.Drawing.Point(38, 49)
         Me.pcb1.Name = "pcb1"
@@ -328,39 +373,57 @@ Partial Class Menuform
         '
         'Panel3
         '
-        Me.Panel3.Controls.Add(Me.dtg)
+        Me.tranpanel.SetDecoration(Me.Panel3, BunifuAnimatorNS.DecorationType.None)
+        Me.tranlogo.SetDecoration(Me.Panel3, BunifuAnimatorNS.DecorationType.None)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(237, 50)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(763, 550)
         Me.Panel3.TabIndex = 2
         '
-        'dtg
+        'tranlogo
         '
-        Me.dtg.AllowUserToAddRows = False
-        Me.dtg.AllowUserToDeleteRows = False
-        Me.dtg.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dtg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dtg.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.dtg.Location = New System.Drawing.Point(0, 221)
-        Me.dtg.Name = "dtg"
-        Me.dtg.ReadOnly = True
-        Me.dtg.Size = New System.Drawing.Size(763, 329)
-        Me.dtg.TabIndex = 0
+        Me.tranlogo.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate
+        Me.tranlogo.Cursor = Nothing
+        Animation2.AnimateOnlyDifferences = True
+        Animation2.BlindCoeff = CType(resources.GetObject("Animation2.BlindCoeff"), System.Drawing.PointF)
+        Animation2.LeafCoeff = 0!
+        Animation2.MaxTime = 1.0!
+        Animation2.MinTime = 0!
+        Animation2.MosaicCoeff = CType(resources.GetObject("Animation2.MosaicCoeff"), System.Drawing.PointF)
+        Animation2.MosaicShift = CType(resources.GetObject("Animation2.MosaicShift"), System.Drawing.PointF)
+        Animation2.MosaicSize = 0
+        Animation2.Padding = New System.Windows.Forms.Padding(30)
+        Animation2.RotateCoeff = 0.5!
+        Animation2.RotateLimit = 0.2!
+        Animation2.ScaleCoeff = CType(resources.GetObject("Animation2.ScaleCoeff"), System.Drawing.PointF)
+        Animation2.SlideCoeff = CType(resources.GetObject("Animation2.SlideCoeff"), System.Drawing.PointF)
+        Animation2.TimeCoeff = 0!
+        Animation2.TransparencyCoeff = 0!
+        Me.tranlogo.DefaultAnimation = Animation2
+        Me.tranlogo.TimeStep = 0.01!
         '
-        'BunifuImageButton2
+        'tranpanel
         '
-        Me.BunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.BunifuImageButton2.ErrorImage = Nothing
-        Me.BunifuImageButton2.Image = CType(resources.GetObject("BunifuImageButton2.Image"), System.Drawing.Image)
-        Me.BunifuImageButton2.ImageActive = Nothing
-        Me.BunifuImageButton2.Location = New System.Drawing.Point(922, 10)
-        Me.BunifuImageButton2.Name = "BunifuImageButton2"
-        Me.BunifuImageButton2.Size = New System.Drawing.Size(30, 30)
-        Me.BunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BunifuImageButton2.TabIndex = 3
-        Me.BunifuImageButton2.TabStop = False
-        Me.BunifuImageButton2.Zoom = 10
+        Me.tranpanel.AnimationType = BunifuAnimatorNS.AnimationType.Leaf
+        Me.tranpanel.Cursor = Nothing
+        Animation1.AnimateOnlyDifferences = True
+        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
+        Animation1.LeafCoeff = 1.0!
+        Animation1.MaxTime = 1.0!
+        Animation1.MinTime = 0!
+        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
+        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
+        Animation1.MosaicSize = 0
+        Animation1.Padding = New System.Windows.Forms.Padding(0)
+        Animation1.RotateCoeff = 0!
+        Animation1.RotateLimit = 0!
+        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
+        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
+        Animation1.TimeCoeff = 0!
+        Animation1.TransparencyCoeff = 0!
+        Me.tranpanel.DefaultAnimation = Animation1
+        Me.tranpanel.TimeStep = 0.01!
         '
         'Menuform
         '
@@ -371,21 +434,21 @@ Partial Class Menuform
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.pnlMenu)
         Me.Controls.Add(Me.Panel1)
+        Me.tranlogo.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Menuform"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menuform"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlMenu.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
         CType(Me.btnmenu, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pcb1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel3.ResumeLayout(False)
-        CType(Me.dtg, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -405,6 +468,8 @@ Partial Class Menuform
     Friend WithEvents pcb1 As PictureBox
     Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents dtg As DataGridView
     Friend WithEvents BunifuImageButton2 As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents tranlogo As BunifuAnimatorNS.BunifuTransition
+    Friend WithEvents tranpanel As BunifuAnimatorNS.BunifuTransition
+    Friend WithEvents Timer1 As Timer
 End Class
