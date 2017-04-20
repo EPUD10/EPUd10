@@ -91,6 +91,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChucVu.Designer.vb">
+      <DependentUpon>ChucVu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChucVu.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DAO\Dataprovider.vb" />
     <Compile Include="DTO\SignIn.vb" />
     <Compile Include="Login.Designer.vb">
