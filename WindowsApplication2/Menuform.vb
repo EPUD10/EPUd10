@@ -23,4 +23,19 @@ Public Class Menuform
             tranpanel.ShowSync(pnlMenu)
         End If
     End Sub
+
+    Private Sub BunifuFlatButton3_Click(sender As Object, e As EventArgs) Handles btnNhaCC.Click
+        PanelNhaCC.Visible = False
+        PanelNhaCC.BringToFront()
+        tranChucVu.HideSync(PanelChucVu1)
+        tranNhaCC.ShowSync(PanelNhaCC)
+    End Sub
+
+    Private Sub btnChucVu_Click_1(sender As Object, e As EventArgs) Handles btnChucVu.Click
+        PanelChucVu1.Visible = False
+        PanelChucVu1.BringToFront()
+        tranNhaCC.HideSync(PanelNhaCC)
+        tranChucVu.ShowSync(PanelChucVu1)
+    End Sub
+
 End Class

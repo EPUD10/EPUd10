@@ -65,13 +65,13 @@ Partial Class NhaCC
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(246, 550)
+        Me.Panel1.Size = New System.Drawing.Size(246, 496)
         Me.Panel1.TabIndex = 0
         '
         'btnAdd
         '
         Me.btnAdd.Activecolor = System.Drawing.Color.FromArgb(CType(CType(126, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(253, Byte), Integer))
-        Me.btnAdd.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnAdd.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnAdd.BorderRadius = 0
         Me.btnAdd.ButtonText = "Add"
@@ -87,15 +87,15 @@ Partial Class NhaCC
         Me.btnAdd.IconRightVisible = True
         Me.btnAdd.IconRightZoom = 0R
         Me.btnAdd.IconVisible = True
-        Me.btnAdd.IconZoom = 60.0R
+        Me.btnAdd.IconZoom = 40.0R
         Me.btnAdd.IsTab = False
         Me.btnAdd.Location = New System.Drawing.Point(38, 379)
         Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnAdd.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnAdd.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
         Me.btnAdd.OnHoverTextColor = System.Drawing.Color.White
         Me.btnAdd.selected = False
-        Me.btnAdd.Size = New System.Drawing.Size(156, 40)
+        Me.btnAdd.Size = New System.Drawing.Size(156, 26)
         Me.btnAdd.TabIndex = 7
         Me.btnAdd.Text = "Add"
         Me.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -127,9 +127,9 @@ Partial Class NhaCC
         Me.BunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(253, Byte), Integer))
         Me.BunifuCustomLabel4.Location = New System.Drawing.Point(3, 276)
         Me.BunifuCustomLabel4.Name = "BunifuCustomLabel4"
-        Me.BunifuCustomLabel4.Size = New System.Drawing.Size(72, 17)
+        Me.BunifuCustomLabel4.Size = New System.Drawing.Size(73, 17)
         Me.BunifuCustomLabel4.TabIndex = 5
-        Me.BunifuCustomLabel4.Text = "Quyền hạn"
+        Me.BunifuCustomLabel4.Text = "Jurisdiction"
         '
         'txtTenCV
         '
@@ -156,9 +156,9 @@ Partial Class NhaCC
         Me.BunifuCustomLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(253, Byte), Integer))
         Me.BunifuCustomLabel3.Location = New System.Drawing.Point(4, 195)
         Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
-        Me.BunifuCustomLabel3.Size = New System.Drawing.Size(82, 17)
+        Me.BunifuCustomLabel3.Size = New System.Drawing.Size(100, 17)
         Me.BunifuCustomLabel3.TabIndex = 3
-        Me.BunifuCustomLabel3.Text = "Tên chức vụ"
+        Me.BunifuCustomLabel3.Text = "Name Regency"
         '
         'txtMaChucVu
         '
@@ -185,19 +185,20 @@ Partial Class NhaCC
         Me.BunifuCustomLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(253, Byte), Integer))
         Me.BunifuCustomLabel2.Location = New System.Drawing.Point(3, 113)
         Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
-        Me.BunifuCustomLabel2.Size = New System.Drawing.Size(79, 17)
+        Me.BunifuCustomLabel2.Size = New System.Drawing.Size(80, 17)
         Me.BunifuCustomLabel2.TabIndex = 1
-        Me.BunifuCustomLabel2.Text = "Mã chức vụ"
+        Me.BunifuCustomLabel2.Text = "ID Regency"
         '
         'BunifuCustomLabel1
         '
         Me.BunifuCustomLabel1.AutoSize = True
-        Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Calibri", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(51, 44)
+        Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Calibri", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(253, Byte), Integer))
+        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(58, 40)
         Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
-        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(143, 29)
+        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(117, 33)
         Me.BunifuCustomLabel1.TabIndex = 0
-        Me.BunifuCustomLabel1.Text = "Thêm dữ liệu"
+        Me.BunifuCustomLabel1.Text = "Add Data"
         '
         'PanelNhaCC
         '
@@ -205,10 +206,9 @@ Partial Class NhaCC
         Me.PanelNhaCC.Controls.Add(Me.dgvChucVu)
         Me.PanelNhaCC.Controls.Add(Me.Panel2)
         Me.PanelNhaCC.Controls.Add(Me.Panel1)
-        Me.PanelNhaCC.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelNhaCC.Location = New System.Drawing.Point(0, 0)
+        Me.PanelNhaCC.Location = New System.Drawing.Point(280, 96)
         Me.PanelNhaCC.Name = "PanelNhaCC"
-        Me.PanelNhaCC.Size = New System.Drawing.Size(763, 550)
+        Me.PanelNhaCC.Size = New System.Drawing.Size(763, 496)
         Me.PanelNhaCC.TabIndex = 1
         '
         'dgvChucVu
@@ -270,7 +270,7 @@ Partial Class NhaCC
         'btnUpdate
         '
         Me.btnUpdate.Activecolor = System.Drawing.Color.FromArgb(CType(CType(134, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(99, Byte), Integer))
-        Me.btnUpdate.BackColor = System.Drawing.Color.FromArgb(CType(CType(134, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.btnUpdate.BackColor = System.Drawing.Color.FromArgb(CType(CType(134, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnUpdate.BorderRadius = 0
         Me.btnUpdate.ButtonText = "Update"
@@ -290,7 +290,7 @@ Partial Class NhaCC
         Me.btnUpdate.IsTab = False
         Me.btnUpdate.Location = New System.Drawing.Point(115, 13)
         Me.btnUpdate.Name = "btnUpdate"
-        Me.btnUpdate.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(134, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(99, Byte), Integer))
+        Me.btnUpdate.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(134, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.btnUpdate.OnHovercolor = System.Drawing.Color.Lime
         Me.btnUpdate.OnHoverTextColor = System.Drawing.Color.White
         Me.btnUpdate.selected = False
@@ -304,7 +304,7 @@ Partial Class NhaCC
         'btnRemove
         '
         Me.btnRemove.Activecolor = System.Drawing.Color.Red
-        Me.btnRemove.BackColor = System.Drawing.Color.Red
+        Me.btnRemove.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(110, Byte), Integer))
         Me.btnRemove.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnRemove.BorderRadius = 0
         Me.btnRemove.ButtonText = "Remove"
@@ -324,7 +324,7 @@ Partial Class NhaCC
         Me.btnRemove.IsTab = False
         Me.btnRemove.Location = New System.Drawing.Point(9, 13)
         Me.btnRemove.Name = "btnRemove"
-        Me.btnRemove.Normalcolor = System.Drawing.Color.Red
+        Me.btnRemove.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(110, Byte), Integer))
         Me.btnRemove.OnHovercolor = System.Drawing.Color.Brown
         Me.btnRemove.OnHoverTextColor = System.Drawing.Color.White
         Me.btnRemove.selected = False

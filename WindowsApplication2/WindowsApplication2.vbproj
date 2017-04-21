@@ -97,9 +97,7 @@
     <Compile Include="ChucVu.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Class1.vb" />
     <Compile Include="DAO\Dataprovider.vb" />
-    <Compile Include="DTO\SignIn.vb" />
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
@@ -166,7 +164,9 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="DTO\" />
+  </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
       <Visible>False</Visible>
