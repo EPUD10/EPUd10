@@ -37,5 +37,21 @@ Public Class Menuform
         tranNhaCC.HideSync(PanelNhaCC)
         tranChucVu.ShowSync(PanelChucVu1)
     End Sub
+    Dim x, y As Integer
+    Dim newpoint As Point
 
+    Private Sub Panel1_MouseDown(sender As Object, e As MouseEventArgs) Handles Panel1.MouseDown
+        x = Control.MousePosition.X - Me.Location.X
+        y = Control.MousePosition.Y - Me.Location.Y
+    End Sub
+
+    Private Sub Panel1_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel1.MouseMove
+        If e.Button Then
+            newpoint = Control.MousePosition
+            newpoint.X -= x
+            newpoint.Y -= y
+            Me.Location = newpoint
+            Application.DoEvents()
+        End If
+    End Sub
 End Class

@@ -206,7 +206,7 @@ Partial Class NhaCC
         Me.PanelNhaCC.Controls.Add(Me.dgvChucVu)
         Me.PanelNhaCC.Controls.Add(Me.Panel2)
         Me.PanelNhaCC.Controls.Add(Me.Panel1)
-        Me.PanelNhaCC.Location = New System.Drawing.Point(280, 96)
+        Me.PanelNhaCC.Location = New System.Drawing.Point(12, 92)
         Me.PanelNhaCC.Name = "PanelNhaCC"
         Me.PanelNhaCC.Size = New System.Drawing.Size(763, 496)
         Me.PanelNhaCC.TabIndex = 1
