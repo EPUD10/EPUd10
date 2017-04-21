@@ -60,8 +60,10 @@
         If PanelSignIn.Left = 483 Then
             PanelSignUp.Visible = False
             PanelSignUp.Left = 483
+            tranSignIn.HideSync(PanelSignUp)
             PanelSignIn.Visible = False
             PanelSignIn.Left = 30
+            tranSignIn.ShowSync(PanelSignIn)
             PanelSignIn.Visible = True
             PanelSignIn.Refresh()
             EmtySignIn()
@@ -73,8 +75,10 @@
         If PanelSignUp.Left = 483 Then
             PanelSignIn.Visible = False
             PanelSignIn.Left = 483
+            tranSignUp.HideSync(PanelSignIn)
             PanelSignUp.Visible = False
             PanelSignUp.Left = 30
+            tranSignUp.ShowSync(PanelSignUp)
             PanelSignUp.Visible = True
             PanelSignUp.Refresh()
             EmtySignUp()
