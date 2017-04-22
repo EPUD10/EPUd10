@@ -46,14 +46,14 @@ Partial Class Menuform
         Me.tranlogo = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.ChucVuForm1 = New WindowsApplication2.ChucVuForm()
+        Me.KhachHangForm1 = New WindowsApplication2.KhachHangForm()
+        Me.NhaCCform1 = New WindowsApplication2.NhaCCform()
         Me.tranpanel = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.tranNhaCC = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.tranChucVu = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.tranKhachhang = New BunifuAnimatorNS.BunifuTransition(Me.components)
-        Me.ChucVuForm1 = New WindowsApplication2.ChucVuForm()
-        Me.KhachHangForm1 = New WindowsApplication2.KhachHangForm()
-        Me.NhaCCform1 = New WindowsApplication2.NhaCCform()
         Me.Panel1.SuspendLayout()
         CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -436,6 +436,49 @@ Partial Class Menuform
         Me.Panel3.Size = New System.Drawing.Size(887, 676)
         Me.Panel3.TabIndex = 0
         '
+        'ChucVuForm1
+        '
+        Me.ChucVuForm1.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer))
+        Me.tranKhachhang.SetDecoration(Me.ChucVuForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranChucVu.SetDecoration(Me.ChucVuForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranlogo.SetDecoration(Me.ChucVuForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.ChucVuForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.ChucVuForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVuForm1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ChucVuForm1.Location = New System.Drawing.Point(0, 0)
+        Me.ChucVuForm1.Name = "ChucVuForm1"
+        Me.ChucVuForm1.Size = New System.Drawing.Size(887, 676)
+        Me.ChucVuForm1.TabIndex = 3
+        '
+        'KhachHangForm1
+        '
+        Me.KhachHangForm1.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer))
+        Me.tranKhachhang.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranChucVu.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranlogo.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.KhachHangForm1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.KhachHangForm1.Location = New System.Drawing.Point(0, 0)
+        Me.KhachHangForm1.Name = "KhachHangForm1"
+        Me.KhachHangForm1.Size = New System.Drawing.Size(887, 676)
+        Me.KhachHangForm1.TabIndex = 2
+        Me.KhachHangForm1.Visible = False
+        '
+        'NhaCCform1
+        '
+        Me.tranKhachhang.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranChucVu.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranlogo.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
+        Me.NhaCCform1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.NhaCCform1.Location = New System.Drawing.Point(0, 0)
+        Me.NhaCCform1.Name = "NhaCCform1"
+        Me.NhaCCform1.Size = New System.Drawing.Size(887, 676)
+        Me.NhaCCform1.TabIndex = 1
+        Me.NhaCCform1.Visible = False
+        '
         'tranpanel
         '
         Me.tranpanel.AnimationType = BunifuAnimatorNS.AnimationType.Leaf
@@ -520,49 +563,6 @@ Partial Class Menuform
         Animation1.TimeCoeff = 0!
         Animation1.TransparencyCoeff = 0!
         Me.tranKhachhang.DefaultAnimation = Animation1
-        '
-        'ChucVuForm1
-        '
-        Me.ChucVuForm1.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer))
-        Me.tranKhachhang.SetDecoration(Me.ChucVuForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranChucVu.SetDecoration(Me.ChucVuForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranlogo.SetDecoration(Me.ChucVuForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me.ChucVuForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.ChucVuForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.ChucVuForm1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ChucVuForm1.Location = New System.Drawing.Point(0, 0)
-        Me.ChucVuForm1.Name = "ChucVuForm1"
-        Me.ChucVuForm1.Size = New System.Drawing.Size(887, 676)
-        Me.ChucVuForm1.TabIndex = 3
-        '
-        'KhachHangForm1
-        '
-        Me.KhachHangForm1.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer))
-        Me.tranKhachhang.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranChucVu.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranlogo.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.KhachHangForm1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.KhachHangForm1.Location = New System.Drawing.Point(0, 0)
-        Me.KhachHangForm1.Name = "KhachHangForm1"
-        Me.KhachHangForm1.Size = New System.Drawing.Size(887, 676)
-        Me.KhachHangForm1.TabIndex = 2
-        Me.KhachHangForm1.Visible = False
-        '
-        'NhaCCform1
-        '
-        Me.tranKhachhang.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranChucVu.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranlogo.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
-        Me.NhaCCform1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.NhaCCform1.Location = New System.Drawing.Point(0, 0)
-        Me.NhaCCform1.Name = "NhaCCform1"
-        Me.NhaCCform1.Size = New System.Drawing.Size(887, 676)
-        Me.NhaCCform1.TabIndex = 1
-        Me.NhaCCform1.Visible = False
         '
         'Menuform
         '

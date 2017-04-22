@@ -1,5 +1,6 @@
 ﻿Public Class Login
-
+    Dim x, y As Integer
+    Dim newpoint As Point
     Private Sub EmtySignUp()
         txtFirstName.Text = ""
         txtLastName.Text = ""
@@ -96,10 +97,26 @@
 
     Private Sub btnSignUpLogin_Click(sender As Object, e As EventArgs) Handles btnSignUpLogin.Click
         BoolEmtySignUp()
+        Menuform.Show()
     End Sub
 
     Private Sub btnSignInLogin_Click(sender As Object, e As EventArgs) Handles btnSignInLogin.Click
         BoolEmtySignIn()
     End Sub
 
+    Private Sub Login_MouseDown(sender As Object, e As MouseEventArgs) Handles Me.MouseDown
+        x = Control.MousePosition.X - Me.Location.X
+        y = Control.MousePosition.Y - Me.Location.Y
+
+    End Sub
+
+    Private Sub Login_MouseMove(sender As Object, e As MouseEventArgs) Handles Me.MouseMove
+        If e.Button Then
+            newpoint = Control.MousePosition
+            newpoint.X -= x
+            newpoint.Y -= y
+            Me.Location = newpoint
+            Application.DoEvents()
+        End If
+    End Sub
 End Class
