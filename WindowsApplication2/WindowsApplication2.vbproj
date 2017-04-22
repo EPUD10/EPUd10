@@ -103,13 +103,19 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChucVuform.Designer.vb">
-      <DependentUpon>ChucVuform.vb</DependentUpon>
+    <Compile Include="ChucVuForm.Designer.vb">
+      <DependentUpon>ChucVuForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="ChucVuform.vb">
+    <Compile Include="ChucVuForm.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="DAO\Dataprovider.vb" />
+    <Compile Include="KhachHangForm.Designer.vb">
+      <DependentUpon>KhachHangForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KhachHangForm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
@@ -145,8 +151,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ChucVuform.resx">
-      <DependentUpon>ChucVuform.vb</DependentUpon>
+    <EmbeddedResource Include="ChucVuForm.resx">
+      <DependentUpon>ChucVuForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhachHangForm.resx">
+      <DependentUpon>KhachHangForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>

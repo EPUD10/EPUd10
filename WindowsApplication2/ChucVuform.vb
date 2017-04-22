@@ -1,3 +1,3 @@
-﻿Public Class ChucVuform
+﻿Public Class ChucVuForm
 
 End Class
