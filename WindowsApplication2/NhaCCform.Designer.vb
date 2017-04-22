@@ -81,8 +81,7 @@ Partial Class NhaCCform
         Me.Panel2.Controls.Add(Me.BunifuFlatButton4)
         Me.Panel2.Controls.Add(Me.btnUpdate)
         Me.Panel2.Controls.Add(Me.btnRemove)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Location = New System.Drawing.Point(40, 30)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(752, 59)
         Me.Panel2.TabIndex = 0

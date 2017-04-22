@@ -62,9 +62,9 @@ Partial Class ChucVuform
         Me.dgvChucVu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvChucVu.BackgroundColor = System.Drawing.Color.White
         Me.dgvChucVu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvChucVu.Location = New System.Drawing.Point(338, 70)
+        Me.dgvChucVu.Location = New System.Drawing.Point(255, 70)
         Me.dgvChucVu.Name = "dgvChucVu"
-        Me.dgvChucVu.Size = New System.Drawing.Size(499, 396)
+        Me.dgvChucVu.Size = New System.Drawing.Size(683, 460)
         Me.dgvChucVu.TabIndex = 2
         '
         'Panel2
@@ -74,10 +74,9 @@ Partial Class ChucVuform
         Me.Panel2.Controls.Add(Me.btnUpdate)
         Me.Panel2.Controls.Add(Me.btnRemove)
         Me.Panel2.Controls.Add(Me.txtSearch)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(246, 0)
+        Me.Panel2.Location = New System.Drawing.Point(291, 12)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(717, 52)
+        Me.Panel2.Size = New System.Drawing.Size(595, 52)
         Me.Panel2.TabIndex = 1
         '
         'btnSearch

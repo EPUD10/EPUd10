@@ -1,6 +1,7 @@
 ﻿
 Public Class Menuform
-
+    Dim NhaCC As New NhaCCform
+    Dim ChucVu As New ChucVuform
     Private Sub BunifuImageButton1_Click(sender As Object, e As EventArgs) Handles BunifuImageButton1.Click
         Try
             Me.Close()
@@ -30,6 +31,19 @@ Public Class Menuform
         x = Control.MousePosition.X - Me.Location.X
         y = Control.MousePosition.Y - Me.Location.Y
     End Sub
+
+    Private Sub btnChucVu_Click(sender As Object, e As EventArgs) Handles btnChucVu.Click
+        ChucVuform1.Visible = False
+        ChucVuform1.BringToFront()
+        tranNhaCC.ShowSync(ChucVuform1)
+    End Sub
+
+    Private Sub btnNhaCC_Click(sender As Object, e As EventArgs) Handles btnNhaCC.Click
+        NhaCCform1.Visible = False
+        NhaCCform1.BringToFront()
+        tranNhaCC.ShowSync(NhaCCform1)
+    End Sub
+
     Private Sub Panel1_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel1.MouseMove
         If e.Button Then
             newpoint = Control.MousePosition
