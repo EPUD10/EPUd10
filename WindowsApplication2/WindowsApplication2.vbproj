@@ -110,6 +110,18 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="DAO\Dataprovider.vb" />
+    <Compile Include="HoaDonBan.Designer.vb">
+      <DependentUpon>HoaDonBan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonBan.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HoaDonNhap.Designer.vb">
+      <DependentUpon>HoaDonNhap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonNhap.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="KhachHangForm.Designer.vb">
       <DependentUpon>KhachHangForm.vb</DependentUpon>
     </Compile>
@@ -149,10 +161,34 @@
     <Compile Include="NhaCCform.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="NhanVien.Designer.vb">
+      <DependentUpon>NhanVien.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CuaHang.Designer.vb">
+      <DependentUpon>CuaHang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CuaHang.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaiKhoan.Designer.vb">
+      <DependentUpon>TaiKhoan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TaiKhoan.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ChucVuForm.resx">
       <DependentUpon>ChucVuForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDonBan.resx">
+      <DependentUpon>HoaDonBan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDonNhap.resx">
+      <DependentUpon>HoaDonNhap.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KhachHangForm.resx">
       <DependentUpon>KhachHangForm.vb</DependentUpon>
@@ -171,6 +207,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NhaCCform.resx">
       <DependentUpon>NhaCCform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien.resx">
+      <DependentUpon>NhanVien.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CuaHang.resx">
+      <DependentUpon>CuaHang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaiKhoan.resx">
+      <DependentUpon>TaiKhoan.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

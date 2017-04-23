@@ -60,6 +60,12 @@ Public Class Menuform
         tranChucVu.ShowSync(ChucVuForm1)
     End Sub
 
+    Private Sub btnNhanVien_Click(sender As Object, e As EventArgs) Handles btnNhanVien.Click
+        NhanVien1.Visible = False
+        NhanVien1.BringToFront()
+        tranNhanVien.ShowSync(NhanVien1)
+    End Sub
+
     Private Sub Panel1_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel1.MouseMove
         If e.Button Then
             newpoint = Control.MousePosition

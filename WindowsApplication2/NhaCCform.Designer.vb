@@ -27,11 +27,11 @@ Partial Class NhaCCform
         Me.dgvSupplier = New System.Windows.Forms.DataGridView()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.txtSearch = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.BunifuFlatButton4 = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.btnSearch = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnUpdate = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnRemove = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.btnAdd = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.txtDienThoai = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.BunifuCustomLabel6 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.txtEmail = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
@@ -78,7 +78,7 @@ Partial Class NhaCCform
         '
         Me.Panel2.BackColor = System.Drawing.Color.White
         Me.Panel2.Controls.Add(Me.txtSearch)
-        Me.Panel2.Controls.Add(Me.BunifuFlatButton4)
+        Me.Panel2.Controls.Add(Me.btnSearch)
         Me.Panel2.Controls.Add(Me.btnUpdate)
         Me.Panel2.Controls.Add(Me.btnRemove)
         Me.Panel2.Location = New System.Drawing.Point(40, 30)
@@ -95,39 +95,39 @@ Partial Class NhaCCform
         Me.txtSearch.Size = New System.Drawing.Size(168, 28)
         Me.txtSearch.TabIndex = 16
         '
-        'BunifuFlatButton4
+        'btnSearch
         '
-        Me.BunifuFlatButton4.Activecolor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(38, Byte), Integer))
-        Me.BunifuFlatButton4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.BunifuFlatButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton4.BorderRadius = 0
-        Me.BunifuFlatButton4.ButtonText = "Search"
-        Me.BunifuFlatButton4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuFlatButton4.DisabledColor = System.Drawing.Color.Gray
-        Me.BunifuFlatButton4.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton4.Iconimage = CType(resources.GetObject("BunifuFlatButton4.Iconimage"), System.Drawing.Image)
-        Me.BunifuFlatButton4.Iconimage_right = Nothing
-        Me.BunifuFlatButton4.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton4.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton4.IconMarginLeft = 0
-        Me.BunifuFlatButton4.IconMarginRight = 0
-        Me.BunifuFlatButton4.IconRightVisible = True
-        Me.BunifuFlatButton4.IconRightZoom = 0R
-        Me.BunifuFlatButton4.IconVisible = True
-        Me.BunifuFlatButton4.IconZoom = 40.0R
-        Me.BunifuFlatButton4.IsTab = False
-        Me.BunifuFlatButton4.Location = New System.Drawing.Point(505, 12)
-        Me.BunifuFlatButton4.Name = "BunifuFlatButton4"
-        Me.BunifuFlatButton4.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.BunifuFlatButton4.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.BunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.White
-        Me.BunifuFlatButton4.selected = False
-        Me.BunifuFlatButton4.Size = New System.Drawing.Size(91, 28)
-        Me.BunifuFlatButton4.TabIndex = 15
-        Me.BunifuFlatButton4.Text = "Search"
-        Me.BunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.BunifuFlatButton4.Textcolor = System.Drawing.Color.White
-        Me.BunifuFlatButton4.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSearch.Activecolor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(38, Byte), Integer))
+        Me.btnSearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(102, Byte), Integer))
+        Me.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnSearch.BorderRadius = 0
+        Me.btnSearch.ButtonText = "Search"
+        Me.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSearch.DisabledColor = System.Drawing.Color.Gray
+        Me.btnSearch.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnSearch.Iconimage = CType(resources.GetObject("btnSearch.Iconimage"), System.Drawing.Image)
+        Me.btnSearch.Iconimage_right = Nothing
+        Me.btnSearch.Iconimage_right_Selected = Nothing
+        Me.btnSearch.Iconimage_Selected = Nothing
+        Me.btnSearch.IconMarginLeft = 0
+        Me.btnSearch.IconMarginRight = 0
+        Me.btnSearch.IconRightVisible = True
+        Me.btnSearch.IconRightZoom = 0R
+        Me.btnSearch.IconVisible = True
+        Me.btnSearch.IconZoom = 40.0R
+        Me.btnSearch.IsTab = False
+        Me.btnSearch.Location = New System.Drawing.Point(505, 12)
+        Me.btnSearch.Name = "btnSearch"
+        Me.btnSearch.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(102, Byte), Integer))
+        Me.btnSearch.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnSearch.OnHoverTextColor = System.Drawing.Color.White
+        Me.btnSearch.selected = False
+        Me.btnSearch.Size = New System.Drawing.Size(91, 28)
+        Me.btnSearch.TabIndex = 15
+        Me.btnSearch.Text = "Search"
+        Me.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btnSearch.Textcolor = System.Drawing.Color.White
+        Me.btnSearch.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'btnUpdate
         '
@@ -200,7 +200,7 @@ Partial Class NhaCCform
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.BunifuFlatButton1)
+        Me.Panel1.Controls.Add(Me.btnAdd)
         Me.Panel1.Controls.Add(Me.txtDienThoai)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel6)
         Me.Panel1.Controls.Add(Me.txtEmail)
@@ -219,39 +219,39 @@ Partial Class NhaCCform
         Me.Panel1.Size = New System.Drawing.Size(211, 734)
         Me.Panel1.TabIndex = 4
         '
-        'BunifuFlatButton1
+        'btnAdd
         '
-        Me.BunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(38, Byte), Integer))
-        Me.BunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton1.BorderRadius = 0
-        Me.BunifuFlatButton1.ButtonText = "Add"
-        Me.BunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray
-        Me.BunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton1.Iconimage = CType(resources.GetObject("BunifuFlatButton1.Iconimage"), System.Drawing.Image)
-        Me.BunifuFlatButton1.Iconimage_right = Nothing
-        Me.BunifuFlatButton1.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton1.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton1.IconMarginLeft = 0
-        Me.BunifuFlatButton1.IconMarginRight = 0
-        Me.BunifuFlatButton1.IconRightVisible = True
-        Me.BunifuFlatButton1.IconRightZoom = 0R
-        Me.BunifuFlatButton1.IconVisible = True
-        Me.BunifuFlatButton1.IconZoom = 40.0R
-        Me.BunifuFlatButton1.IsTab = False
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(16, 537)
-        Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
-        Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.BunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White
-        Me.BunifuFlatButton1.selected = False
-        Me.BunifuFlatButton1.Size = New System.Drawing.Size(168, 28)
-        Me.BunifuFlatButton1.TabIndex = 12
-        Me.BunifuFlatButton1.Text = "Add"
-        Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
-        Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAdd.Activecolor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(38, Byte), Integer))
+        Me.btnAdd.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnAdd.BorderRadius = 0
+        Me.btnAdd.ButtonText = "Add"
+        Me.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAdd.DisabledColor = System.Drawing.Color.Gray
+        Me.btnAdd.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnAdd.Iconimage = CType(resources.GetObject("btnAdd.Iconimage"), System.Drawing.Image)
+        Me.btnAdd.Iconimage_right = Nothing
+        Me.btnAdd.Iconimage_right_Selected = Nothing
+        Me.btnAdd.Iconimage_Selected = Nothing
+        Me.btnAdd.IconMarginLeft = 0
+        Me.btnAdd.IconMarginRight = 0
+        Me.btnAdd.IconRightVisible = True
+        Me.btnAdd.IconRightZoom = 0R
+        Me.btnAdd.IconVisible = True
+        Me.btnAdd.IconZoom = 40.0R
+        Me.btnAdd.IsTab = False
+        Me.btnAdd.Location = New System.Drawing.Point(16, 537)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnAdd.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnAdd.OnHoverTextColor = System.Drawing.Color.White
+        Me.btnAdd.selected = False
+        Me.btnAdd.Size = New System.Drawing.Size(168, 28)
+        Me.btnAdd.TabIndex = 12
+        Me.btnAdd.Text = "Add"
+        Me.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btnAdd.Textcolor = System.Drawing.Color.White
+        Me.btnAdd.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'txtDienThoai
         '
@@ -391,11 +391,11 @@ Partial Class NhaCCform
     Friend WithEvents dgvSupplier As DataGridView
     Friend WithEvents Panel2 As Panel
     Friend WithEvents txtSearch As WindowsFormsControlLibrary1.BunifuCustomTextbox
-    Friend WithEvents BunifuFlatButton4 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents btnSearch As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents btnUpdate As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents btnRemove As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents btnAdd As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents txtDienThoai As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents BunifuCustomLabel6 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents txtEmail As WindowsFormsControlLibrary1.BunifuCustomTextbox

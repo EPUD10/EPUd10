@@ -25,14 +25,14 @@ Partial Class KhachHangForm
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(KhachHangForm))
-        Me.BunifuCustomDataGrid1 = New Bunifu.Framework.UI.BunifuCustomDataGrid()
+        Me.dgvKhach = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.datetime = New System.Windows.Forms.DateTimePicker()
         Me.rbtnu = New System.Windows.Forms.RadioButton()
         Me.rbtNam = New System.Windows.Forms.RadioButton()
         Me.txtPhoneNumber = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.BunifuCustomLabel7 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuMetroTextbox5 = New Bunifu.Framework.UI.BunifuMetroTextbox()
+        Me.txtEmail = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.BunifuCustomLabel6 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel5 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel4 = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -50,20 +50,20 @@ Partial Class KhachHangForm
         Me.btnSearch = New Bunifu.Framework.UI.BunifuImageButton()
         Me.txtSearch = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.BunifuCustomLabel8 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        CType(Me.BunifuCustomDataGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvKhach, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.btnSearch, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'BunifuCustomDataGrid1
+        'dgvKhach
         '
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.BunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.BunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.BunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgvKhach.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvKhach.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.dgvKhach.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvKhach.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -71,28 +71,28 @@ Partial Class KhachHangForm
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.BunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.BunifuCustomDataGrid1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BunifuCustomDataGrid1.DoubleBuffered = True
-        Me.BunifuCustomDataGrid1.EnableHeadersVisualStyles = False
-        Me.BunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomDataGrid1.Location = New System.Drawing.Point(0, 0)
-        Me.BunifuCustomDataGrid1.Name = "BunifuCustomDataGrid1"
-        Me.BunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.BunifuCustomDataGrid1.Size = New System.Drawing.Size(887, 273)
-        Me.BunifuCustomDataGrid1.TabIndex = 0
+        Me.dgvKhach.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvKhach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvKhach.Dock = System.Windows.Forms.DockStyle.Top
+        Me.dgvKhach.DoubleBuffered = True
+        Me.dgvKhach.EnableHeadersVisualStyles = False
+        Me.dgvKhach.HeaderBgColor = System.Drawing.Color.SeaGreen
+        Me.dgvKhach.HeaderForeColor = System.Drawing.Color.SeaGreen
+        Me.dgvKhach.Location = New System.Drawing.Point(0, 0)
+        Me.dgvKhach.Name = "dgvKhach"
+        Me.dgvKhach.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgvKhach.Size = New System.Drawing.Size(887, 273)
+        Me.dgvKhach.TabIndex = 0
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Controls.Add(Me.DateTimePicker1)
+        Me.Panel1.Controls.Add(Me.datetime)
         Me.Panel1.Controls.Add(Me.rbtnu)
         Me.Panel1.Controls.Add(Me.rbtNam)
         Me.Panel1.Controls.Add(Me.txtPhoneNumber)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel7)
-        Me.Panel1.Controls.Add(Me.BunifuMetroTextbox5)
+        Me.Panel1.Controls.Add(Me.txtEmail)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel6)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel5)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel4)
@@ -107,12 +107,12 @@ Partial Class KhachHangForm
         Me.Panel1.Size = New System.Drawing.Size(840, 199)
         Me.Panel1.TabIndex = 20
         '
-        'DateTimePicker1
+        'datetime
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(319, 137)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 34
+        Me.datetime.Location = New System.Drawing.Point(319, 137)
+        Me.datetime.Name = "datetime"
+        Me.datetime.Size = New System.Drawing.Size(200, 20)
+        Me.datetime.TabIndex = 34
         '
         'rbtnu
         '
@@ -163,22 +163,22 @@ Partial Class KhachHangForm
         Me.BunifuCustomLabel7.TabIndex = 30
         Me.BunifuCustomLabel7.Text = "Phone Number"
         '
-        'BunifuMetroTextbox5
+        'txtEmail
         '
-        Me.BunifuMetroTextbox5.BorderColorFocused = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox5.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMetroTextbox5.BorderColorMouseHover = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox5.BorderThickness = 1
-        Me.BunifuMetroTextbox5.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuMetroTextbox5.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.BunifuMetroTextbox5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.BunifuMetroTextbox5.isPassword = False
-        Me.BunifuMetroTextbox5.Location = New System.Drawing.Point(579, 132)
-        Me.BunifuMetroTextbox5.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuMetroTextbox5.Name = "BunifuMetroTextbox5"
-        Me.BunifuMetroTextbox5.Size = New System.Drawing.Size(146, 22)
-        Me.BunifuMetroTextbox5.TabIndex = 29
-        Me.BunifuMetroTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txtEmail.BorderColorFocused = System.Drawing.Color.Blue
+        Me.txtEmail.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtEmail.BorderColorMouseHover = System.Drawing.Color.Blue
+        Me.txtEmail.BorderThickness = 1
+        Me.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtEmail.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.txtEmail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.txtEmail.isPassword = False
+        Me.txtEmail.Location = New System.Drawing.Point(579, 132)
+        Me.txtEmail.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(146, 22)
+        Me.txtEmail.TabIndex = 29
+        Me.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'BunifuCustomLabel6
         '
@@ -464,10 +464,10 @@ Partial Class KhachHangForm
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.BunifuCustomDataGrid1)
+        Me.Controls.Add(Me.dgvKhach)
         Me.Name = "KhachHangForm"
         Me.Size = New System.Drawing.Size(887, 683)
-        CType(Me.BunifuCustomDataGrid1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvKhach, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
@@ -478,14 +478,14 @@ Partial Class KhachHangForm
 
     End Sub
 
-    Friend WithEvents BunifuCustomDataGrid1 As Bunifu.Framework.UI.BunifuCustomDataGrid
+    Friend WithEvents dgvKhach As Bunifu.Framework.UI.BunifuCustomDataGrid
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents datetime As DateTimePicker
     Friend WithEvents rbtnu As RadioButton
     Friend WithEvents rbtNam As RadioButton
     Friend WithEvents txtPhoneNumber As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents BunifuCustomLabel7 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents BunifuMetroTextbox5 As Bunifu.Framework.UI.BunifuMetroTextbox
+    Friend WithEvents txtEmail As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents BunifuCustomLabel6 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel5 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel4 As Bunifu.Framework.UI.BunifuCustomLabel
