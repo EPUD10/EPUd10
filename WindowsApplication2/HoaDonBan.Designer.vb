@@ -26,18 +26,22 @@ Partial Class HoaDonBan
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(HoaDonBan))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtGiaNhap = New Bunifu.Framework.UI.BunifuMetroTextbox()
+        Me.cmbNhaCC = New System.Windows.Forms.ComboBox()
+        Me.BunifuCustomLabel7 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel8 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.datetime = New System.Windows.Forms.DateTimePicker()
+        Me.cmbCH = New System.Windows.Forms.ComboBox()
+        Me.cmbSP = New System.Windows.Forms.ComboBox()
+        Me.cmbNV = New System.Windows.Forms.ComboBox()
+        Me.BunifuCustomLabel4 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel5 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.txtSoLuong = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel6 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.txtMahdb = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomLabel4 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomLabel5 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.cmbNV = New System.Windows.Forms.ComboBox()
-        Me.cmbSP = New System.Windows.Forms.ComboBox()
-        Me.cmbCH = New System.Windows.Forms.ComboBox()
-        Me.datetime = New System.Windows.Forms.DateTimePicker()
         Me.dgvHDN = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.btnSearch = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnUpdate = New Bunifu.Framework.UI.BunifuFlatButton()
@@ -45,10 +49,6 @@ Partial Class HoaDonBan
         Me.txtSearch = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.BunifuCustomLabel11 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.btnAdd = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.cmbNhaCC = New System.Windows.Forms.ComboBox()
-        Me.BunifuCustomLabel7 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomLabel8 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.txtGiaNhap = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dgvHDN, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -77,7 +77,133 @@ Partial Class HoaDonBan
         Me.GroupBox1.Size = New System.Drawing.Size(881, 268)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Information"
+        Me.GroupBox1.Text = "Information Bill Of Sale"
+        '
+        'txtGiaNhap
+        '
+        Me.txtGiaNhap.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer))
+        Me.txtGiaNhap.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(160, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(220, Byte), Integer))
+        Me.txtGiaNhap.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtGiaNhap.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(160, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(220, Byte), Integer))
+        Me.txtGiaNhap.BorderThickness = 1
+        Me.txtGiaNhap.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtGiaNhap.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.txtGiaNhap.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.txtGiaNhap.isPassword = False
+        Me.txtGiaNhap.Location = New System.Drawing.Point(49, 233)
+        Me.txtGiaNhap.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtGiaNhap.Name = "txtGiaNhap"
+        Me.txtGiaNhap.Size = New System.Drawing.Size(192, 22)
+        Me.txtGiaNhap.TabIndex = 72
+        Me.txtGiaNhap.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'cmbNhaCC
+        '
+        Me.cmbNhaCC.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmbNhaCC.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbNhaCC.FormattingEnabled = True
+        Me.cmbNhaCC.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.cmbNhaCC.IntegralHeight = False
+        Me.cmbNhaCC.ItemHeight = 16
+        Me.cmbNhaCC.Location = New System.Drawing.Point(354, 233)
+        Me.cmbNhaCC.Name = "cmbNhaCC"
+        Me.cmbNhaCC.Size = New System.Drawing.Size(192, 24)
+        Me.cmbNhaCC.TabIndex = 71
+        Me.cmbNhaCC.TabStop = False
+        '
+        'BunifuCustomLabel7
+        '
+        Me.BunifuCustomLabel7.AutoSize = True
+        Me.BunifuCustomLabel7.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(207, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(26, Byte), Integer))
+        Me.BunifuCustomLabel7.Location = New System.Drawing.Point(46, 207)
+        Me.BunifuCustomLabel7.Name = "BunifuCustomLabel7"
+        Me.BunifuCustomLabel7.Size = New System.Drawing.Size(51, 18)
+        Me.BunifuCustomLabel7.TabIndex = 70
+        Me.BunifuCustomLabel7.Text = "Accede"
+        '
+        'BunifuCustomLabel8
+        '
+        Me.BunifuCustomLabel8.AutoSize = True
+        Me.BunifuCustomLabel8.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(207, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(26, Byte), Integer))
+        Me.BunifuCustomLabel8.Location = New System.Drawing.Point(351, 207)
+        Me.BunifuCustomLabel8.Name = "BunifuCustomLabel8"
+        Me.BunifuCustomLabel8.Size = New System.Drawing.Size(86, 18)
+        Me.BunifuCustomLabel8.TabIndex = 69
+        Me.BunifuCustomLabel8.Text = "ID Supplier"
+        '
+        'datetime
+        '
+        Me.datetime.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.datetime.Location = New System.Drawing.Point(352, 154)
+        Me.datetime.Name = "datetime"
+        Me.datetime.Size = New System.Drawing.Size(228, 22)
+        Me.datetime.TabIndex = 63
+        '
+        'cmbCH
+        '
+        Me.cmbCH.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmbCH.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbCH.FormattingEnabled = True
+        Me.cmbCH.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.cmbCH.IntegralHeight = False
+        Me.cmbCH.ItemHeight = 16
+        Me.cmbCH.Location = New System.Drawing.Point(675, 159)
+        Me.cmbCH.Name = "cmbCH"
+        Me.cmbCH.Size = New System.Drawing.Size(192, 24)
+        Me.cmbCH.TabIndex = 62
+        Me.cmbCH.TabStop = False
+        '
+        'cmbSP
+        '
+        Me.cmbSP.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmbSP.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbSP.FormattingEnabled = True
+        Me.cmbSP.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.cmbSP.IntegralHeight = False
+        Me.cmbSP.ItemHeight = 16
+        Me.cmbSP.Location = New System.Drawing.Point(49, 154)
+        Me.cmbSP.Name = "cmbSP"
+        Me.cmbSP.Size = New System.Drawing.Size(192, 24)
+        Me.cmbSP.TabIndex = 60
+        Me.cmbSP.TabStop = False
+        '
+        'cmbNV
+        '
+        Me.cmbNV.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmbNV.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbNV.FormattingEnabled = True
+        Me.cmbNV.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.cmbNV.IntegralHeight = False
+        Me.cmbNV.ItemHeight = 16
+        Me.cmbNV.Location = New System.Drawing.Point(675, 89)
+        Me.cmbNV.Name = "cmbNV"
+        Me.cmbNV.Size = New System.Drawing.Size(192, 24)
+        Me.cmbNV.TabIndex = 20
+        Me.cmbNV.TabStop = False
+        '
+        'BunifuCustomLabel4
+        '
+        Me.BunifuCustomLabel4.AutoSize = True
+        Me.BunifuCustomLabel4.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(207, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(26, Byte), Integer))
+        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(672, 67)
+        Me.BunifuCustomLabel4.Name = "BunifuCustomLabel4"
+        Me.BunifuCustomLabel4.Size = New System.Drawing.Size(92, 18)
+        Me.BunifuCustomLabel4.TabIndex = 59
+        Me.BunifuCustomLabel4.Text = "ID Salesman"
+        '
+        'BunifuCustomLabel5
+        '
+        Me.BunifuCustomLabel5.AutoSize = True
+        Me.BunifuCustomLabel5.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(207, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(26, Byte), Integer))
+        Me.BunifuCustomLabel5.Location = New System.Drawing.Point(672, 133)
+        Me.BunifuCustomLabel5.Name = "BunifuCustomLabel5"
+        Me.BunifuCustomLabel5.Size = New System.Drawing.Size(64, 18)
+        Me.BunifuCustomLabel5.TabIndex = 58
+        Me.BunifuCustomLabel5.Text = "ID Store"
         '
         'txtSoLuong
         '
@@ -158,78 +284,6 @@ Partial Class HoaDonBan
         Me.BunifuCustomLabel1.Size = New System.Drawing.Size(84, 18)
         Me.BunifuCustomLabel1.TabIndex = 50
         Me.BunifuCustomLabel1.Text = "ID Billiard"
-        '
-        'BunifuCustomLabel4
-        '
-        Me.BunifuCustomLabel4.AutoSize = True
-        Me.BunifuCustomLabel4.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(207, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(672, 67)
-        Me.BunifuCustomLabel4.Name = "BunifuCustomLabel4"
-        Me.BunifuCustomLabel4.Size = New System.Drawing.Size(92, 18)
-        Me.BunifuCustomLabel4.TabIndex = 59
-        Me.BunifuCustomLabel4.Text = "ID Salesman"
-        '
-        'BunifuCustomLabel5
-        '
-        Me.BunifuCustomLabel5.AutoSize = True
-        Me.BunifuCustomLabel5.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(207, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.BunifuCustomLabel5.Location = New System.Drawing.Point(672, 133)
-        Me.BunifuCustomLabel5.Name = "BunifuCustomLabel5"
-        Me.BunifuCustomLabel5.Size = New System.Drawing.Size(64, 18)
-        Me.BunifuCustomLabel5.TabIndex = 58
-        Me.BunifuCustomLabel5.Text = "ID Store"
-        '
-        'cmbNV
-        '
-        Me.cmbNV.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmbNV.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbNV.FormattingEnabled = True
-        Me.cmbNV.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.cmbNV.IntegralHeight = False
-        Me.cmbNV.ItemHeight = 16
-        Me.cmbNV.Location = New System.Drawing.Point(675, 89)
-        Me.cmbNV.Name = "cmbNV"
-        Me.cmbNV.Size = New System.Drawing.Size(192, 24)
-        Me.cmbNV.TabIndex = 20
-        Me.cmbNV.TabStop = False
-        '
-        'cmbSP
-        '
-        Me.cmbSP.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmbSP.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbSP.FormattingEnabled = True
-        Me.cmbSP.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.cmbSP.IntegralHeight = False
-        Me.cmbSP.ItemHeight = 16
-        Me.cmbSP.Location = New System.Drawing.Point(49, 154)
-        Me.cmbSP.Name = "cmbSP"
-        Me.cmbSP.Size = New System.Drawing.Size(192, 24)
-        Me.cmbSP.TabIndex = 60
-        Me.cmbSP.TabStop = False
-        '
-        'cmbCH
-        '
-        Me.cmbCH.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmbCH.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbCH.FormattingEnabled = True
-        Me.cmbCH.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.cmbCH.IntegralHeight = False
-        Me.cmbCH.ItemHeight = 16
-        Me.cmbCH.Location = New System.Drawing.Point(675, 159)
-        Me.cmbCH.Name = "cmbCH"
-        Me.cmbCH.Size = New System.Drawing.Size(192, 24)
-        Me.cmbCH.TabIndex = 62
-        Me.cmbCH.TabStop = False
-        '
-        'datetime
-        '
-        Me.datetime.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.datetime.Location = New System.Drawing.Point(352, 154)
-        Me.datetime.Name = "datetime"
-        Me.datetime.Size = New System.Drawing.Size(228, 22)
-        Me.datetime.TabIndex = 63
         '
         'dgvHDN
         '
@@ -429,60 +483,6 @@ Partial Class HoaDonBan
         Me.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.btnAdd.Textcolor = System.Drawing.Color.White
         Me.btnAdd.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'cmbNhaCC
-        '
-        Me.cmbNhaCC.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmbNhaCC.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbNhaCC.FormattingEnabled = True
-        Me.cmbNhaCC.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.cmbNhaCC.IntegralHeight = False
-        Me.cmbNhaCC.ItemHeight = 16
-        Me.cmbNhaCC.Location = New System.Drawing.Point(354, 233)
-        Me.cmbNhaCC.Name = "cmbNhaCC"
-        Me.cmbNhaCC.Size = New System.Drawing.Size(192, 24)
-        Me.cmbNhaCC.TabIndex = 71
-        Me.cmbNhaCC.TabStop = False
-        '
-        'BunifuCustomLabel7
-        '
-        Me.BunifuCustomLabel7.AutoSize = True
-        Me.BunifuCustomLabel7.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(207, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.BunifuCustomLabel7.Location = New System.Drawing.Point(46, 207)
-        Me.BunifuCustomLabel7.Name = "BunifuCustomLabel7"
-        Me.BunifuCustomLabel7.Size = New System.Drawing.Size(51, 18)
-        Me.BunifuCustomLabel7.TabIndex = 70
-        Me.BunifuCustomLabel7.Text = "Accede"
-        '
-        'BunifuCustomLabel8
-        '
-        Me.BunifuCustomLabel8.AutoSize = True
-        Me.BunifuCustomLabel8.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(207, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.BunifuCustomLabel8.Location = New System.Drawing.Point(351, 207)
-        Me.BunifuCustomLabel8.Name = "BunifuCustomLabel8"
-        Me.BunifuCustomLabel8.Size = New System.Drawing.Size(86, 18)
-        Me.BunifuCustomLabel8.TabIndex = 69
-        Me.BunifuCustomLabel8.Text = "ID Supplier"
-        '
-        'txtGiaNhap
-        '
-        Me.txtGiaNhap.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer))
-        Me.txtGiaNhap.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(160, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.txtGiaNhap.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtGiaNhap.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(160, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.txtGiaNhap.BorderThickness = 1
-        Me.txtGiaNhap.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtGiaNhap.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.txtGiaNhap.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.txtGiaNhap.isPassword = False
-        Me.txtGiaNhap.Location = New System.Drawing.Point(49, 233)
-        Me.txtGiaNhap.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtGiaNhap.Name = "txtGiaNhap"
-        Me.txtGiaNhap.Size = New System.Drawing.Size(192, 22)
-        Me.txtGiaNhap.TabIndex = 72
-        Me.txtGiaNhap.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'HoaDonBan
         '

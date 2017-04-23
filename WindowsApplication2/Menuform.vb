@@ -66,6 +66,30 @@ Public Class Menuform
         tranNhanVien.ShowSync(NhanVien1)
     End Sub
 
+    Private Sub btnTaiKhoan_Click(sender As Object, e As EventArgs) Handles btnTaiKhoan.Click
+        TaiKhoan1.Visible = False
+        TaiKhoan1.BringToFront()
+        tranTaiKhoan.ShowSync(TaiKhoan1)
+    End Sub
+
+    Private Sub btnHoaDonBan_Click(sender As Object, e As EventArgs) Handles btnHoaDonBan.Click
+        HoaDonBan1.Visible = False
+        HoaDonBan1.BringToFront()
+        tranHDN.ShowSync(HoaDonBan1)
+    End Sub
+
+    Private Sub btnHoaDonNhap_Click(sender As Object, e As EventArgs) Handles btnHoaDonNhap.Click
+        HoaDonNhap1.Visible = False
+        HoaDonNhap1.BringToFront()
+        tranHDN.ShowSync(HoaDonNhap1)
+    End Sub
+
+    Private Sub btnhome_Click(sender As Object, e As EventArgs) Handles btnhome.Click
+        Home1.Visible = False
+        Home1.BringToFront()
+        tranHome.ShowSync(Home1)
+    End Sub
+
     Private Sub Panel1_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel1.MouseMove
         If e.Button Then
             newpoint = Control.MousePosition
