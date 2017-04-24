@@ -423,6 +423,7 @@ Partial Class HoaDonNhap
         Me.GroupBox1.Controls.Add(Me.txtMahdb)
         Me.GroupBox1.Controls.Add(Me.BunifuCustomLabel1)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.ForeColor = System.Drawing.Color.White
         Me.GroupBox1.Location = New System.Drawing.Point(3, 1)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(881, 263)

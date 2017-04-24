@@ -103,35 +103,34 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChucVuForm.Designer.vb">
+    <Compile Include="UIlayer\ChucVuForm.Designer.vb">
       <DependentUpon>ChucVuForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="ChucVuForm.vb">
+    <Compile Include="UIlayer\ChucVuForm.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DAO\Dataprovider.vb" />
-    <Compile Include="HoaDonBan.Designer.vb">
+    <Compile Include="UIlayer\HoaDonBan.Designer.vb">
       <DependentUpon>HoaDonBan.vb</DependentUpon>
     </Compile>
-    <Compile Include="HoaDonBan.vb">
+    <Compile Include="UIlayer\HoaDonBan.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="HoaDonNhap.Designer.vb">
+    <Compile Include="UIlayer\HoaDonNhap.Designer.vb">
       <DependentUpon>HoaDonNhap.vb</DependentUpon>
     </Compile>
-    <Compile Include="HoaDonNhap.vb">
+    <Compile Include="UIlayer\HoaDonNhap.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Home.Designer.vb">
+    <Compile Include="UIlayer\Home.Designer.vb">
       <DependentUpon>Home.vb</DependentUpon>
     </Compile>
-    <Compile Include="Home.vb">
+    <Compile Include="UIlayer\Home.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="KhachHangForm.Designer.vb">
+    <Compile Include="UIlayer\KhachHangForm.Designer.vb">
       <DependentUpon>KhachHangForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="KhachHangForm.vb">
+    <Compile Include="UIlayer\KhachHangForm.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Login.Designer.vb">
@@ -161,45 +160,45 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="NhaCCform.Designer.vb">
+    <Compile Include="UIlayer\NhaCCform.Designer.vb">
       <DependentUpon>NhaCCform.vb</DependentUpon>
     </Compile>
-    <Compile Include="NhaCCform.vb">
+    <Compile Include="UIlayer\NhaCCform.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="NhanVien.Designer.vb">
+    <Compile Include="UIlayer\NhanVien.Designer.vb">
       <DependentUpon>NhanVien.vb</DependentUpon>
     </Compile>
-    <Compile Include="NhanVien.vb">
+    <Compile Include="UIlayer\NhanVien.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CuaHang.Designer.vb">
+    <Compile Include="UIlayer\CuaHang.Designer.vb">
       <DependentUpon>CuaHang.vb</DependentUpon>
     </Compile>
-    <Compile Include="CuaHang.vb">
+    <Compile Include="UIlayer\CuaHang.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="TaiKhoan.Designer.vb">
+    <Compile Include="UIlayer\TaiKhoan.Designer.vb">
       <DependentUpon>TaiKhoan.vb</DependentUpon>
     </Compile>
-    <Compile Include="TaiKhoan.vb">
+    <Compile Include="UIlayer\TaiKhoan.vb">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ChucVuForm.resx">
+    <EmbeddedResource Include="UIlayer\ChucVuForm.resx">
       <DependentUpon>ChucVuForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HoaDonBan.resx">
+    <EmbeddedResource Include="UIlayer\HoaDonBan.resx">
       <DependentUpon>HoaDonBan.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HoaDonNhap.resx">
+    <EmbeddedResource Include="UIlayer\HoaDonNhap.resx">
       <DependentUpon>HoaDonNhap.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
+    <EmbeddedResource Include="UIlayer\Home.resx">
       <DependentUpon>Home.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KhachHangForm.resx">
+    <EmbeddedResource Include="UIlayer\KhachHangForm.resx">
       <DependentUpon>KhachHangForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
@@ -214,16 +213,16 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="NhaCCform.resx">
+    <EmbeddedResource Include="UIlayer\NhaCCform.resx">
       <DependentUpon>NhaCCform.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NhanVien.resx">
+    <EmbeddedResource Include="UIlayer\NhanVien.resx">
       <DependentUpon>NhanVien.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CuaHang.resx">
+    <EmbeddedResource Include="UIlayer\CuaHang.resx">
       <DependentUpon>CuaHang.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TaiKhoan.resx">
+    <EmbeddedResource Include="UIlayer\TaiKhoan.resx">
       <DependentUpon>TaiKhoan.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
@@ -238,10 +237,10 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-    <None Include="packages.config" />
+    <None Include="UIlayer\packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DTO\" />
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
