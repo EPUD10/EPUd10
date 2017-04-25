@@ -67,9 +67,7 @@ Public Class Menuform
     End Sub
 
     Private Sub btnTaiKhoan_Click(sender As Object, e As EventArgs) Handles btnTaiKhoan.Click
-        TaiKhoan1.Visible = False
-        TaiKhoan1.BringToFront()
-        tranTaiKhoan.ShowSync(TaiKhoan1)
+
     End Sub
 
     Private Sub btnHoaDonBan_Click(sender As Object, e As EventArgs) Handles btnHoaDonBan.Click

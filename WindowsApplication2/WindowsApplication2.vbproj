@@ -65,18 +65,6 @@
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>E:\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
-    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
-      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
-      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
-      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -103,14 +91,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAO\DataProvider.vb" />
-    <Compile Include="DTO\ChucVuDTO.vb" />
-    <Compile Include="DTO\CuaHangDTO.vb" />
-    <Compile Include="DTO\HoaDonBanDTO.vb" />
-    <Compile Include="DTO\HoaDonNhapDTO.vb" />
-    <Compile Include="DTO\KhachHangDTO.vb" />
-    <Compile Include="DTO\NhaCCDTO.vb" />
-    <Compile Include="DTO\NhanVienDTO.vb" />
     <Compile Include="UIlayer\ChucVuForm.Designer.vb">
       <DependentUpon>ChucVuForm.vb</DependentUpon>
     </Compile>
@@ -186,12 +166,6 @@
     <Compile Include="UIlayer\CuaHang.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UIlayer\TaiKhoan.Designer.vb">
-      <DependentUpon>TaiKhoan.vb</DependentUpon>
-    </Compile>
-    <Compile Include="UIlayer\TaiKhoan.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="UIlayer\ChucVuForm.resx">
@@ -229,9 +203,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UIlayer\CuaHang.resx">
       <DependentUpon>CuaHang.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UIlayer\TaiKhoan.resx">
-      <DependentUpon>TaiKhoan.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -282,7 +253,14 @@
     <Content Include="Image\Twitter_64px.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BUS\" />
+    <ProjectReference Include="..\BUS1\BUS1.vbproj">
+      <Project>{702082ec-a6e6-4e67-a88e-81090d42b1df}</Project>
+      <Name>BUS1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO1\DTO1.vbproj">
+      <Project>{4539f81b-a1f8-46fa-b08b-c528b263602e}</Project>
+      <Name>DTO1</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
