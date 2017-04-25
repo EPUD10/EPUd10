@@ -1,4 +1,4 @@
-﻿Public Class KhachHang
+﻿Public Class KhachHangDTO
     Private maKH As String
     Private tenKH As String
     Private diaChi As String

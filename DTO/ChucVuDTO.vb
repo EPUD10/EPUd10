@@ -1,4 +1,4 @@
-﻿Public Class ChucVu
+﻿Public Class ChucVuDTO
     Private maCV As String
     Private tenCV As String
     Private ghiChu As String

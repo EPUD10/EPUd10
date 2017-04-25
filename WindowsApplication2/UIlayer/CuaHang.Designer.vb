@@ -365,13 +365,15 @@ Partial Class CuaHang
         Me.dgvCH.AllowUserToDeleteRows = False
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.dgvCH.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvCH.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvCH.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.dgvCH.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.dgvCH.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgvCH.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Silver
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
@@ -380,8 +382,8 @@ Partial Class CuaHang
         Me.dgvCH.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.dgvCH.DoubleBuffered = True
         Me.dgvCH.EnableHeadersVisualStyles = False
-        Me.dgvCH.HeaderBgColor = System.Drawing.Color.SeaGreen
-        Me.dgvCH.HeaderForeColor = System.Drawing.Color.SeaGreen
+        Me.dgvCH.HeaderBgColor = System.Drawing.Color.Silver
+        Me.dgvCH.HeaderForeColor = System.Drawing.Color.Black
         Me.dgvCH.Location = New System.Drawing.Point(0, 357)
         Me.dgvCH.Name = "dgvCH"
         Me.dgvCH.ReadOnly = True
@@ -389,7 +391,7 @@ Partial Class CuaHang
         Me.dgvCH.Size = New System.Drawing.Size(887, 326)
         Me.dgvCH.TabIndex = 53
         '
-        'TaiKhoan
+        'CuaHang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -411,7 +413,7 @@ Partial Class CuaHang
         Me.Controls.Add(Me.BunifuCustomLabel4)
         Me.Controls.Add(Me.txtMaCH)
         Me.Controls.Add(Me.BunifuCustomLabel1)
-        Me.Name = "TaiKhoan"
+        Me.Name = "CuaHang"
         Me.Size = New System.Drawing.Size(887, 683)
         CType(Me.dgvCH, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

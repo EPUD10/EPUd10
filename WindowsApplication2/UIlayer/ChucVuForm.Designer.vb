@@ -295,14 +295,13 @@ Partial Class ChucVuForm
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.dgvChucVu.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvChucVu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvChucVu.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.dgvChucVu.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.dgvChucVu.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgvChucVu.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Silver
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
@@ -310,8 +309,8 @@ Partial Class ChucVuForm
         Me.dgvChucVu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvChucVu.DoubleBuffered = True
         Me.dgvChucVu.EnableHeadersVisualStyles = False
-        Me.dgvChucVu.HeaderBgColor = System.Drawing.Color.SeaGreen
-        Me.dgvChucVu.HeaderForeColor = System.Drawing.Color.SeaGreen
+        Me.dgvChucVu.HeaderBgColor = System.Drawing.Color.Silver
+        Me.dgvChucVu.HeaderForeColor = System.Drawing.Color.Black
         Me.dgvChucVu.Location = New System.Drawing.Point(232, 104)
         Me.dgvChucVu.Name = "dgvChucVu"
         Me.dgvChucVu.ReadOnly = True

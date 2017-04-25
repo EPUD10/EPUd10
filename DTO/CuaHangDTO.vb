@@ -1,34 +1,34 @@
-﻿Public Class NhaCC
-    Private maNhaCC As String
-    Private tenNhaCC As String
-    Private diaChiNhaCC As String
+﻿Public Class CuaHangDTO
+    Private maCh As String
+    Private tenCH As String
+    Private diaChi As String
     Private dienThoai As Integer
     Private email As String
     Public Property Ma() As String
         Get
-            Return maNhaCC
+            Return maCh
         End Get
         Set(value As String)
-            maNhaCC = value
+            maCh = value
         End Set
     End Property
     Public Property Ten() As String
         Get
-            Return tenNhaCC
+            Return tenCH
         End Get
         Set(value As String)
-            tenNhaCC = value
+            tenCH = value
         End Set
     End Property
-    Public Property address() As String
+    Public Property Address() As String
         Get
-            Return diaChiNhaCC
+            Return diaChi
         End Get
         Set(value As String)
-            diaChiNhaCC = value
+            diaChi = value
         End Set
     End Property
-    Public Property phone() As Integer
+    Public Property Phone() As Integer
         Get
             Return dienThoai
         End Get
@@ -44,10 +44,10 @@
             email = value
         End Set
     End Property
-    Public Sub New(ByVal IDNhaCC As String, ByVal NameNhaCC As String, ByVal AddressNhaCC As String, ByVal phone As Integer, ByVal mail As String)
-        maNhaCC = IDNhaCC
-        tenNhaCC = NameNhaCC
-        diaChiNhaCC = AddressNhaCC
+    Public Sub New(ByVal Ma As String, ByVal Ten As String, ByVal address As String, ByVal phone As Integer, ByVal mail As String)
+        maCh = Ma
+        tenCH = Ten
+        diaChi = address
         dienThoai = phone
         email = mail
     End Sub

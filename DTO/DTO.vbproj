@@ -63,11 +63,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChucVu.vb" />
-    <Compile Include="CuaHang.vb" />
-    <Compile Include="HoaDonBan.vb" />
-    <Compile Include="HoaDonNhap.vb" />
-    <Compile Include="KhachHang.vb" />
+    <Compile Include="ChucVuDTO.vb" />
+    <Compile Include="CuaHangDTO.vb" />
+    <Compile Include="HoaDonBanDTO.vb" />
+    <Compile Include="HoaDonNhapDTO.vb" />
+    <Compile Include="KhachHangDTO.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -83,8 +83,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="NhaCC.vb" />
-    <Compile Include="NhanVien.vb" />
+    <Compile Include="NhaCCDTO.vb" />
+    <Compile Include="NhanVienDTO.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

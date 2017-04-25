@@ -103,6 +103,14 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\DataProvider.vb" />
+    <Compile Include="DTO\ChucVuDTO.vb" />
+    <Compile Include="DTO\CuaHangDTO.vb" />
+    <Compile Include="DTO\HoaDonBanDTO.vb" />
+    <Compile Include="DTO\HoaDonNhapDTO.vb" />
+    <Compile Include="DTO\KhachHangDTO.vb" />
+    <Compile Include="DTO\NhaCCDTO.vb" />
+    <Compile Include="DTO\NhanVienDTO.vb" />
     <Compile Include="UIlayer\ChucVuForm.Designer.vb">
       <DependentUpon>ChucVuForm.vb</DependentUpon>
     </Compile>
@@ -272,6 +280,9 @@
     <Content Include="Image\Sort Right_25px.png" />
     <Content Include="Image\Sort Right_50px.png" />
     <Content Include="Image\Twitter_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BUS\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

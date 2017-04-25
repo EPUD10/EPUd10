@@ -85,9 +85,15 @@ Public Class Menuform
     End Sub
 
     Private Sub btnhome_Click(sender As Object, e As EventArgs) Handles btnhome.Click
-        Home1.Visible = False
-        Home1.BringToFront()
-        tranHome.ShowSync(Home1)
+        'Home1.Visible = False
+        'Home1.BringToFront()
+        'tranHome.ShowSync(Home1)
+    End Sub
+
+    Private Sub btnCuaHang_Click(sender As Object, e As EventArgs) Handles btnCuaHang.Click
+        CuaHang1.Visible = False
+        CuaHang1.BringToFront()
+        CuaHang1.Show()
     End Sub
 
     Private Sub Panel1_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel1.MouseMove
