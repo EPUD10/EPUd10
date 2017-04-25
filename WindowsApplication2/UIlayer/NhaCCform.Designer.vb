@@ -22,11 +22,10 @@ Partial Class NhaCCform
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NhaCCform))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NhaCCform))
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.dgvSupplier = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.txtSearch = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.btnSearch = New Bunifu.Framework.UI.BunifuFlatButton()
@@ -46,53 +45,24 @@ Partial Class NhaCCform
         Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.PanelnhaCC = New System.Windows.Forms.Panel()
+        Me.dgvNhaCC = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.Panel3.SuspendLayout()
-        CType(Me.dgvSupplier, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.PanelnhaCC.SuspendLayout()
+        CType(Me.dgvNhaCC, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer))
-        Me.Panel3.Controls.Add(Me.dgvSupplier)
+        Me.Panel3.Controls.Add(Me.dgvNhaCC)
         Me.Panel3.Controls.Add(Me.Panel2)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(211, 0)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(752, 734)
         Me.Panel3.TabIndex = 3
-        '
-        'dgvSupplier
-        '
-        Me.dgvSupplier.AllowUserToAddRows = False
-        Me.dgvSupplier.AllowUserToDeleteRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.dgvSupplier.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.dgvSupplier.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvSupplier.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.dgvSupplier.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.dgvSupplier.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Silver
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvSupplier.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.dgvSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvSupplier.DoubleBuffered = True
-        Me.dgvSupplier.EnableHeadersVisualStyles = False
-        Me.dgvSupplier.HeaderBgColor = System.Drawing.Color.Silver
-        Me.dgvSupplier.HeaderForeColor = System.Drawing.Color.Black
-        Me.dgvSupplier.Location = New System.Drawing.Point(40, 110)
-        Me.dgvSupplier.Name = "dgvSupplier"
-        Me.dgvSupplier.ReadOnly = True
-        Me.dgvSupplier.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.dgvSupplier.Size = New System.Drawing.Size(669, 504)
-        Me.dgvSupplier.TabIndex = 1
         '
         'Panel2
         '
@@ -101,15 +71,15 @@ Partial Class NhaCCform
         Me.Panel2.Controls.Add(Me.btnSearch)
         Me.Panel2.Controls.Add(Me.btnUpdate)
         Me.Panel2.Controls.Add(Me.btnRemove)
-        Me.Panel2.Location = New System.Drawing.Point(40, 30)
+        Me.Panel2.Location = New System.Drawing.Point(6, 21)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(669, 59)
+        Me.Panel2.Size = New System.Drawing.Size(576, 59)
         Me.Panel2.TabIndex = 0
         '
         'txtSearch
         '
         Me.txtSearch.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtSearch.Location = New System.Drawing.Point(331, 12)
+        Me.txtSearch.Location = New System.Drawing.Point(277, 12)
         Me.txtSearch.Multiline = True
         Me.txtSearch.Name = "txtSearch"
         Me.txtSearch.Size = New System.Drawing.Size(168, 28)
@@ -136,7 +106,7 @@ Partial Class NhaCCform
         Me.btnSearch.IconVisible = True
         Me.btnSearch.IconZoom = 40.0R
         Me.btnSearch.IsTab = False
-        Me.btnSearch.Location = New System.Drawing.Point(505, 12)
+        Me.btnSearch.Location = New System.Drawing.Point(451, 12)
         Me.btnSearch.Name = "btnSearch"
         Me.btnSearch.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.btnSearch.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
@@ -170,7 +140,7 @@ Partial Class NhaCCform
         Me.btnUpdate.IconVisible = True
         Me.btnUpdate.IconZoom = 40.0R
         Me.btnUpdate.IsTab = False
-        Me.btnUpdate.Location = New System.Drawing.Point(207, 12)
+        Me.btnUpdate.Location = New System.Drawing.Point(153, 12)
         Me.btnUpdate.Name = "btnUpdate"
         Me.btnUpdate.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(134, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.btnUpdate.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
@@ -204,7 +174,7 @@ Partial Class NhaCCform
         Me.btnRemove.IconVisible = True
         Me.btnRemove.IconZoom = 40.0R
         Me.btnRemove.IsTab = False
-        Me.btnRemove.Location = New System.Drawing.Point(90, 12)
+        Me.btnRemove.Location = New System.Drawing.Point(36, 12)
         Me.btnRemove.Name = "btnRemove"
         Me.btnRemove.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(110, Byte), Integer))
         Me.btnRemove.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
@@ -389,6 +359,36 @@ Partial Class NhaCCform
         Me.PanelnhaCC.Size = New System.Drawing.Size(963, 734)
         Me.PanelnhaCC.TabIndex = 5
         '
+        'dgvNhaCC
+        '
+        Me.dgvNhaCC.AllowUserToAddRows = False
+        Me.dgvNhaCC.AllowUserToDeleteRows = False
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgvNhaCC.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvNhaCC.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvNhaCC.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.dgvNhaCC.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvNhaCC.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Silver
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvNhaCC.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvNhaCC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvNhaCC.DoubleBuffered = True
+        Me.dgvNhaCC.EnableHeadersVisualStyles = False
+        Me.dgvNhaCC.HeaderBgColor = System.Drawing.Color.Silver
+        Me.dgvNhaCC.HeaderForeColor = System.Drawing.Color.Black
+        Me.dgvNhaCC.Location = New System.Drawing.Point(0, 106)
+        Me.dgvNhaCC.Name = "dgvNhaCC"
+        Me.dgvNhaCC.ReadOnly = True
+        Me.dgvNhaCC.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgvNhaCC.Size = New System.Drawing.Size(669, 513)
+        Me.dgvNhaCC.TabIndex = 1
+        '
         'NhaCCform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -397,12 +397,12 @@ Partial Class NhaCCform
         Me.Name = "NhaCCform"
         Me.Size = New System.Drawing.Size(963, 734)
         Me.Panel3.ResumeLayout(False)
-        CType(Me.dgvSupplier, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.PanelnhaCC.ResumeLayout(False)
+        CType(Me.dgvNhaCC, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -427,5 +427,5 @@ Partial Class NhaCCform
     Friend WithEvents BunifuCustomLabel2 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents PanelnhaCC As Panel
-    Friend WithEvents dgvSupplier As Bunifu.Framework.UI.BunifuCustomDataGrid
+    Friend WithEvents dgvNhaCC As Bunifu.Framework.UI.BunifuCustomDataGrid
 End Class
