@@ -59,10 +59,12 @@ Partial Class KhachHangForm
         '
         'dgvKhach
         '
+        Me.dgvKhach.AllowUserToAddRows = False
+        Me.dgvKhach.AllowUserToDeleteRows = False
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.dgvKhach.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvKhach.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvKhach.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.dgvKhach.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells
         Me.dgvKhach.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.dgvKhach.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgvKhach.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
@@ -82,6 +84,7 @@ Partial Class KhachHangForm
         Me.dgvKhach.HeaderForeColor = System.Drawing.Color.Black
         Me.dgvKhach.Location = New System.Drawing.Point(0, 0)
         Me.dgvKhach.Name = "dgvKhach"
+        Me.dgvKhach.ReadOnly = True
         Me.dgvKhach.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.dgvKhach.Size = New System.Drawing.Size(887, 273)
         Me.dgvKhach.TabIndex = 0

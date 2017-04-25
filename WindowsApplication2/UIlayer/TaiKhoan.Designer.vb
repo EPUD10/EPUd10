@@ -47,13 +47,14 @@ Partial Class TaiKhoan
         Me.dgvTaikhoan.AllowUserToDeleteRows = False
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.dgvTaikhoan.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvTaikhoan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvTaikhoan.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.dgvTaikhoan.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgvTaikhoan.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Silver
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
@@ -62,8 +63,8 @@ Partial Class TaiKhoan
         Me.dgvTaikhoan.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.dgvTaikhoan.DoubleBuffered = True
         Me.dgvTaikhoan.EnableHeadersVisualStyles = False
-        Me.dgvTaikhoan.HeaderBgColor = System.Drawing.Color.SeaGreen
-        Me.dgvTaikhoan.HeaderForeColor = System.Drawing.Color.SeaGreen
+        Me.dgvTaikhoan.HeaderBgColor = System.Drawing.Color.Silver
+        Me.dgvTaikhoan.HeaderForeColor = System.Drawing.Color.Black
         Me.dgvTaikhoan.Location = New System.Drawing.Point(0, 302)
         Me.dgvTaikhoan.Name = "dgvTaikhoan"
         Me.dgvTaikhoan.ReadOnly = True

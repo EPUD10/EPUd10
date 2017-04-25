@@ -22,9 +22,11 @@ Partial Class NhaCCform
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NhaCCform))
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.dgvSupplier = New System.Windows.Forms.DataGridView()
+        Me.dgvSupplier = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.txtSearch = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.btnSearch = New Bunifu.Framework.UI.BunifuFlatButton()
@@ -66,14 +68,30 @@ Partial Class NhaCCform
         '
         Me.dgvSupplier.AllowUserToAddRows = False
         Me.dgvSupplier.AllowUserToDeleteRows = False
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgvSupplier.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvSupplier.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvSupplier.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.dgvSupplier.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.dgvSupplier.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.dgvSupplier.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvSupplier.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Silver
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvSupplier.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvSupplier.Location = New System.Drawing.Point(23, 111)
+        Me.dgvSupplier.DoubleBuffered = True
+        Me.dgvSupplier.EnableHeadersVisualStyles = False
+        Me.dgvSupplier.HeaderBgColor = System.Drawing.Color.Silver
+        Me.dgvSupplier.HeaderForeColor = System.Drawing.Color.Black
+        Me.dgvSupplier.Location = New System.Drawing.Point(40, 110)
         Me.dgvSupplier.Name = "dgvSupplier"
         Me.dgvSupplier.ReadOnly = True
-        Me.dgvSupplier.Size = New System.Drawing.Size(706, 553)
+        Me.dgvSupplier.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgvSupplier.Size = New System.Drawing.Size(669, 504)
         Me.dgvSupplier.TabIndex = 1
         '
         'Panel2
@@ -390,7 +408,6 @@ Partial Class NhaCCform
     End Sub
 
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents dgvSupplier As DataGridView
     Friend WithEvents Panel2 As Panel
     Friend WithEvents txtSearch As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents btnSearch As Bunifu.Framework.UI.BunifuFlatButton
@@ -410,4 +427,5 @@ Partial Class NhaCCform
     Friend WithEvents BunifuCustomLabel2 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents PanelnhaCC As Panel
+    Friend WithEvents dgvSupplier As Bunifu.Framework.UI.BunifuCustomDataGrid
 End Class

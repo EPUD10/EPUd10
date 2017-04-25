@@ -23,7 +23,8 @@ Partial Class NhanVien
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NhanVien))
-        Me.dgvNhanVien = New System.Windows.Forms.DataGridView()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.cmbChucVu = New System.Windows.Forms.ComboBox()
         Me.cmbCuaHang = New System.Windows.Forms.ComboBox()
@@ -50,24 +51,10 @@ Partial Class NhanVien
         Me.txtSearch = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.BunifuCustomLabel11 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.btnSearch = New Bunifu.Framework.UI.BunifuFlatButton()
-        CType(Me.dgvNhanVien, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.dgvNhanVien = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.dgvNhanVien, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'dgvNhanVien
-        '
-        Me.dgvNhanVien.AllowUserToAddRows = False
-        Me.dgvNhanVien.AllowUserToDeleteRows = False
-        Me.dgvNhanVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvNhanVien.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.dgvNhanVien.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer))
-        Me.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvNhanVien.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.dgvNhanVien.Location = New System.Drawing.Point(0, 335)
-        Me.dgvNhanVien.Name = "dgvNhanVien"
-        Me.dgvNhanVien.ReadOnly = True
-        Me.dgvNhanVien.Size = New System.Drawing.Size(887, 348)
-        Me.dgvNhanVien.TabIndex = 0
         '
         'GroupBox1
         '
@@ -517,27 +504,56 @@ Partial Class NhanVien
         Me.btnSearch.Textcolor = System.Drawing.Color.White
         Me.btnSearch.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
+        'dgvNhanVien
+        '
+        Me.dgvNhanVien.AllowUserToAddRows = False
+        Me.dgvNhanVien.AllowUserToDeleteRows = False
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgvNhanVien.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvNhanVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvNhanVien.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.dgvNhanVien.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvNhanVien.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Silver
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvNhanVien.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvNhanVien.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.dgvNhanVien.DoubleBuffered = True
+        Me.dgvNhanVien.EnableHeadersVisualStyles = False
+        Me.dgvNhanVien.HeaderBgColor = System.Drawing.Color.Silver
+        Me.dgvNhanVien.HeaderForeColor = System.Drawing.Color.Black
+        Me.dgvNhanVien.Location = New System.Drawing.Point(0, 341)
+        Me.dgvNhanVien.Name = "dgvNhanVien"
+        Me.dgvNhanVien.ReadOnly = True
+        Me.dgvNhanVien.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgvNhanVien.Size = New System.Drawing.Size(887, 342)
+        Me.dgvNhanVien.TabIndex = 23
+        '
         'NhanVien
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(56, Byte), Integer))
+        Me.Controls.Add(Me.dgvNhanVien)
         Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.txtSearch)
         Me.Controls.Add(Me.BunifuCustomLabel11)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.dgvNhanVien)
         Me.Name = "NhanVien"
         Me.Size = New System.Drawing.Size(887, 683)
-        CType(Me.dgvNhanVien, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.dgvNhanVien, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents dgvNhanVien As DataGridView
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents BunifuCustomLabel7 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel8 As Bunifu.Framework.UI.BunifuCustomLabel
@@ -564,4 +580,5 @@ Partial Class NhanVien
     Friend WithEvents BunifuCustomLabel2 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents cmbChucVu As ComboBox
     Friend WithEvents cmbCuaHang As ComboBox
+    Friend WithEvents dgvNhanVien As Bunifu.Framework.UI.BunifuCustomDataGrid
 End Class
