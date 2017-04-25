@@ -63,6 +63,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NhaCCDAO.vb" />
     <Compile Include="TaiKhoanDAO.vb" />
     <Compile Include="DataProvider.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

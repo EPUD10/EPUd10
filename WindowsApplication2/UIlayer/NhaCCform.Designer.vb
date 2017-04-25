@@ -22,10 +22,11 @@ Partial Class NhaCCform
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NhaCCform))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NhaCCform))
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.dgvNhaCC = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.txtSearch = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.btnSearch = New Bunifu.Framework.UI.BunifuFlatButton()
@@ -45,12 +46,11 @@ Partial Class NhaCCform
         Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.PanelnhaCC = New System.Windows.Forms.Panel()
-        Me.dgvNhaCC = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.Panel3.SuspendLayout()
+        CType(Me.dgvNhaCC, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.PanelnhaCC.SuspendLayout()
-        CType(Me.dgvNhaCC, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel3
@@ -63,6 +63,36 @@ Partial Class NhaCCform
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(752, 734)
         Me.Panel3.TabIndex = 3
+        '
+        'dgvNhaCC
+        '
+        Me.dgvNhaCC.AllowUserToAddRows = False
+        Me.dgvNhaCC.AllowUserToDeleteRows = False
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgvNhaCC.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvNhaCC.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvNhaCC.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.dgvNhaCC.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvNhaCC.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Silver
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvNhaCC.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvNhaCC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvNhaCC.DoubleBuffered = True
+        Me.dgvNhaCC.EnableHeadersVisualStyles = False
+        Me.dgvNhaCC.HeaderBgColor = System.Drawing.Color.Silver
+        Me.dgvNhaCC.HeaderForeColor = System.Drawing.Color.Black
+        Me.dgvNhaCC.Location = New System.Drawing.Point(0, 106)
+        Me.dgvNhaCC.Name = "dgvNhaCC"
+        Me.dgvNhaCC.ReadOnly = True
+        Me.dgvNhaCC.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgvNhaCC.Size = New System.Drawing.Size(669, 513)
+        Me.dgvNhaCC.TabIndex = 1
         '
         'Panel2
         '
@@ -359,36 +389,6 @@ Partial Class NhaCCform
         Me.PanelnhaCC.Size = New System.Drawing.Size(963, 734)
         Me.PanelnhaCC.TabIndex = 5
         '
-        'dgvNhaCC
-        '
-        Me.dgvNhaCC.AllowUserToAddRows = False
-        Me.dgvNhaCC.AllowUserToDeleteRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.dgvNhaCC.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.dgvNhaCC.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvNhaCC.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.dgvNhaCC.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.dgvNhaCC.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Silver
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvNhaCC.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.dgvNhaCC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvNhaCC.DoubleBuffered = True
-        Me.dgvNhaCC.EnableHeadersVisualStyles = False
-        Me.dgvNhaCC.HeaderBgColor = System.Drawing.Color.Silver
-        Me.dgvNhaCC.HeaderForeColor = System.Drawing.Color.Black
-        Me.dgvNhaCC.Location = New System.Drawing.Point(0, 106)
-        Me.dgvNhaCC.Name = "dgvNhaCC"
-        Me.dgvNhaCC.ReadOnly = True
-        Me.dgvNhaCC.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.dgvNhaCC.Size = New System.Drawing.Size(669, 513)
-        Me.dgvNhaCC.TabIndex = 1
-        '
         'NhaCCform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -397,12 +397,12 @@ Partial Class NhaCCform
         Me.Name = "NhaCCform"
         Me.Size = New System.Drawing.Size(963, 734)
         Me.Panel3.ResumeLayout(False)
+        CType(Me.dgvNhaCC, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.PanelnhaCC.ResumeLayout(False)
-        CType(Me.dgvNhaCC, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
