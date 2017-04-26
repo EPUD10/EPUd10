@@ -1,4 +1,5 @@
-﻿Public Class ChucVuDTO
+﻿
+Public Class ChucVuDTO
     Private maCV As String
     Private tenCV As String
     Private ghiChu As String
@@ -30,5 +31,8 @@
         maCV = ma
         tenCV = tenCV
         ghiChu = note
+    End Sub
+    Public Sub New()
+
     End Sub
 End Class

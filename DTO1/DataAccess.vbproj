@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{702082EC-A6E6-4E67-A88E-81090D42B1DF}</ProjectGuid>
+    <ProjectGuid>{4539F81B-A1F8-46FA-B08B-C528B263602E}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>BUS1</RootNamespace>
-    <AssemblyName>BUS1</AssemblyName>
+    <RootNamespace>DTO1</RootNamespace>
+    <AssemblyName>DTO1</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -18,7 +18,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>BUS1.xml</DocumentationFile>
+    <DocumentationFile>DTO1.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -27,7 +27,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>BUS1.xml</DocumentationFile>
+    <DocumentationFile>DTO1.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -63,8 +63,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NhaCCBUS.vb" />
-    <Compile Include="TaiKhoanBUS.vb" />
+    <Compile Include="config.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -80,6 +79,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="NhacCCDAO.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -99,16 +99,6 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DAO1\DAO1.vbproj">
-      <Project>{9DF54C1F-F80B-42C2-8A0B-A3F375BAF4EE}</Project>
-      <Name>DAO1</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DTO1\DTO1.vbproj">
-      <Project>{4539f81b-a1f8-46fa-b08b-c528b263602e}</Project>
-      <Name>DTO1</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

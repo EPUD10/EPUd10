@@ -61,7 +61,7 @@ Partial Class Menuform
         Me.HoaDonBan1 = New WindowsApplication2.HoaDonBan()
         Me.HoaDonNhap1 = New WindowsApplication2.HoaDonNhap()
         Me.NhanVien1 = New WindowsApplication2.NhanVien()
-        Me.ChucVuForm1 = New WindowsApplication2.ChucVuForm()
+
         Me.KhachHangForm1 = New WindowsApplication2.KhachHangForm()
         Me.NhaCCform1 = New WindowsApplication2.NhaCCform()
         Me.tranpanel = New BunifuAnimatorNS.BunifuTransition(Me.components)
@@ -743,7 +743,6 @@ Partial Class Menuform
         Me.Panel3.Controls.Add(Me.HoaDonBan1)
         Me.Panel3.Controls.Add(Me.HoaDonNhap1)
         Me.Panel3.Controls.Add(Me.NhanVien1)
-        Me.Panel3.Controls.Add(Me.ChucVuForm1)
         Me.Panel3.Controls.Add(Me.KhachHangForm1)
         Me.Panel3.Controls.Add(Me.NhaCCform1)
         Me.tranpanel.SetDecoration(Me.Panel3, BunifuAnimatorNS.DecorationType.None)
@@ -855,24 +854,7 @@ Partial Class Menuform
         Me.NhanVien1.Visible = False
         '
         'ChucVuForm1
-        '
-        Me.ChucVuForm1.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer))
-        Me.tranlogo.SetDecoration(Me.ChucVuForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me.ChucVuForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranTaiKhoan.SetDecoration(Me.ChucVuForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDB.SetDecoration(Me.ChucVuForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranChucVu.SetDecoration(Me.ChucVuForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.ChucVuForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.ChucVuForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhanVien.SetDecoration(Me.ChucVuForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.ChucVuForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHome.SetDecoration(Me.ChucVuForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.ChucVuForm1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ChucVuForm1.Location = New System.Drawing.Point(0, 0)
-        Me.ChucVuForm1.Name = "ChucVuForm1"
-        Me.ChucVuForm1.Size = New System.Drawing.Size(887, 676)
-        Me.ChucVuForm1.TabIndex = 3
-        '
+
         'KhachHangForm1
         '
         Me.KhachHangForm1.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer))
@@ -1164,7 +1146,6 @@ Partial Class Menuform
     Friend WithEvents Panel3 As Panel
     Friend WithEvents KhachHangForm1 As KhachHangForm
     Friend WithEvents NhaCCform1 As NhaCCform
-    Friend WithEvents ChucVuForm1 As ChucVuForm
     Friend WithEvents btnNhanVien As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents NhanVien1 As NhanVien
     Friend WithEvents tranNhanVien As BunifuAnimatorNS.BunifuTransition

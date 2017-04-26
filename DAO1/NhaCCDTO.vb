@@ -51,4 +51,7 @@
         dienThoai = phone
         email = mail
     End Sub
+    Public Sub New()
+
+    End Sub
 End Class

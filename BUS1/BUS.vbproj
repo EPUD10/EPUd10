@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9DF54C1F-F80B-42C2-8A0B-A3F375BAF4EE}</ProjectGuid>
+    <ProjectGuid>{702082EC-A6E6-4E67-A88E-81090D42B1DF}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>DAO1</RootNamespace>
-    <AssemblyName>DAO1</AssemblyName>
+    <RootNamespace>BUS1</RootNamespace>
+    <AssemblyName>BUS1</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -18,7 +18,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>DAO1.xml</DocumentationFile>
+    <DocumentationFile>BUS1.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -27,7 +27,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>DAO1.xml</DocumentationFile>
+    <DocumentationFile>BUS1.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -63,9 +63,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NhaCCDAO.vb" />
-    <Compile Include="TaiKhoanDAO.vb" />
-    <Compile Include="DataProvider.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -81,6 +78,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="NhaCCBUS.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -102,9 +100,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DTO1\DTO1.vbproj">
+    <ProjectReference Include="..\DAO1\Entity.vbproj">
+      <Project>{9DF54C1F-F80B-42C2-8A0B-A3F375BAF4EE}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO1\DataAccess.vbproj">
       <Project>{4539f81b-a1f8-46fa-b08b-c528b263602e}</Project>
-      <Name>DTO1</Name>
+      <Name>DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

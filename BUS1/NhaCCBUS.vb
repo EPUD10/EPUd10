@@ -1,7 +1,8 @@
-﻿Imports DAO1
+﻿Imports DTO1
+
 Public Class NhaCCBUS
-    Dim cls As New NhaCCDAO
-    Public Function load() As DataTable
-        Return cls.load()
+    Dim cls As New NhacCCDAO
+    Public Function GetData() As DataTable
+        Return cls.LoadData()
     End Function
 End Class

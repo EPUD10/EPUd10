@@ -55,9 +55,7 @@ Public Class Menuform
     End Sub
 
     Private Sub btnChucVu_Click(sender As Object, e As EventArgs) Handles btnChucVu.Click
-        ChucVuForm1.Visible = False
-        ChucVuForm1.BringToFront()
-        tranChucVu.ShowSync(ChucVuForm1)
+
     End Sub
 
     Private Sub btnNhanVien_Click(sender As Object, e As EventArgs) Handles btnNhanVien.Click

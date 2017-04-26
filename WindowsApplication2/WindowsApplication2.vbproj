@@ -91,12 +91,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UIlayer\ChucVuForm.Designer.vb">
-      <DependentUpon>ChucVuForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="UIlayer\ChucVuForm.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Include="UIlayer\HoaDonBan.Designer.vb">
       <DependentUpon>HoaDonBan.vb</DependentUpon>
     </Compile>
@@ -168,9 +162,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="UIlayer\ChucVuForm.resx">
-      <DependentUpon>ChucVuForm.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UIlayer\HoaDonBan.resx">
       <DependentUpon>HoaDonBan.vb</DependentUpon>
     </EmbeddedResource>
@@ -253,13 +244,17 @@
     <Content Include="Image\Twitter_64px.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BUS1\BUS1.vbproj">
+    <ProjectReference Include="..\BUS1\BUS.vbproj">
       <Project>{702082ec-a6e6-4e67-a88e-81090d42b1df}</Project>
-      <Name>BUS1</Name>
+      <Name>BUS</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DTO1\DTO1.vbproj">
+    <ProjectReference Include="..\DAO1\Entity.vbproj">
+      <Project>{9df54c1f-f80b-42c2-8a0b-a3f375baf4ee}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO1\DataAccess.vbproj">
       <Project>{4539f81b-a1f8-46fa-b08b-c528b263602e}</Project>
-      <Name>DTO1</Name>
+      <Name>DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
