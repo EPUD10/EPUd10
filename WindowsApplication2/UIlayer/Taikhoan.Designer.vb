@@ -40,6 +40,9 @@ Partial Class Taikhoan
         Me.btnUpdate = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnRemove = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.dgvTaiKhoan = New Bunifu.Framework.UI.BunifuCustomDataGrid()
+        Me.lbTaiKhoan = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbMatKhau = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbNote = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.dgvTaiKhoan, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -48,6 +51,9 @@ Partial Class Taikhoan
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.lbNote)
+        Me.Panel1.Controls.Add(Me.lbMatKhau)
+        Me.Panel1.Controls.Add(Me.lbTaiKhoan)
         Me.Panel1.Controls.Add(Me.btnAdd)
         Me.Panel1.Controls.Add(Me.txtMatKhau)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel4)
@@ -100,7 +106,7 @@ Partial Class Taikhoan
         'txtMatKhau
         '
         Me.txtMatKhau.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtMatKhau.Location = New System.Drawing.Point(16, 306)
+        Me.txtMatKhau.Location = New System.Drawing.Point(16, 344)
         Me.txtMatKhau.Multiline = True
         Me.txtMatKhau.Name = "txtMatKhau"
         Me.txtMatKhau.Size = New System.Drawing.Size(168, 23)
@@ -110,7 +116,7 @@ Partial Class Taikhoan
         '
         Me.BunifuCustomLabel4.AutoSize = True
         Me.BunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(111, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(16, 287)
+        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(16, 325)
         Me.BunifuCustomLabel4.Name = "BunifuCustomLabel4"
         Me.BunifuCustomLabel4.Size = New System.Drawing.Size(76, 13)
         Me.BunifuCustomLabel4.TabIndex = 6
@@ -119,7 +125,7 @@ Partial Class Taikhoan
         'txtGhiChu
         '
         Me.txtGhiChu.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtGhiChu.Location = New System.Drawing.Point(16, 366)
+        Me.txtGhiChu.Location = New System.Drawing.Point(16, 426)
         Me.txtGhiChu.Multiline = True
         Me.txtGhiChu.Name = "txtGhiChu"
         Me.txtGhiChu.Size = New System.Drawing.Size(168, 23)
@@ -129,7 +135,7 @@ Partial Class Taikhoan
         '
         Me.BunifuCustomLabel3.AutoSize = True
         Me.BunifuCustomLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(111, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(16, 344)
+        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(16, 404)
         Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
         Me.BunifuCustomLabel3.Size = New System.Drawing.Size(42, 13)
         Me.BunifuCustomLabel3.TabIndex = 4
@@ -318,6 +324,36 @@ Partial Class Taikhoan
         Me.dgvTaiKhoan.Size = New System.Drawing.Size(576, 416)
         Me.dgvTaiKhoan.TabIndex = 7
         '
+        'lbTaiKhoan
+        '
+        Me.lbTaiKhoan.AutoSize = True
+        Me.lbTaiKhoan.ForeColor = System.Drawing.Color.Red
+        Me.lbTaiKhoan.Location = New System.Drawing.Point(29, 281)
+        Me.lbTaiKhoan.Name = "lbTaiKhoan"
+        Me.lbTaiKhoan.Size = New System.Drawing.Size(104, 13)
+        Me.lbTaiKhoan.TabIndex = 13
+        Me.lbTaiKhoan.Text = "BunifuCustomLabel5"
+        '
+        'lbMatKhau
+        '
+        Me.lbMatKhau.AutoSize = True
+        Me.lbMatKhau.ForeColor = System.Drawing.Color.Red
+        Me.lbMatKhau.Location = New System.Drawing.Point(29, 382)
+        Me.lbMatKhau.Name = "lbMatKhau"
+        Me.lbMatKhau.Size = New System.Drawing.Size(104, 13)
+        Me.lbMatKhau.TabIndex = 14
+        Me.lbMatKhau.Text = "BunifuCustomLabel5"
+        '
+        'lbNote
+        '
+        Me.lbNote.AutoSize = True
+        Me.lbNote.ForeColor = System.Drawing.Color.Red
+        Me.lbNote.Location = New System.Drawing.Point(29, 466)
+        Me.lbNote.Name = "lbNote"
+        Me.lbNote.Size = New System.Drawing.Size(104, 13)
+        Me.lbNote.TabIndex = 15
+        Me.lbNote.Text = "BunifuCustomLabel5"
+        '
         'Taikhoan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -351,4 +387,7 @@ Partial Class Taikhoan
     Friend WithEvents btnUpdate As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents btnRemove As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents dgvTaiKhoan As Bunifu.Framework.UI.BunifuCustomDataGrid
+    Friend WithEvents lbNote As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents lbMatKhau As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents lbTaiKhoan As Bunifu.Framework.UI.BunifuCustomLabel
 End Class
