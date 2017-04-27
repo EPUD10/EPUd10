@@ -160,6 +160,12 @@
     <Compile Include="UIlayer\CuaHang.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="UIlayer\Taikhoan.Designer.vb">
+      <DependentUpon>Taikhoan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIlayer\Taikhoan.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="UIlayer\HoaDonBan.resx">
@@ -194,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UIlayer\CuaHang.resx">
       <DependentUpon>CuaHang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIlayer\Taikhoan.resx">
+      <DependentUpon>Taikhoan.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -242,6 +251,20 @@
     <Content Include="Image\Sort Right_25px.png" />
     <Content Include="Image\Sort Right_50px.png" />
     <Content Include="Image\Twitter_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.vbproj">
+      <Project>{b035a926-3c29-47fb-b2f1-b6f0f630343f}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAO\DAO.vbproj">
+      <Project>{1572fb7f-e322-4889-aa43-f2e9411c5d80}</Project>
+      <Name>DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entyti\Entyti.vbproj">
+      <Project>{3af2a19c-e88c-4e70-a13e-87f5b4c7435e}</Project>
+      <Name>Entyti</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
