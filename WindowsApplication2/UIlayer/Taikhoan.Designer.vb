@@ -23,9 +23,12 @@ Partial Class Taikhoan
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Taikhoan))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lbNote = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbMatKhau = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbTaiKhoan = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.btnAdd = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.txtMatKhau = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.BunifuCustomLabel4 = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -40,9 +43,6 @@ Partial Class Taikhoan
         Me.btnUpdate = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnRemove = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.dgvTaiKhoan = New Bunifu.Framework.UI.BunifuCustomDataGrid()
-        Me.lbTaiKhoan = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.lbMatKhau = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.lbNote = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.dgvTaiKhoan, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -68,6 +68,36 @@ Partial Class Taikhoan
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(211, 683)
         Me.Panel1.TabIndex = 5
+        '
+        'lbNote
+        '
+        Me.lbNote.AutoSize = True
+        Me.lbNote.ForeColor = System.Drawing.Color.Red
+        Me.lbNote.Location = New System.Drawing.Point(29, 466)
+        Me.lbNote.Name = "lbNote"
+        Me.lbNote.Size = New System.Drawing.Size(104, 13)
+        Me.lbNote.TabIndex = 15
+        Me.lbNote.Text = "BunifuCustomLabel5"
+        '
+        'lbMatKhau
+        '
+        Me.lbMatKhau.AutoSize = True
+        Me.lbMatKhau.ForeColor = System.Drawing.Color.Red
+        Me.lbMatKhau.Location = New System.Drawing.Point(29, 382)
+        Me.lbMatKhau.Name = "lbMatKhau"
+        Me.lbMatKhau.Size = New System.Drawing.Size(104, 13)
+        Me.lbMatKhau.TabIndex = 14
+        Me.lbMatKhau.Text = "BunifuCustomLabel5"
+        '
+        'lbTaiKhoan
+        '
+        Me.lbTaiKhoan.AutoSize = True
+        Me.lbTaiKhoan.ForeColor = System.Drawing.Color.Red
+        Me.lbTaiKhoan.Location = New System.Drawing.Point(29, 281)
+        Me.lbTaiKhoan.Name = "lbTaiKhoan"
+        Me.lbTaiKhoan.Size = New System.Drawing.Size(104, 13)
+        Me.lbTaiKhoan.TabIndex = 13
+        Me.lbTaiKhoan.Text = "BunifuCustomLabel5"
         '
         'btnAdd
         '
@@ -186,6 +216,7 @@ Partial Class Taikhoan
         'txtSearch
         '
         Me.txtSearch.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSearch.Location = New System.Drawing.Point(277, 12)
         Me.txtSearch.Multiline = True
         Me.txtSearch.Name = "txtSearch"
@@ -298,20 +329,20 @@ Partial Class Taikhoan
         '
         Me.dgvTaiKhoan.AllowUserToAddRows = False
         Me.dgvTaiKhoan.AllowUserToDeleteRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.dgvTaiKhoan.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgvTaiKhoan.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
         Me.dgvTaiKhoan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvTaiKhoan.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.dgvTaiKhoan.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgvTaiKhoan.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Silver
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvTaiKhoan.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.Silver
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvTaiKhoan.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
         Me.dgvTaiKhoan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvTaiKhoan.DoubleBuffered = True
         Me.dgvTaiKhoan.EnableHeadersVisualStyles = False
@@ -323,36 +354,6 @@ Partial Class Taikhoan
         Me.dgvTaiKhoan.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.dgvTaiKhoan.Size = New System.Drawing.Size(576, 416)
         Me.dgvTaiKhoan.TabIndex = 7
-        '
-        'lbTaiKhoan
-        '
-        Me.lbTaiKhoan.AutoSize = True
-        Me.lbTaiKhoan.ForeColor = System.Drawing.Color.Red
-        Me.lbTaiKhoan.Location = New System.Drawing.Point(29, 281)
-        Me.lbTaiKhoan.Name = "lbTaiKhoan"
-        Me.lbTaiKhoan.Size = New System.Drawing.Size(104, 13)
-        Me.lbTaiKhoan.TabIndex = 13
-        Me.lbTaiKhoan.Text = "BunifuCustomLabel5"
-        '
-        'lbMatKhau
-        '
-        Me.lbMatKhau.AutoSize = True
-        Me.lbMatKhau.ForeColor = System.Drawing.Color.Red
-        Me.lbMatKhau.Location = New System.Drawing.Point(29, 382)
-        Me.lbMatKhau.Name = "lbMatKhau"
-        Me.lbMatKhau.Size = New System.Drawing.Size(104, 13)
-        Me.lbMatKhau.TabIndex = 14
-        Me.lbMatKhau.Text = "BunifuCustomLabel5"
-        '
-        'lbNote
-        '
-        Me.lbNote.AutoSize = True
-        Me.lbNote.ForeColor = System.Drawing.Color.Red
-        Me.lbNote.Location = New System.Drawing.Point(29, 466)
-        Me.lbNote.Name = "lbNote"
-        Me.lbNote.Size = New System.Drawing.Size(104, 13)
-        Me.lbNote.TabIndex = 15
-        Me.lbNote.Text = "BunifuCustomLabel5"
         '
         'Taikhoan
         '

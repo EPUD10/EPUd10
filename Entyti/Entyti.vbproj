@@ -63,6 +63,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CuaHangEntyti.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -79,6 +80,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="NhaCCEntyti.vb" />
+    <Compile Include="NhanVienEntyti.vb" />
     <Compile Include="TaiKhoanEntyti.vb" />
   </ItemGroup>
   <ItemGroup>
