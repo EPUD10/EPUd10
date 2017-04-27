@@ -243,20 +243,6 @@
     <Content Include="Image\Sort Right_50px.png" />
     <Content Include="Image\Twitter_64px.png" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BUS1\BUS.vbproj">
-      <Project>{702082ec-a6e6-4e67-a88e-81090d42b1df}</Project>
-      <Name>BUS</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DAO1\Entity.vbproj">
-      <Project>{9df54c1f-f80b-42c2-8a0b-a3f375baf4ee}</Project>
-      <Name>Entity</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DTO1\DataAccess.vbproj">
-      <Project>{4539f81b-a1f8-46fa-b08b-c528b263602e}</Project>
-      <Name>DataAccess</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
