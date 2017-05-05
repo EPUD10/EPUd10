@@ -25,4 +25,30 @@ Public Class CuaHangDAO
         values(4) = CH.Email
         Return cls.Add(sql, Name, values, _soluong)
     End Function
+    Public Function Remove(ByVal CH As CuaHangEntyti) As Integer
+        _soluong = 0
+        Dim Name(_soluong) As String
+        Dim values(_soluong) As Object
+        sql = "dbo.sp_removeCH"
+        Name(0) = "@ma"
+        values(0) = CH.Ma
+        Return cls.Add(sql, Name, values, _soluong)
+    End Function
+    Public Function Update(ByVal CH As CuaHangEntyti) As Integer
+        _soluong = 4
+        Dim Name(_soluong) As String
+        Dim values(_soluong) As Object
+        sql = "dbo.sp_UpdateCH"
+        Name(0) = "@ma"
+        values(0) = CH.Ma
+        Name(1) = "@ten"
+        values(1) = CH.Ten
+        Name(2) = "@dt"
+        values(2) = CH.DienThoai
+        Name(3) = "@dc"
+        values(3) = CH.DiaChi
+        Name(4) = "@mail"
+        values(4) = CH.Email
+        Return cls.Add(sql, Name, values, _soluong)
+    End Function
 End Class

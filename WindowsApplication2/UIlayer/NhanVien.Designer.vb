@@ -52,12 +52,22 @@ Partial Class NhanVien
         Me.BunifuCustomLabel11 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.btnSearch = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.dgvNhanVien = New Bunifu.Framework.UI.BunifuCustomDataGrid()
+        Me.lbID = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbPhone = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbName = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbEmail = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbAdd = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dgvNhanVien, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.lbAdd)
+        Me.GroupBox1.Controls.Add(Me.lbEmail)
+        Me.GroupBox1.Controls.Add(Me.lbName)
+        Me.GroupBox1.Controls.Add(Me.lbPhone)
+        Me.GroupBox1.Controls.Add(Me.lbID)
         Me.GroupBox1.Controls.Add(Me.cmbChucVu)
         Me.GroupBox1.Controls.Add(Me.cmbCuaHang)
         Me.GroupBox1.Controls.Add(Me.txtEmail)
@@ -102,7 +112,7 @@ Partial Class NhanVien
         '
         Me.cmbCuaHang.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbCuaHang.FormattingEnabled = True
-        Me.cmbCuaHang.Location = New System.Drawing.Point(491, 144)
+        Me.cmbCuaHang.Location = New System.Drawing.Point(491, 138)
         Me.cmbCuaHang.Name = "cmbCuaHang"
         Me.cmbCuaHang.Size = New System.Drawing.Size(165, 23)
         Me.cmbCuaHang.TabIndex = 28
@@ -118,7 +128,7 @@ Partial Class NhanVien
         Me.txtEmail.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.txtEmail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.txtEmail.isPassword = False
-        Me.txtEmail.Location = New System.Drawing.Point(265, 143)
+        Me.txtEmail.Location = New System.Drawing.Point(265, 137)
         Me.txtEmail.Margin = New System.Windows.Forms.Padding(4)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(152, 19)
@@ -136,7 +146,7 @@ Partial Class NhanVien
         Me.txtDT.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.txtDT.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.txtDT.isPassword = False
-        Me.txtDT.Location = New System.Drawing.Point(265, 77)
+        Me.txtDT.Location = New System.Drawing.Point(265, 63)
         Me.txtDT.Margin = New System.Windows.Forms.Padding(4)
         Me.txtDT.Name = "txtDT"
         Me.txtDT.Size = New System.Drawing.Size(152, 19)
@@ -148,7 +158,7 @@ Partial Class NhanVien
         Me.BunifuCustomLabel3.AutoSize = True
         Me.BunifuCustomLabel3.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(201, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(262, 55)
+        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(262, 41)
         Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
         Me.BunifuCustomLabel3.Size = New System.Drawing.Size(105, 18)
         Me.BunifuCustomLabel3.TabIndex = 25
@@ -159,7 +169,7 @@ Partial Class NhanVien
         Me.BunifuCustomLabel2.AutoSize = True
         Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(201, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(271, 121)
+        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(271, 115)
         Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
         Me.BunifuCustomLabel2.Size = New System.Drawing.Size(48, 18)
         Me.BunifuCustomLabel2.TabIndex = 24
@@ -314,7 +324,7 @@ Partial Class NhanVien
         Me.BunifuCustomLabel7.AutoSize = True
         Me.BunifuCustomLabel7.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(201, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.BunifuCustomLabel7.Location = New System.Drawing.Point(489, 116)
+        Me.BunifuCustomLabel7.Location = New System.Drawing.Point(489, 110)
         Me.BunifuCustomLabel7.Name = "BunifuCustomLabel7"
         Me.BunifuCustomLabel7.Size = New System.Drawing.Size(64, 18)
         Me.BunifuCustomLabel7.TabIndex = 16
@@ -342,7 +352,7 @@ Partial Class NhanVien
         Me.txtDC.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.txtDC.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.txtDC.isPassword = False
-        Me.txtDC.Location = New System.Drawing.Point(491, 77)
+        Me.txtDC.Location = New System.Drawing.Point(491, 63)
         Me.txtDC.Margin = New System.Windows.Forms.Padding(4)
         Me.txtDC.Name = "txtDC"
         Me.txtDC.Size = New System.Drawing.Size(165, 19)
@@ -371,7 +381,7 @@ Partial Class NhanVien
         Me.txtName.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.txtName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.txtName.isPassword = False
-        Me.txtName.Location = New System.Drawing.Point(26, 138)
+        Me.txtName.Location = New System.Drawing.Point(26, 132)
         Me.txtName.Margin = New System.Windows.Forms.Padding(4)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(152, 19)
@@ -383,7 +393,7 @@ Partial Class NhanVien
         Me.BunifuCustomLabel6.AutoSize = True
         Me.BunifuCustomLabel6.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(201, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.BunifuCustomLabel6.Location = New System.Drawing.Point(23, 116)
+        Me.BunifuCustomLabel6.Location = New System.Drawing.Point(23, 110)
         Me.BunifuCustomLabel6.Name = "BunifuCustomLabel6"
         Me.BunifuCustomLabel6.Size = New System.Drawing.Size(109, 18)
         Me.BunifuCustomLabel6.TabIndex = 10
@@ -405,7 +415,7 @@ Partial Class NhanVien
         Me.BunifuCustomLabel4.AutoSize = True
         Me.BunifuCustomLabel4.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(201, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(494, 55)
+        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(494, 41)
         Me.BunifuCustomLabel4.Name = "BunifuCustomLabel4"
         Me.BunifuCustomLabel4.Size = New System.Drawing.Size(59, 18)
         Me.BunifuCustomLabel4.TabIndex = 6
@@ -422,7 +432,7 @@ Partial Class NhanVien
         Me.txtMaNhanVien.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.txtMaNhanVien.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.txtMaNhanVien.isPassword = False
-        Me.txtMaNhanVien.Location = New System.Drawing.Point(26, 77)
+        Me.txtMaNhanVien.Location = New System.Drawing.Point(26, 63)
         Me.txtMaNhanVien.Margin = New System.Windows.Forms.Padding(4)
         Me.txtMaNhanVien.Name = "txtMaNhanVien"
         Me.txtMaNhanVien.Size = New System.Drawing.Size(152, 19)
@@ -434,7 +444,7 @@ Partial Class NhanVien
         Me.BunifuCustomLabel1.AutoSize = True
         Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(201, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(23, 55)
+        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(23, 41)
         Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
         Me.BunifuCustomLabel1.Size = New System.Drawing.Size(92, 18)
         Me.BunifuCustomLabel1.TabIndex = 0
@@ -535,6 +545,61 @@ Partial Class NhanVien
         Me.dgvNhanVien.Size = New System.Drawing.Size(887, 342)
         Me.dgvNhanVien.TabIndex = 23
         '
+        'lbID
+        '
+        Me.lbID.AutoSize = True
+        Me.lbID.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbID.ForeColor = System.Drawing.Color.Red
+        Me.lbID.Location = New System.Drawing.Point(25, 93)
+        Me.lbID.Name = "lbID"
+        Me.lbID.Size = New System.Drawing.Size(127, 15)
+        Me.lbID.TabIndex = 30
+        Me.lbID.Text = "BunifuCustomLabel10"
+        '
+        'lbPhone
+        '
+        Me.lbPhone.AutoSize = True
+        Me.lbPhone.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbPhone.ForeColor = System.Drawing.Color.Red
+        Me.lbPhone.Location = New System.Drawing.Point(262, 93)
+        Me.lbPhone.Name = "lbPhone"
+        Me.lbPhone.Size = New System.Drawing.Size(127, 15)
+        Me.lbPhone.TabIndex = 31
+        Me.lbPhone.Text = "BunifuCustomLabel10"
+        '
+        'lbName
+        '
+        Me.lbName.AutoSize = True
+        Me.lbName.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbName.ForeColor = System.Drawing.Color.Red
+        Me.lbName.Location = New System.Drawing.Point(25, 163)
+        Me.lbName.Name = "lbName"
+        Me.lbName.Size = New System.Drawing.Size(127, 15)
+        Me.lbName.TabIndex = 32
+        Me.lbName.Text = "BunifuCustomLabel10"
+        '
+        'lbEmail
+        '
+        Me.lbEmail.AutoSize = True
+        Me.lbEmail.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbEmail.ForeColor = System.Drawing.Color.Red
+        Me.lbEmail.Location = New System.Drawing.Point(262, 163)
+        Me.lbEmail.Name = "lbEmail"
+        Me.lbEmail.Size = New System.Drawing.Size(127, 15)
+        Me.lbEmail.TabIndex = 33
+        Me.lbEmail.Text = "BunifuCustomLabel10"
+        '
+        'lbAdd
+        '
+        Me.lbAdd.AutoSize = True
+        Me.lbAdd.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbAdd.ForeColor = System.Drawing.Color.Red
+        Me.lbAdd.Location = New System.Drawing.Point(489, 93)
+        Me.lbAdd.Name = "lbAdd"
+        Me.lbAdd.Size = New System.Drawing.Size(127, 15)
+        Me.lbAdd.TabIndex = 34
+        Me.lbAdd.Text = "BunifuCustomLabel10"
+        '
         'NhanVien
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -581,4 +646,9 @@ Partial Class NhanVien
     Friend WithEvents cmbChucVu As ComboBox
     Friend WithEvents cmbCuaHang As ComboBox
     Friend WithEvents dgvNhanVien As Bunifu.Framework.UI.BunifuCustomDataGrid
+    Friend WithEvents lbAdd As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents lbEmail As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents lbName As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents lbPhone As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents lbID As Bunifu.Framework.UI.BunifuCustomLabel
 End Class

@@ -42,6 +42,11 @@ Partial Class CuaHang
         Me.txtSearch = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.BunifuCustomLabel11 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.dgvCH = New Bunifu.Framework.UI.BunifuCustomDataGrid()
+        Me.lbID = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbName = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbPhone = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbEmail = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbAdd = New Bunifu.Framework.UI.BunifuCustomLabel()
         CType(Me.dgvCH, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -391,11 +396,66 @@ Partial Class CuaHang
         Me.dgvCH.Size = New System.Drawing.Size(887, 326)
         Me.dgvCH.TabIndex = 53
         '
+        'lbID
+        '
+        Me.lbID.AutoSize = True
+        Me.lbID.ForeColor = System.Drawing.Color.Red
+        Me.lbID.Location = New System.Drawing.Point(32, 109)
+        Me.lbID.Name = "lbID"
+        Me.lbID.Size = New System.Drawing.Size(104, 13)
+        Me.lbID.TabIndex = 54
+        Me.lbID.Text = "BunifuCustomLabel5"
+        '
+        'lbName
+        '
+        Me.lbName.AutoSize = True
+        Me.lbName.ForeColor = System.Drawing.Color.Red
+        Me.lbName.Location = New System.Drawing.Point(32, 208)
+        Me.lbName.Name = "lbName"
+        Me.lbName.Size = New System.Drawing.Size(104, 13)
+        Me.lbName.TabIndex = 55
+        Me.lbName.Text = "BunifuCustomLabel5"
+        '
+        'lbPhone
+        '
+        Me.lbPhone.AutoSize = True
+        Me.lbPhone.ForeColor = System.Drawing.Color.Red
+        Me.lbPhone.Location = New System.Drawing.Point(271, 109)
+        Me.lbPhone.Name = "lbPhone"
+        Me.lbPhone.Size = New System.Drawing.Size(104, 13)
+        Me.lbPhone.TabIndex = 56
+        Me.lbPhone.Text = "BunifuCustomLabel5"
+        '
+        'lbEmail
+        '
+        Me.lbEmail.AutoSize = True
+        Me.lbEmail.ForeColor = System.Drawing.Color.Red
+        Me.lbEmail.Location = New System.Drawing.Point(271, 208)
+        Me.lbEmail.Name = "lbEmail"
+        Me.lbEmail.Size = New System.Drawing.Size(104, 13)
+        Me.lbEmail.TabIndex = 57
+        Me.lbEmail.Text = "BunifuCustomLabel5"
+        '
+        'lbAdd
+        '
+        Me.lbAdd.AutoSize = True
+        Me.lbAdd.ForeColor = System.Drawing.Color.Red
+        Me.lbAdd.Location = New System.Drawing.Point(497, 109)
+        Me.lbAdd.Name = "lbAdd"
+        Me.lbAdd.Size = New System.Drawing.Size(104, 13)
+        Me.lbAdd.TabIndex = 58
+        Me.lbAdd.Text = "BunifuCustomLabel5"
+        '
         'CuaHang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(190, Byte), Integer), CType(CType(177, Byte), Integer), CType(CType(156, Byte), Integer))
+        Me.Controls.Add(Me.lbAdd)
+        Me.Controls.Add(Me.lbEmail)
+        Me.Controls.Add(Me.lbPhone)
+        Me.Controls.Add(Me.lbName)
+        Me.Controls.Add(Me.lbID)
         Me.Controls.Add(Me.dgvCH)
         Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.txtSearch)
@@ -437,4 +497,9 @@ Partial Class CuaHang
     Friend WithEvents txtSearch As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents BunifuCustomLabel11 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents dgvCH As Bunifu.Framework.UI.BunifuCustomDataGrid
+    Friend WithEvents lbID As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents lbName As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents lbPhone As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents lbEmail As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents lbAdd As Bunifu.Framework.UI.BunifuCustomLabel
 End Class

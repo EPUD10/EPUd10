@@ -33,6 +33,11 @@ Partial Class NhaCCform
         Me.btnUpdate = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnRemove = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lbEmail = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbPhone = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbAdd = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbName = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbID = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.btnAdd = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.txtDienThoai = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.BunifuCustomLabel6 = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -220,6 +225,11 @@ Partial Class NhaCCform
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.lbEmail)
+        Me.Panel1.Controls.Add(Me.lbPhone)
+        Me.Panel1.Controls.Add(Me.lbAdd)
+        Me.Panel1.Controls.Add(Me.lbName)
+        Me.Panel1.Controls.Add(Me.lbID)
         Me.Panel1.Controls.Add(Me.btnAdd)
         Me.Panel1.Controls.Add(Me.txtDienThoai)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel6)
@@ -238,6 +248,56 @@ Partial Class NhaCCform
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(211, 734)
         Me.Panel1.TabIndex = 4
+        '
+        'lbEmail
+        '
+        Me.lbEmail.AutoSize = True
+        Me.lbEmail.ForeColor = System.Drawing.Color.Red
+        Me.lbEmail.Location = New System.Drawing.Point(16, 590)
+        Me.lbEmail.Name = "lbEmail"
+        Me.lbEmail.Size = New System.Drawing.Size(104, 13)
+        Me.lbEmail.TabIndex = 17
+        Me.lbEmail.Text = "BunifuCustomLabel7"
+        '
+        'lbPhone
+        '
+        Me.lbPhone.AutoSize = True
+        Me.lbPhone.ForeColor = System.Drawing.Color.Red
+        Me.lbPhone.Location = New System.Drawing.Point(16, 520)
+        Me.lbPhone.Name = "lbPhone"
+        Me.lbPhone.Size = New System.Drawing.Size(104, 13)
+        Me.lbPhone.TabIndex = 16
+        Me.lbPhone.Text = "BunifuCustomLabel7"
+        '
+        'lbAdd
+        '
+        Me.lbAdd.AutoSize = True
+        Me.lbAdd.ForeColor = System.Drawing.Color.Red
+        Me.lbAdd.Location = New System.Drawing.Point(16, 446)
+        Me.lbAdd.Name = "lbAdd"
+        Me.lbAdd.Size = New System.Drawing.Size(104, 13)
+        Me.lbAdd.TabIndex = 15
+        Me.lbAdd.Text = "BunifuCustomLabel7"
+        '
+        'lbName
+        '
+        Me.lbName.AutoSize = True
+        Me.lbName.ForeColor = System.Drawing.Color.Red
+        Me.lbName.Location = New System.Drawing.Point(16, 362)
+        Me.lbName.Name = "lbName"
+        Me.lbName.Size = New System.Drawing.Size(104, 13)
+        Me.lbName.TabIndex = 14
+        Me.lbName.Text = "BunifuCustomLabel7"
+        '
+        'lbID
+        '
+        Me.lbID.AutoSize = True
+        Me.lbID.ForeColor = System.Drawing.Color.Red
+        Me.lbID.Location = New System.Drawing.Point(16, 282)
+        Me.lbID.Name = "lbID"
+        Me.lbID.Size = New System.Drawing.Size(104, 13)
+        Me.lbID.TabIndex = 13
+        Me.lbID.Text = "BunifuCustomLabel7"
         '
         'btnAdd
         '
@@ -260,7 +320,7 @@ Partial Class NhaCCform
         Me.btnAdd.IconVisible = True
         Me.btnAdd.IconZoom = 40.0R
         Me.btnAdd.IsTab = False
-        Me.btnAdd.Location = New System.Drawing.Point(16, 537)
+        Me.btnAdd.Location = New System.Drawing.Point(16, 622)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnAdd.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
@@ -276,7 +336,7 @@ Partial Class NhaCCform
         'txtDienThoai
         '
         Me.txtDienThoai.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtDienThoai.Location = New System.Drawing.Point(16, 435)
+        Me.txtDienThoai.Location = New System.Drawing.Point(16, 485)
         Me.txtDienThoai.Multiline = True
         Me.txtDienThoai.Name = "txtDienThoai"
         Me.txtDienThoai.Size = New System.Drawing.Size(168, 23)
@@ -286,7 +346,7 @@ Partial Class NhaCCform
         '
         Me.BunifuCustomLabel6.AutoSize = True
         Me.BunifuCustomLabel6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(111, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.BunifuCustomLabel6.Location = New System.Drawing.Point(16, 419)
+        Me.BunifuCustomLabel6.Location = New System.Drawing.Point(16, 469)
         Me.BunifuCustomLabel6.Name = "BunifuCustomLabel6"
         Me.BunifuCustomLabel6.Size = New System.Drawing.Size(78, 13)
         Me.BunifuCustomLabel6.TabIndex = 10
@@ -295,7 +355,7 @@ Partial Class NhaCCform
         'txtEmail
         '
         Me.txtEmail.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtEmail.Location = New System.Drawing.Point(16, 494)
+        Me.txtEmail.Location = New System.Drawing.Point(16, 555)
         Me.txtEmail.Multiline = True
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(168, 23)
@@ -305,7 +365,7 @@ Partial Class NhaCCform
         '
         Me.BunifuCustomLabel5.AutoSize = True
         Me.BunifuCustomLabel5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(111, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.BunifuCustomLabel5.Location = New System.Drawing.Point(16, 478)
+        Me.BunifuCustomLabel5.Location = New System.Drawing.Point(16, 539)
         Me.BunifuCustomLabel5.Name = "BunifuCustomLabel5"
         Me.BunifuCustomLabel5.Size = New System.Drawing.Size(32, 13)
         Me.BunifuCustomLabel5.TabIndex = 8
@@ -314,7 +374,7 @@ Partial Class NhaCCform
         'txtTenNhaCC
         '
         Me.txtTenNhaCC.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtTenNhaCC.Location = New System.Drawing.Point(16, 306)
+        Me.txtTenNhaCC.Location = New System.Drawing.Point(16, 325)
         Me.txtTenNhaCC.Multiline = True
         Me.txtTenNhaCC.Name = "txtTenNhaCC"
         Me.txtTenNhaCC.Size = New System.Drawing.Size(168, 23)
@@ -324,7 +384,7 @@ Partial Class NhaCCform
         '
         Me.BunifuCustomLabel4.AutoSize = True
         Me.BunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(111, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(16, 287)
+        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(16, 306)
         Me.BunifuCustomLabel4.Name = "BunifuCustomLabel4"
         Me.BunifuCustomLabel4.Size = New System.Drawing.Size(76, 13)
         Me.BunifuCustomLabel4.TabIndex = 6
@@ -333,7 +393,7 @@ Partial Class NhaCCform
         'txtDiaChi
         '
         Me.txtDiaChi.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtDiaChi.Location = New System.Drawing.Point(16, 366)
+        Me.txtDiaChi.Location = New System.Drawing.Point(16, 411)
         Me.txtDiaChi.Multiline = True
         Me.txtDiaChi.Name = "txtDiaChi"
         Me.txtDiaChi.Size = New System.Drawing.Size(168, 23)
@@ -343,7 +403,7 @@ Partial Class NhaCCform
         '
         Me.BunifuCustomLabel3.AutoSize = True
         Me.BunifuCustomLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(111, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(16, 344)
+        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(16, 391)
         Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
         Me.BunifuCustomLabel3.Size = New System.Drawing.Size(42, 13)
         Me.BunifuCustomLabel3.TabIndex = 4
@@ -428,4 +488,9 @@ Partial Class NhaCCform
     Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents PanelnhaCC As Panel
     Friend WithEvents dgvNhaCC As Bunifu.Framework.UI.BunifuCustomDataGrid
+    Friend WithEvents lbEmail As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents lbPhone As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents lbAdd As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents lbName As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents lbID As Bunifu.Framework.UI.BunifuCustomLabel
 End Class
