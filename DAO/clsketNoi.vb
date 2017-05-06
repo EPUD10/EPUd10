@@ -5,7 +5,8 @@ Public Class clsketNoi
     Public da As SqlDataAdapter
     Public con As SqlConnection
     Public Sub openKnoi()
-        con = New SqlConnection("Data Source=.\SQLEXPRESS;Initial Catalog=ChuoiCuaHang;Persist Security Info=True;User ID=sa;Password=sa123456")
+        ' con = New SqlConnection("Data Source=.\SQLEXPRESS;Initial Catalog=ChuoiCuaHang;Persist Security Info=True;User ID=sa;Password=sa123456")
+        con = New SqlConnection("Data Source=DIEUNINH\SQLEXPRESS;Initial Catalog=ChuoiCuaHang;Integrated Security=True")
         con.Open()
         If con.State = ConnectionState.Open Then
             con.Close()
