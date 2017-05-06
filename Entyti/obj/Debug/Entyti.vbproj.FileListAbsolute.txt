@@ -25,3 +25,12 @@ C:\Users\camIT\Source\Repos\EPUd10\Entyti\obj\Debug\Entyti.pdb
 C:\Users\camIT\Source\Repos\EPUd10\Entyti\bin\Debug\Entyti.dll
 C:\Users\camIT\Source\Repos\EPUd10\Entyti\bin\Debug\Entyti.pdb
 C:\Users\camIT\Source\Repos\EPUd10\Entyti\bin\Debug\Entyti.xml
+E:\ProjectWinform\MyProject\EPUd102\Entyti\bin\Debug\Entyti.dll
+E:\ProjectWinform\MyProject\EPUd102\Entyti\bin\Debug\Entyti.pdb
+E:\ProjectWinform\MyProject\EPUd102\Entyti\bin\Debug\Entyti.xml
+E:\ProjectWinform\MyProject\EPUd102\Entyti\obj\Debug\Entyti.vbprojResolveAssemblyReference.cache
+E:\ProjectWinform\MyProject\EPUd102\Entyti\obj\Debug\Entyti.Resources.resources
+E:\ProjectWinform\MyProject\EPUd102\Entyti\obj\Debug\Entyti.vbproj.GenerateResource.Cache
+E:\ProjectWinform\MyProject\EPUd102\Entyti\obj\Debug\Entyti.dll
+E:\ProjectWinform\MyProject\EPUd102\Entyti\obj\Debug\Entyti.xml
+E:\ProjectWinform\MyProject\EPUd102\Entyti\obj\Debug\Entyti.pdb

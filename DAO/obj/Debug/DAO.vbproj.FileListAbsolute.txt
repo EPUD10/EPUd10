@@ -36,3 +36,16 @@ C:\Users\camIT\Source\Repos\EPUd10\DAO\bin\Debug\DAO.xml
 C:\Users\camIT\Source\Repos\EPUd10\DAO\bin\Debug\Entyti.dll
 C:\Users\camIT\Source\Repos\EPUd10\DAO\bin\Debug\Entyti.pdb
 C:\Users\camIT\Source\Repos\EPUd10\DAO\bin\Debug\Entyti.xml
+E:\ProjectWinform\MyProject\EPUd102\DAO\bin\Debug\DAO.dll.config
+E:\ProjectWinform\MyProject\EPUd102\DAO\bin\Debug\DAO.dll
+E:\ProjectWinform\MyProject\EPUd102\DAO\bin\Debug\DAO.pdb
+E:\ProjectWinform\MyProject\EPUd102\DAO\bin\Debug\DAO.xml
+E:\ProjectWinform\MyProject\EPUd102\DAO\bin\Debug\Entyti.dll
+E:\ProjectWinform\MyProject\EPUd102\DAO\bin\Debug\Entyti.pdb
+E:\ProjectWinform\MyProject\EPUd102\DAO\bin\Debug\Entyti.xml
+E:\ProjectWinform\MyProject\EPUd102\DAO\obj\Debug\DAO.vbprojResolveAssemblyReference.cache
+E:\ProjectWinform\MyProject\EPUd102\DAO\obj\Debug\DAO.Resources.resources
+E:\ProjectWinform\MyProject\EPUd102\DAO\obj\Debug\DAO.vbproj.GenerateResource.Cache
+E:\ProjectWinform\MyProject\EPUd102\DAO\obj\Debug\DAO.dll
+E:\ProjectWinform\MyProject\EPUd102\DAO\obj\Debug\DAO.xml
+E:\ProjectWinform\MyProject\EPUd102\DAO\obj\Debug\DAO.pdb
