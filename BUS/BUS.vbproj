@@ -86,7 +86,6 @@
     </Compile>
     <Compile Include="NhaCCBUS.vb" />
     <Compile Include="NhanVienBUS.vb" />
-    <Compile Include="SanPhamBUS.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

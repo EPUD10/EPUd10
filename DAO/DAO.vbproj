@@ -90,7 +90,6 @@
     </Compile>
     <Compile Include="NhaCCDAO.vb" />
     <Compile Include="NhanVienDAO.vb" />
-    <Compile Include="SanPhamDAO.vb" />
     <Compile Include="TaiKhoanDAO.vb" />
   </ItemGroup>
   <ItemGroup>
