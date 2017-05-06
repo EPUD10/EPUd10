@@ -91,6 +91,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.vb" />
     <Compile Include="UIlayer\HoaDonBan.Designer.vb">
       <DependentUpon>HoaDonBan.vb</DependentUpon>
     </Compile>

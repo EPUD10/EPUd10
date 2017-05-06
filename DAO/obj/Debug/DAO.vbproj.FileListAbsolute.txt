@@ -1,0 +1,12 @@
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\DAO\bin\Debug\DAO.dll
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\DAO\bin\Debug\DAO.pdb
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\DAO\bin\Debug\DAO.xml
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\DAO\bin\Debug\Entyti.dll
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\DAO\bin\Debug\Entyti.pdb
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\DAO\bin\Debug\Entyti.xml
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\DAO\obj\Debug\DAO.vbprojResolveAssemblyReference.cache
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\DAO\obj\Debug\DAO.Resources.resources
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\DAO\obj\Debug\DAO.vbproj.GenerateResource.Cache
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\DAO\obj\Debug\DAO.dll
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\DAO\obj\Debug\DAO.xml
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\DAO\obj\Debug\DAO.pdb

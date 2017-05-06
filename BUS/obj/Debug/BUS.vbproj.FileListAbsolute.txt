@@ -1,0 +1,15 @@
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\BUS\bin\Debug\BUS.dll
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\BUS\bin\Debug\BUS.pdb
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\BUS\bin\Debug\BUS.xml
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\BUS\bin\Debug\DAO.dll
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\BUS\bin\Debug\Entyti.dll
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\BUS\bin\Debug\DAO.pdb
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\BUS\bin\Debug\DAO.xml
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\BUS\bin\Debug\Entyti.pdb
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\BUS\bin\Debug\Entyti.xml
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\BUS\obj\Debug\BUS.vbprojResolveAssemblyReference.cache
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\BUS\obj\Debug\BUS.Resources.resources
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\BUS\obj\Debug\BUS.vbproj.GenerateResource.Cache
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\BUS\obj\Debug\BUS.dll
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\BUS\obj\Debug\BUS.xml
+C:\Users\camIT\Source\Repos\QuanlyCuaHang\BUS\obj\Debug\BUS.pdb
