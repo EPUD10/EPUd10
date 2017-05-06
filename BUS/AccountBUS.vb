@@ -18,4 +18,9 @@ Public Class AccountBUS
     Public Function Search(ByVal tk As TaiKhoanEntyti) As Integer
         Return cls.Search(tk)
     End Function
+    Public Function áda()
+
+    End Function
+
+
 End Class
