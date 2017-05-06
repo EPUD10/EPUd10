@@ -83,7 +83,6 @@
     </Compile>
     <Compile Include="NhaCCEntyti.vb" />
     <Compile Include="NhanVienEntyti.vb" />
-    <Compile Include="SanPhamEntyti.vb" />
     <Compile Include="TaiKhoanEntyti.vb" />
   </ItemGroup>
   <ItemGroup>
