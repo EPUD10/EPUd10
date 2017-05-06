@@ -63,7 +63,9 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChucVuEntyti.vb" />
     <Compile Include="CuaHangEntyti.vb" />
+    <Compile Include="KhachEntyti.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -81,6 +83,7 @@
     </Compile>
     <Compile Include="NhaCCEntyti.vb" />
     <Compile Include="NhanVienEntyti.vb" />
+    <Compile Include="SanPhamEntyti.vb" />
     <Compile Include="TaiKhoanEntyti.vb" />
   </ItemGroup>
   <ItemGroup>

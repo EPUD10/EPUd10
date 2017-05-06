@@ -63,9 +63,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChucVuDao.vb" />
+    <Compile Include="ChuoiCuaHangDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChuoiCuaHangDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Class1.vb" />
     <Compile Include="clsketNoi.vb" />
     <Compile Include="CuaHangDAO.vb" />
+    <Compile Include="KhachDao.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -83,6 +90,7 @@
     </Compile>
     <Compile Include="NhaCCDAO.vb" />
     <Compile Include="NhanVienDAO.vb" />
+    <Compile Include="SanPhamDAO.vb" />
     <Compile Include="TaiKhoanDAO.vb" />
   </ItemGroup>
   <ItemGroup>
@@ -94,6 +102,18 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ChuoiCuaHangDataSet.xsc">
+      <DependentUpon>ChuoiCuaHangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ChuoiCuaHangDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChuoiCuaHangDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ChuoiCuaHangDataSet.xss">
+      <DependentUpon>ChuoiCuaHangDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
