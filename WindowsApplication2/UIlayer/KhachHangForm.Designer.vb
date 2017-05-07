@@ -50,6 +50,11 @@ Partial Class KhachHangForm
         Me.btnSearch = New Bunifu.Framework.UI.BunifuImageButton()
         Me.txtSearch = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.BunifuCustomLabel8 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbID = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbName = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbaddress = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbphone = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbEmail = New Bunifu.Framework.UI.BunifuCustomLabel()
         CType(Me.dgvKhach, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -92,6 +97,11 @@ Partial Class KhachHangForm
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Controls.Add(Me.lbEmail)
+        Me.Panel1.Controls.Add(Me.lbphone)
+        Me.Panel1.Controls.Add(Me.lbaddress)
+        Me.Panel1.Controls.Add(Me.lbName)
+        Me.Panel1.Controls.Add(Me.lbID)
         Me.Panel1.Controls.Add(Me.datetime)
         Me.Panel1.Controls.Add(Me.rbtnu)
         Me.Panel1.Controls.Add(Me.rbtNam)
@@ -114,7 +124,7 @@ Partial Class KhachHangForm
         '
         'datetime
         '
-        Me.datetime.Location = New System.Drawing.Point(319, 137)
+        Me.datetime.Location = New System.Drawing.Point(319, 134)
         Me.datetime.Name = "datetime"
         Me.datetime.Size = New System.Drawing.Size(200, 20)
         Me.datetime.TabIndex = 34
@@ -122,7 +132,7 @@ Partial Class KhachHangForm
         'rbtnu
         '
         Me.rbtnu.AutoSize = True
-        Me.rbtnu.Location = New System.Drawing.Point(192, 137)
+        Me.rbtnu.Location = New System.Drawing.Point(192, 134)
         Me.rbtnu.Name = "rbtnu"
         Me.rbtnu.Size = New System.Drawing.Size(39, 17)
         Me.rbtnu.TabIndex = 33
@@ -133,7 +143,7 @@ Partial Class KhachHangForm
         'rbtNam
         '
         Me.rbtNam.AutoSize = True
-        Me.rbtNam.Location = New System.Drawing.Point(139, 137)
+        Me.rbtNam.Location = New System.Drawing.Point(139, 134)
         Me.rbtNam.Name = "rbtNam"
         Me.rbtNam.Size = New System.Drawing.Size(47, 17)
         Me.rbtNam.TabIndex = 32
@@ -151,7 +161,7 @@ Partial Class KhachHangForm
         Me.txtPhoneNumber.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.txtPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.txtPhoneNumber.isPassword = False
-        Me.txtPhoneNumber.Location = New System.Drawing.Point(687, 68)
+        Me.txtPhoneNumber.Location = New System.Drawing.Point(687, 38)
         Me.txtPhoneNumber.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPhoneNumber.Name = "txtPhoneNumber"
         Me.txtPhoneNumber.Size = New System.Drawing.Size(146, 22)
@@ -162,7 +172,7 @@ Partial Class KhachHangForm
         '
         Me.BunifuCustomLabel7.AutoSize = True
         Me.BunifuCustomLabel7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel7.Location = New System.Drawing.Point(689, 48)
+        Me.BunifuCustomLabel7.Location = New System.Drawing.Point(689, 18)
         Me.BunifuCustomLabel7.Name = "BunifuCustomLabel7"
         Me.BunifuCustomLabel7.Size = New System.Drawing.Size(91, 15)
         Me.BunifuCustomLabel7.TabIndex = 30
@@ -178,7 +188,7 @@ Partial Class KhachHangForm
         Me.txtEmail.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.txtEmail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.txtEmail.isPassword = False
-        Me.txtEmail.Location = New System.Drawing.Point(579, 132)
+        Me.txtEmail.Location = New System.Drawing.Point(579, 129)
         Me.txtEmail.Margin = New System.Windows.Forms.Padding(4)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(146, 22)
@@ -189,7 +199,7 @@ Partial Class KhachHangForm
         '
         Me.BunifuCustomLabel6.AutoSize = True
         Me.BunifuCustomLabel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel6.Location = New System.Drawing.Point(578, 113)
+        Me.BunifuCustomLabel6.Location = New System.Drawing.Point(578, 110)
         Me.BunifuCustomLabel6.Name = "BunifuCustomLabel6"
         Me.BunifuCustomLabel6.Size = New System.Drawing.Size(39, 15)
         Me.BunifuCustomLabel6.TabIndex = 28
@@ -199,7 +209,7 @@ Partial Class KhachHangForm
         '
         Me.BunifuCustomLabel5.AutoSize = True
         Me.BunifuCustomLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel5.Location = New System.Drawing.Point(316, 113)
+        Me.BunifuCustomLabel5.Location = New System.Drawing.Point(316, 110)
         Me.BunifuCustomLabel5.Name = "BunifuCustomLabel5"
         Me.BunifuCustomLabel5.Size = New System.Drawing.Size(74, 15)
         Me.BunifuCustomLabel5.TabIndex = 27
@@ -209,7 +219,7 @@ Partial Class KhachHangForm
         '
         Me.BunifuCustomLabel4.AutoSize = True
         Me.BunifuCustomLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(136, 113)
+        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(136, 110)
         Me.BunifuCustomLabel4.Name = "BunifuCustomLabel4"
         Me.BunifuCustomLabel4.Size = New System.Drawing.Size(28, 15)
         Me.BunifuCustomLabel4.TabIndex = 26
@@ -225,7 +235,7 @@ Partial Class KhachHangForm
         Me.txtAddress.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.txtAddress.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.txtAddress.isPassword = False
-        Me.txtAddress.Location = New System.Drawing.Point(466, 68)
+        Me.txtAddress.Location = New System.Drawing.Point(466, 38)
         Me.txtAddress.Margin = New System.Windows.Forms.Padding(4)
         Me.txtAddress.Name = "txtAddress"
         Me.txtAddress.Size = New System.Drawing.Size(146, 22)
@@ -236,7 +246,7 @@ Partial Class KhachHangForm
         '
         Me.BunifuCustomLabel3.AutoSize = True
         Me.BunifuCustomLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(468, 48)
+        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(468, 18)
         Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
         Me.BunifuCustomLabel3.Size = New System.Drawing.Size(51, 15)
         Me.BunifuCustomLabel3.TabIndex = 24
@@ -252,7 +262,7 @@ Partial Class KhachHangForm
         Me.txtNameCus.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.txtNameCus.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.txtNameCus.isPassword = False
-        Me.txtNameCus.Location = New System.Drawing.Point(245, 68)
+        Me.txtNameCus.Location = New System.Drawing.Point(245, 38)
         Me.txtNameCus.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNameCus.Name = "txtNameCus"
         Me.txtNameCus.Size = New System.Drawing.Size(146, 22)
@@ -263,7 +273,7 @@ Partial Class KhachHangForm
         '
         Me.BunifuCustomLabel2.AutoSize = True
         Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(247, 48)
+        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(247, 18)
         Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
         Me.BunifuCustomLabel2.Size = New System.Drawing.Size(97, 15)
         Me.BunifuCustomLabel2.TabIndex = 22
@@ -279,7 +289,7 @@ Partial Class KhachHangForm
         Me.txtIDCustomer.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.txtIDCustomer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.txtIDCustomer.isPassword = False
-        Me.txtIDCustomer.Location = New System.Drawing.Point(24, 68)
+        Me.txtIDCustomer.Location = New System.Drawing.Point(24, 38)
         Me.txtIDCustomer.Margin = New System.Windows.Forms.Padding(4)
         Me.txtIDCustomer.Name = "txtIDCustomer"
         Me.txtIDCustomer.Size = New System.Drawing.Size(146, 22)
@@ -290,7 +300,7 @@ Partial Class KhachHangForm
         '
         Me.BunifuCustomLabel1.AutoSize = True
         Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(26, 48)
+        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(26, 18)
         Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
         Me.BunifuCustomLabel1.Size = New System.Drawing.Size(75, 15)
         Me.BunifuCustomLabel1.TabIndex = 20
@@ -461,6 +471,56 @@ Partial Class KhachHangForm
         Me.BunifuCustomLabel8.TabIndex = 22
         Me.BunifuCustomLabel8.Text = "Search"
         '
+        'lbID
+        '
+        Me.lbID.AutoSize = True
+        Me.lbID.ForeColor = System.Drawing.Color.Red
+        Me.lbID.Location = New System.Drawing.Point(26, 78)
+        Me.lbID.Name = "lbID"
+        Me.lbID.Size = New System.Drawing.Size(104, 13)
+        Me.lbID.TabIndex = 35
+        Me.lbID.Text = "BunifuCustomLabel9"
+        '
+        'lbName
+        '
+        Me.lbName.AutoSize = True
+        Me.lbName.ForeColor = System.Drawing.Color.Red
+        Me.lbName.Location = New System.Drawing.Point(247, 78)
+        Me.lbName.Name = "lbName"
+        Me.lbName.Size = New System.Drawing.Size(104, 13)
+        Me.lbName.TabIndex = 36
+        Me.lbName.Text = "BunifuCustomLabel9"
+        '
+        'lbaddress
+        '
+        Me.lbaddress.AutoSize = True
+        Me.lbaddress.ForeColor = System.Drawing.Color.Red
+        Me.lbaddress.Location = New System.Drawing.Point(468, 78)
+        Me.lbaddress.Name = "lbaddress"
+        Me.lbaddress.Size = New System.Drawing.Size(104, 13)
+        Me.lbaddress.TabIndex = 37
+        Me.lbaddress.Text = "BunifuCustomLabel9"
+        '
+        'lbphone
+        '
+        Me.lbphone.AutoSize = True
+        Me.lbphone.ForeColor = System.Drawing.Color.Red
+        Me.lbphone.Location = New System.Drawing.Point(689, 78)
+        Me.lbphone.Name = "lbphone"
+        Me.lbphone.Size = New System.Drawing.Size(104, 13)
+        Me.lbphone.TabIndex = 38
+        Me.lbphone.Text = "BunifuCustomLabel9"
+        '
+        'lbEmail
+        '
+        Me.lbEmail.AutoSize = True
+        Me.lbEmail.ForeColor = System.Drawing.Color.Red
+        Me.lbEmail.Location = New System.Drawing.Point(578, 169)
+        Me.lbEmail.Name = "lbEmail"
+        Me.lbEmail.Size = New System.Drawing.Size(104, 13)
+        Me.lbEmail.TabIndex = 39
+        Me.lbEmail.Text = "BunifuCustomLabel9"
+        '
         'KhachHangForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -508,4 +568,9 @@ Partial Class KhachHangForm
     Friend WithEvents btnSearch As Bunifu.Framework.UI.BunifuImageButton
     Friend WithEvents txtSearch As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents BunifuCustomLabel8 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents lbID As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents lbEmail As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents lbphone As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents lbaddress As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents lbName As Bunifu.Framework.UI.BunifuCustomLabel
 End Class

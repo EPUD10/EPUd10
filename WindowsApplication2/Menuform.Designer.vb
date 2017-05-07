@@ -25,14 +25,15 @@ Partial Class Menuform
         Me.components = New System.ComponentModel.Container()
         Dim Animation1 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Menuform))
-        Dim Animation2 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
-        Dim Animation6 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
-        Dim Animation5 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim Animation7 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
-        Dim Animation8 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
-        Dim Animation3 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim Animation4 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation2 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim Animation9 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation3 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation5 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation8 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation11 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation6 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim Animation10 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -66,14 +67,16 @@ Partial Class Menuform
         Me.tranHDB = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.tranHDN = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.tranHome = New BunifuAnimatorNS.BunifuTransition(Me.components)
+        Me.ChucVu = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.Home1 = New WindowsApplication2.Home()
+        Me.ChucVu1 = New WindowsApplication2.ChucVu()
+        Me.Taikhoan1 = New WindowsApplication2.Taikhoan()
         Me.CuaHang1 = New WindowsApplication2.CuaHang()
         Me.HoaDonBan1 = New WindowsApplication2.HoaDonBan()
         Me.HoaDonNhap1 = New WindowsApplication2.HoaDonNhap()
         Me.NhanVien1 = New WindowsApplication2.NhanVien()
         Me.KhachHangForm1 = New WindowsApplication2.KhachHangForm()
         Me.NhaCCform1 = New WindowsApplication2.NhaCCform()
-        Me.Taikhoan1 = New WindowsApplication2.Taikhoan()
         Me.Panel1.SuspendLayout()
         CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -100,14 +103,15 @@ Partial Class Menuform
         Me.Panel1.Controls.Add(Me.BunifuImageButton1)
         Me.Panel1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.tranpanel.SetDecoration(Me.Panel1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.Panel1, BunifuAnimatorNS.DecorationType.None)
         Me.tranHome.SetDecoration(Me.Panel1, BunifuAnimatorNS.DecorationType.None)
         Me.tranTaiKhoan.SetDecoration(Me.Panel1, BunifuAnimatorNS.DecorationType.None)
         Me.tranHDB.SetDecoration(Me.Panel1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.Panel1, BunifuAnimatorNS.DecorationType.None)
         Me.tranlogo.SetDecoration(Me.Panel1, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.Panel1, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhaCC.SetDecoration(Me.Panel1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.Panel1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.Panel1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.Panel1, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.Panel1, BunifuAnimatorNS.DecorationType.None)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -118,7 +122,7 @@ Partial Class Menuform
         'BunifuImageButton2
         '
         Me.BunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.tranHome.SetDecoration(Me.BunifuImageButton2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.BunifuImageButton2, BunifuAnimatorNS.DecorationType.None)
         Me.tranpanel.SetDecoration(Me.BunifuImageButton2, BunifuAnimatorNS.DecorationType.None)
         Me.tranlogo.SetDecoration(Me.BunifuImageButton2, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.BunifuImageButton2, BunifuAnimatorNS.DecorationType.None)
@@ -127,7 +131,8 @@ Partial Class Menuform
         Me.tranKhachhang.SetDecoration(Me.BunifuImageButton2, BunifuAnimatorNS.DecorationType.None)
         Me.tranHDB.SetDecoration(Me.BunifuImageButton2, BunifuAnimatorNS.DecorationType.None)
         Me.tranTaiKhoan.SetDecoration(Me.BunifuImageButton2, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.BunifuImageButton2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.BunifuImageButton2, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.BunifuImageButton2, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuImageButton2.ErrorImage = Nothing
         Me.BunifuImageButton2.Image = CType(resources.GetObject("BunifuImageButton2.Image"), System.Drawing.Image)
         Me.BunifuImageButton2.ImageActive = Nothing
@@ -141,16 +146,17 @@ Partial Class Menuform
         '
         'PictureBox1
         '
-        Me.tranKhachhang.SetDecoration(Me.PictureBox1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranTaiKhoan.SetDecoration(Me.PictureBox1, BunifuAnimatorNS.DecorationType.None)
         Me.tranHDB.SetDecoration(Me.PictureBox1, BunifuAnimatorNS.DecorationType.None)
         Me.tranHome.SetDecoration(Me.PictureBox1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.PictureBox1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.PictureBox1, BunifuAnimatorNS.DecorationType.None)
         Me.tranpanel.SetDecoration(Me.PictureBox1, BunifuAnimatorNS.DecorationType.None)
         Me.tranlogo.SetDecoration(Me.PictureBox1, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.PictureBox1, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhaCC.SetDecoration(Me.PictureBox1, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.PictureBox1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.PictureBox1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.PictureBox1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.PictureBox1, BunifuAnimatorNS.DecorationType.None)
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(15, 3)
         Me.PictureBox1.Name = "PictureBox1"
@@ -162,16 +168,17 @@ Partial Class Menuform
         'BunifuCustomLabel1
         '
         Me.BunifuCustomLabel1.AutoSize = True
+        Me.tranNhanVien.SetDecoration(Me.BunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.BunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None)
         Me.tranTaiKhoan.SetDecoration(Me.BunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None)
         Me.tranHDB.SetDecoration(Me.BunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None)
         Me.tranKhachhang.SetDecoration(Me.BunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhanVien.SetDecoration(Me.BunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHome.SetDecoration(Me.BunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.BunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None)
         Me.tranpanel.SetDecoration(Me.BunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None)
         Me.tranlogo.SetDecoration(Me.BunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.BunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.BunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.BunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.BunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.BunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Times New Roman", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel1.ForeColor = System.Drawing.Color.Silver
         Me.BunifuCustomLabel1.Location = New System.Drawing.Point(77, 15)
@@ -183,7 +190,7 @@ Partial Class Menuform
         'BunifuImageButton1
         '
         Me.BunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.tranHome.SetDecoration(Me.BunifuImageButton1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.BunifuImageButton1, BunifuAnimatorNS.DecorationType.None)
         Me.tranpanel.SetDecoration(Me.BunifuImageButton1, BunifuAnimatorNS.DecorationType.None)
         Me.tranlogo.SetDecoration(Me.BunifuImageButton1, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.BunifuImageButton1, BunifuAnimatorNS.DecorationType.None)
@@ -192,7 +199,8 @@ Partial Class Menuform
         Me.tranKhachhang.SetDecoration(Me.BunifuImageButton1, BunifuAnimatorNS.DecorationType.None)
         Me.tranHDB.SetDecoration(Me.BunifuImageButton1, BunifuAnimatorNS.DecorationType.None)
         Me.tranTaiKhoan.SetDecoration(Me.BunifuImageButton1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.BunifuImageButton1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.BunifuImageButton1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.BunifuImageButton1, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuImageButton1.ErrorImage = Nothing
         Me.BunifuImageButton1.Image = CType(resources.GetObject("BunifuImageButton1.Image"), System.Drawing.Image)
         Me.BunifuImageButton1.ImageActive = Nothing
@@ -211,14 +219,15 @@ Partial Class Menuform
         Me.pnlMenu.Controls.Add(Me.btnmenu)
         Me.pnlMenu.Controls.Add(Me.pcb1)
         Me.tranpanel.SetDecoration(Me.pnlMenu, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.pnlMenu, BunifuAnimatorNS.DecorationType.None)
         Me.tranHome.SetDecoration(Me.pnlMenu, BunifuAnimatorNS.DecorationType.None)
         Me.tranTaiKhoan.SetDecoration(Me.pnlMenu, BunifuAnimatorNS.DecorationType.None)
         Me.tranHDB.SetDecoration(Me.pnlMenu, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.pnlMenu, BunifuAnimatorNS.DecorationType.None)
         Me.tranlogo.SetDecoration(Me.pnlMenu, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.pnlMenu, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhaCC.SetDecoration(Me.pnlMenu, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.pnlMenu, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.pnlMenu, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.pnlMenu, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.pnlMenu, BunifuAnimatorNS.DecorationType.None)
         Me.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.pnlMenu.Location = New System.Drawing.Point(0, 46)
@@ -238,14 +247,15 @@ Partial Class Menuform
         Me.Panel4.Controls.Add(Me.btnNhaCC)
         Me.Panel4.Controls.Add(Me.btnChucVu)
         Me.tranpanel.SetDecoration(Me.Panel4, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.Panel4, BunifuAnimatorNS.DecorationType.None)
         Me.tranHome.SetDecoration(Me.Panel4, BunifuAnimatorNS.DecorationType.None)
         Me.tranTaiKhoan.SetDecoration(Me.Panel4, BunifuAnimatorNS.DecorationType.None)
         Me.tranHDB.SetDecoration(Me.Panel4, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.Panel4, BunifuAnimatorNS.DecorationType.None)
         Me.tranlogo.SetDecoration(Me.Panel4, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.Panel4, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhaCC.SetDecoration(Me.Panel4, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.Panel4, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.Panel4, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.Panel4, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.Panel4, BunifuAnimatorNS.DecorationType.None)
         Me.Panel4.Location = New System.Drawing.Point(0, 126)
         Me.Panel4.Name = "Panel4"
@@ -260,16 +270,17 @@ Partial Class Menuform
         Me.btnCuaHang.BorderRadius = 0
         Me.btnCuaHang.ButtonText = "Store"
         Me.btnCuaHang.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.tranHome.SetDecoration(Me.btnCuaHang, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.btnCuaHang, BunifuAnimatorNS.DecorationType.None)
         Me.tranpanel.SetDecoration(Me.btnCuaHang, BunifuAnimatorNS.DecorationType.None)
-        Me.tranlogo.SetDecoration(Me.btnCuaHang, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.btnCuaHang, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhaCC.SetDecoration(Me.btnCuaHang, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.btnCuaHang, BunifuAnimatorNS.DecorationType.None)
         Me.tranKhachhang.SetDecoration(Me.btnCuaHang, BunifuAnimatorNS.DecorationType.None)
         Me.tranHDB.SetDecoration(Me.btnCuaHang, BunifuAnimatorNS.DecorationType.None)
         Me.tranTaiKhoan.SetDecoration(Me.btnCuaHang, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.btnCuaHang, BunifuAnimatorNS.DecorationType.None)
+        Me.tranlogo.SetDecoration(Me.btnCuaHang, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.btnCuaHang, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.btnCuaHang, BunifuAnimatorNS.DecorationType.None)
         Me.btnCuaHang.DisabledColor = System.Drawing.Color.Gray
         Me.btnCuaHang.Iconcolor = System.Drawing.Color.Transparent
         Me.btnCuaHang.Iconimage = CType(resources.GetObject("btnCuaHang.Iconimage"), System.Drawing.Image)
@@ -304,16 +315,17 @@ Partial Class Menuform
         Me.btnHoaDonNhap.BorderRadius = 0
         Me.btnHoaDonNhap.ButtonText = "Invoice input"
         Me.btnHoaDonNhap.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.tranHome.SetDecoration(Me.btnHoaDonNhap, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.btnHoaDonNhap, BunifuAnimatorNS.DecorationType.None)
         Me.tranpanel.SetDecoration(Me.btnHoaDonNhap, BunifuAnimatorNS.DecorationType.None)
-        Me.tranlogo.SetDecoration(Me.btnHoaDonNhap, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.btnHoaDonNhap, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhaCC.SetDecoration(Me.btnHoaDonNhap, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.btnHoaDonNhap, BunifuAnimatorNS.DecorationType.None)
         Me.tranKhachhang.SetDecoration(Me.btnHoaDonNhap, BunifuAnimatorNS.DecorationType.None)
         Me.tranHDB.SetDecoration(Me.btnHoaDonNhap, BunifuAnimatorNS.DecorationType.None)
         Me.tranTaiKhoan.SetDecoration(Me.btnHoaDonNhap, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.btnHoaDonNhap, BunifuAnimatorNS.DecorationType.None)
+        Me.tranlogo.SetDecoration(Me.btnHoaDonNhap, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.btnHoaDonNhap, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.btnHoaDonNhap, BunifuAnimatorNS.DecorationType.None)
         Me.btnHoaDonNhap.DisabledColor = System.Drawing.Color.Gray
         Me.btnHoaDonNhap.Iconcolor = System.Drawing.Color.Transparent
         Me.btnHoaDonNhap.Iconimage = CType(resources.GetObject("btnHoaDonNhap.Iconimage"), System.Drawing.Image)
@@ -348,16 +360,17 @@ Partial Class Menuform
         Me.btnHoaDonBan.BorderRadius = 0
         Me.btnHoaDonBan.ButtonText = "Bill of sale"
         Me.btnHoaDonBan.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.tranHome.SetDecoration(Me.btnHoaDonBan, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.btnHoaDonBan, BunifuAnimatorNS.DecorationType.None)
         Me.tranpanel.SetDecoration(Me.btnHoaDonBan, BunifuAnimatorNS.DecorationType.None)
-        Me.tranlogo.SetDecoration(Me.btnHoaDonBan, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.btnHoaDonBan, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhaCC.SetDecoration(Me.btnHoaDonBan, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.btnHoaDonBan, BunifuAnimatorNS.DecorationType.None)
         Me.tranKhachhang.SetDecoration(Me.btnHoaDonBan, BunifuAnimatorNS.DecorationType.None)
         Me.tranHDB.SetDecoration(Me.btnHoaDonBan, BunifuAnimatorNS.DecorationType.None)
         Me.tranTaiKhoan.SetDecoration(Me.btnHoaDonBan, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.btnHoaDonBan, BunifuAnimatorNS.DecorationType.None)
+        Me.tranlogo.SetDecoration(Me.btnHoaDonBan, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.btnHoaDonBan, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.btnHoaDonBan, BunifuAnimatorNS.DecorationType.None)
         Me.btnHoaDonBan.DisabledColor = System.Drawing.Color.Gray
         Me.btnHoaDonBan.Iconcolor = System.Drawing.Color.Transparent
         Me.btnHoaDonBan.Iconimage = CType(resources.GetObject("btnHoaDonBan.Iconimage"), System.Drawing.Image)
@@ -392,16 +405,17 @@ Partial Class Menuform
         Me.btnTaiKhoan.BorderRadius = 0
         Me.btnTaiKhoan.ButtonText = "Account"
         Me.btnTaiKhoan.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.tranHome.SetDecoration(Me.btnTaiKhoan, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.btnTaiKhoan, BunifuAnimatorNS.DecorationType.None)
         Me.tranpanel.SetDecoration(Me.btnTaiKhoan, BunifuAnimatorNS.DecorationType.None)
-        Me.tranlogo.SetDecoration(Me.btnTaiKhoan, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.btnTaiKhoan, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhaCC.SetDecoration(Me.btnTaiKhoan, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.btnTaiKhoan, BunifuAnimatorNS.DecorationType.None)
         Me.tranKhachhang.SetDecoration(Me.btnTaiKhoan, BunifuAnimatorNS.DecorationType.None)
         Me.tranHDB.SetDecoration(Me.btnTaiKhoan, BunifuAnimatorNS.DecorationType.None)
         Me.tranTaiKhoan.SetDecoration(Me.btnTaiKhoan, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.btnTaiKhoan, BunifuAnimatorNS.DecorationType.None)
+        Me.tranlogo.SetDecoration(Me.btnTaiKhoan, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.btnTaiKhoan, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.btnTaiKhoan, BunifuAnimatorNS.DecorationType.None)
         Me.btnTaiKhoan.DisabledColor = System.Drawing.Color.Gray
         Me.btnTaiKhoan.Iconcolor = System.Drawing.Color.Transparent
         Me.btnTaiKhoan.Iconimage = CType(resources.GetObject("btnTaiKhoan.Iconimage"), System.Drawing.Image)
@@ -436,16 +450,17 @@ Partial Class Menuform
         Me.btnNhanVien.BorderRadius = 0
         Me.btnNhanVien.ButtonText = "Salesman"
         Me.btnNhanVien.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.tranHome.SetDecoration(Me.btnNhanVien, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.btnNhanVien, BunifuAnimatorNS.DecorationType.None)
         Me.tranpanel.SetDecoration(Me.btnNhanVien, BunifuAnimatorNS.DecorationType.None)
-        Me.tranlogo.SetDecoration(Me.btnNhanVien, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.btnNhanVien, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhaCC.SetDecoration(Me.btnNhanVien, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.btnNhanVien, BunifuAnimatorNS.DecorationType.None)
         Me.tranKhachhang.SetDecoration(Me.btnNhanVien, BunifuAnimatorNS.DecorationType.None)
         Me.tranHDB.SetDecoration(Me.btnNhanVien, BunifuAnimatorNS.DecorationType.None)
         Me.tranTaiKhoan.SetDecoration(Me.btnNhanVien, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.btnNhanVien, BunifuAnimatorNS.DecorationType.None)
+        Me.tranlogo.SetDecoration(Me.btnNhanVien, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.btnNhanVien, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.btnNhanVien, BunifuAnimatorNS.DecorationType.None)
         Me.btnNhanVien.DisabledColor = System.Drawing.Color.Gray
         Me.btnNhanVien.Iconcolor = System.Drawing.Color.Transparent
         Me.btnNhanVien.Iconimage = CType(resources.GetObject("btnNhanVien.Iconimage"), System.Drawing.Image)
@@ -481,16 +496,17 @@ Partial Class Menuform
         Me.btnKhach.BorderRadius = 0
         Me.btnKhach.ButtonText = "Customer"
         Me.btnKhach.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.tranHome.SetDecoration(Me.btnKhach, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.btnKhach, BunifuAnimatorNS.DecorationType.None)
         Me.tranpanel.SetDecoration(Me.btnKhach, BunifuAnimatorNS.DecorationType.None)
-        Me.tranlogo.SetDecoration(Me.btnKhach, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.btnKhach, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhaCC.SetDecoration(Me.btnKhach, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.btnKhach, BunifuAnimatorNS.DecorationType.None)
         Me.tranKhachhang.SetDecoration(Me.btnKhach, BunifuAnimatorNS.DecorationType.None)
         Me.tranHDB.SetDecoration(Me.btnKhach, BunifuAnimatorNS.DecorationType.None)
         Me.tranTaiKhoan.SetDecoration(Me.btnKhach, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.btnKhach, BunifuAnimatorNS.DecorationType.None)
+        Me.tranlogo.SetDecoration(Me.btnKhach, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.btnKhach, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.btnKhach, BunifuAnimatorNS.DecorationType.None)
         Me.btnKhach.DisabledColor = System.Drawing.Color.Gray
         Me.btnKhach.Iconcolor = System.Drawing.Color.Transparent
         Me.btnKhach.Iconimage = CType(resources.GetObject("btnKhach.Iconimage"), System.Drawing.Image)
@@ -525,16 +541,17 @@ Partial Class Menuform
         Me.btnhome.BorderRadius = 0
         Me.btnhome.ButtonText = "Home"
         Me.btnhome.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.tranHome.SetDecoration(Me.btnhome, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.btnhome, BunifuAnimatorNS.DecorationType.None)
         Me.tranpanel.SetDecoration(Me.btnhome, BunifuAnimatorNS.DecorationType.None)
-        Me.tranlogo.SetDecoration(Me.btnhome, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.btnhome, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhaCC.SetDecoration(Me.btnhome, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.btnhome, BunifuAnimatorNS.DecorationType.None)
         Me.tranKhachhang.SetDecoration(Me.btnhome, BunifuAnimatorNS.DecorationType.None)
         Me.tranHDB.SetDecoration(Me.btnhome, BunifuAnimatorNS.DecorationType.None)
         Me.tranTaiKhoan.SetDecoration(Me.btnhome, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.btnhome, BunifuAnimatorNS.DecorationType.None)
+        Me.tranlogo.SetDecoration(Me.btnhome, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.btnhome, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.btnhome, BunifuAnimatorNS.DecorationType.None)
         Me.btnhome.DisabledColor = System.Drawing.Color.Gray
         Me.btnhome.Iconcolor = System.Drawing.Color.Transparent
         Me.btnhome.Iconimage = CType(resources.GetObject("btnhome.Iconimage"), System.Drawing.Image)
@@ -569,16 +586,17 @@ Partial Class Menuform
         Me.btnNhaCC.BorderRadius = 0
         Me.btnNhaCC.ButtonText = "Supplier"
         Me.btnNhaCC.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.tranHome.SetDecoration(Me.btnNhaCC, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.btnNhaCC, BunifuAnimatorNS.DecorationType.None)
         Me.tranpanel.SetDecoration(Me.btnNhaCC, BunifuAnimatorNS.DecorationType.None)
-        Me.tranlogo.SetDecoration(Me.btnNhaCC, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.btnNhaCC, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhaCC.SetDecoration(Me.btnNhaCC, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.btnNhaCC, BunifuAnimatorNS.DecorationType.None)
         Me.tranKhachhang.SetDecoration(Me.btnNhaCC, BunifuAnimatorNS.DecorationType.None)
         Me.tranHDB.SetDecoration(Me.btnNhaCC, BunifuAnimatorNS.DecorationType.None)
         Me.tranTaiKhoan.SetDecoration(Me.btnNhaCC, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.btnNhaCC, BunifuAnimatorNS.DecorationType.None)
+        Me.tranlogo.SetDecoration(Me.btnNhaCC, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.btnNhaCC, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.btnNhaCC, BunifuAnimatorNS.DecorationType.None)
         Me.btnNhaCC.DisabledColor = System.Drawing.Color.Gray
         Me.btnNhaCC.Iconcolor = System.Drawing.Color.Transparent
         Me.btnNhaCC.Iconimage = CType(resources.GetObject("btnNhaCC.Iconimage"), System.Drawing.Image)
@@ -613,16 +631,17 @@ Partial Class Menuform
         Me.btnChucVu.BorderRadius = 0
         Me.btnChucVu.ButtonText = "Regency"
         Me.btnChucVu.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.tranHome.SetDecoration(Me.btnChucVu, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.btnChucVu, BunifuAnimatorNS.DecorationType.None)
         Me.tranpanel.SetDecoration(Me.btnChucVu, BunifuAnimatorNS.DecorationType.None)
-        Me.tranlogo.SetDecoration(Me.btnChucVu, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.btnChucVu, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhaCC.SetDecoration(Me.btnChucVu, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.btnChucVu, BunifuAnimatorNS.DecorationType.None)
         Me.tranKhachhang.SetDecoration(Me.btnChucVu, BunifuAnimatorNS.DecorationType.None)
         Me.tranHDB.SetDecoration(Me.btnChucVu, BunifuAnimatorNS.DecorationType.None)
         Me.tranTaiKhoan.SetDecoration(Me.btnChucVu, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.btnChucVu, BunifuAnimatorNS.DecorationType.None)
+        Me.tranlogo.SetDecoration(Me.btnChucVu, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.btnChucVu, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.btnChucVu, BunifuAnimatorNS.DecorationType.None)
         Me.btnChucVu.DisabledColor = System.Drawing.Color.Gray
         Me.btnChucVu.Iconcolor = System.Drawing.Color.Transparent
         Me.btnChucVu.Iconimage = CType(resources.GetObject("btnChucVu.Iconimage"), System.Drawing.Image)
@@ -653,7 +672,7 @@ Partial Class Menuform
         '
         Me.btnmenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnmenu.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.tranHome.SetDecoration(Me.btnmenu, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.btnmenu, BunifuAnimatorNS.DecorationType.None)
         Me.tranpanel.SetDecoration(Me.btnmenu, BunifuAnimatorNS.DecorationType.None)
         Me.tranlogo.SetDecoration(Me.btnmenu, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.btnmenu, BunifuAnimatorNS.DecorationType.None)
@@ -662,7 +681,8 @@ Partial Class Menuform
         Me.tranKhachhang.SetDecoration(Me.btnmenu, BunifuAnimatorNS.DecorationType.None)
         Me.tranHDB.SetDecoration(Me.btnmenu, BunifuAnimatorNS.DecorationType.None)
         Me.tranTaiKhoan.SetDecoration(Me.btnmenu, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.btnmenu, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.btnmenu, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.btnmenu, BunifuAnimatorNS.DecorationType.None)
         Me.btnmenu.ErrorImage = Nothing
         Me.btnmenu.Image = CType(resources.GetObject("btnmenu.Image"), System.Drawing.Image)
         Me.btnmenu.ImageActive = Nothing
@@ -677,16 +697,17 @@ Partial Class Menuform
         '
         'pcb1
         '
-        Me.tranKhachhang.SetDecoration(Me.pcb1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranTaiKhoan.SetDecoration(Me.pcb1, BunifuAnimatorNS.DecorationType.None)
         Me.tranHDB.SetDecoration(Me.pcb1, BunifuAnimatorNS.DecorationType.None)
         Me.tranHome.SetDecoration(Me.pcb1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.pcb1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.pcb1, BunifuAnimatorNS.DecorationType.None)
         Me.tranpanel.SetDecoration(Me.pcb1, BunifuAnimatorNS.DecorationType.None)
         Me.tranlogo.SetDecoration(Me.pcb1, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.pcb1, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhaCC.SetDecoration(Me.pcb1, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.pcb1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.pcb1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.pcb1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.pcb1, BunifuAnimatorNS.DecorationType.None)
         Me.pcb1.Image = CType(resources.GetObject("pcb1.Image"), System.Drawing.Image)
         Me.pcb1.Location = New System.Drawing.Point(38, 49)
         Me.pcb1.Name = "pcb1"
@@ -721,14 +742,15 @@ Partial Class Menuform
         '
         Me.Panel2.Controls.Add(Me.Panel3)
         Me.tranpanel.SetDecoration(Me.Panel2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.Panel2, BunifuAnimatorNS.DecorationType.None)
         Me.tranHome.SetDecoration(Me.Panel2, BunifuAnimatorNS.DecorationType.None)
         Me.tranTaiKhoan.SetDecoration(Me.Panel2, BunifuAnimatorNS.DecorationType.None)
         Me.tranHDB.SetDecoration(Me.Panel2, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.Panel2, BunifuAnimatorNS.DecorationType.None)
         Me.tranlogo.SetDecoration(Me.Panel2, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.Panel2, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhaCC.SetDecoration(Me.Panel2, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.Panel2, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.Panel2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.Panel2, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.Panel2, BunifuAnimatorNS.DecorationType.None)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(237, 46)
@@ -738,8 +760,9 @@ Partial Class Menuform
         '
         'Panel3
         '
-        Me.Panel3.Controls.Add(Me.Taikhoan1)
         Me.Panel3.Controls.Add(Me.Home1)
+        Me.Panel3.Controls.Add(Me.ChucVu1)
+        Me.Panel3.Controls.Add(Me.Taikhoan1)
         Me.Panel3.Controls.Add(Me.CuaHang1)
         Me.Panel3.Controls.Add(Me.HoaDonBan1)
         Me.Panel3.Controls.Add(Me.HoaDonNhap1)
@@ -747,14 +770,15 @@ Partial Class Menuform
         Me.Panel3.Controls.Add(Me.KhachHangForm1)
         Me.Panel3.Controls.Add(Me.NhaCCform1)
         Me.tranpanel.SetDecoration(Me.Panel3, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.Panel3, BunifuAnimatorNS.DecorationType.None)
         Me.tranHome.SetDecoration(Me.Panel3, BunifuAnimatorNS.DecorationType.None)
         Me.tranTaiKhoan.SetDecoration(Me.Panel3, BunifuAnimatorNS.DecorationType.None)
         Me.tranHDB.SetDecoration(Me.Panel3, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.Panel3, BunifuAnimatorNS.DecorationType.None)
         Me.tranlogo.SetDecoration(Me.Panel3, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.Panel3, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhaCC.SetDecoration(Me.Panel3, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.Panel3, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.Panel3, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.Panel3, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.Panel3, BunifuAnimatorNS.DecorationType.None)
         Me.Panel3.Location = New System.Drawing.Point(46, 26)
         Me.Panel3.Name = "Panel3"
@@ -765,73 +789,9 @@ Partial Class Menuform
         '
         Me.tranpanel.AnimationType = BunifuAnimatorNS.AnimationType.Leaf
         Me.tranpanel.Cursor = Nothing
-        Animation2.AnimateOnlyDifferences = True
-        Animation2.BlindCoeff = CType(resources.GetObject("Animation2.BlindCoeff"), System.Drawing.PointF)
-        Animation2.LeafCoeff = 1.0!
-        Animation2.MaxTime = 1.0!
-        Animation2.MinTime = 0!
-        Animation2.MosaicCoeff = CType(resources.GetObject("Animation2.MosaicCoeff"), System.Drawing.PointF)
-        Animation2.MosaicShift = CType(resources.GetObject("Animation2.MosaicShift"), System.Drawing.PointF)
-        Animation2.MosaicSize = 0
-        Animation2.Padding = New System.Windows.Forms.Padding(0)
-        Animation2.RotateCoeff = 0!
-        Animation2.RotateLimit = 0!
-        Animation2.ScaleCoeff = CType(resources.GetObject("Animation2.ScaleCoeff"), System.Drawing.PointF)
-        Animation2.SlideCoeff = CType(resources.GetObject("Animation2.SlideCoeff"), System.Drawing.PointF)
-        Animation2.TimeCoeff = 0!
-        Animation2.TransparencyCoeff = 0!
-        Me.tranpanel.DefaultAnimation = Animation2
-        Me.tranpanel.TimeStep = 0.01!
-        '
-        'tranNhaCC
-        '
-        Me.tranNhaCC.AnimationType = BunifuAnimatorNS.AnimationType.Leaf
-        Me.tranNhaCC.Cursor = Nothing
-        Animation6.AnimateOnlyDifferences = True
-        Animation6.BlindCoeff = CType(resources.GetObject("Animation6.BlindCoeff"), System.Drawing.PointF)
-        Animation6.LeafCoeff = 1.0!
-        Animation6.MaxTime = 1.0!
-        Animation6.MinTime = 0!
-        Animation6.MosaicCoeff = CType(resources.GetObject("Animation6.MosaicCoeff"), System.Drawing.PointF)
-        Animation6.MosaicShift = CType(resources.GetObject("Animation6.MosaicShift"), System.Drawing.PointF)
-        Animation6.MosaicSize = 0
-        Animation6.Padding = New System.Windows.Forms.Padding(0)
-        Animation6.RotateCoeff = 0!
-        Animation6.RotateLimit = 0!
-        Animation6.ScaleCoeff = CType(resources.GetObject("Animation6.ScaleCoeff"), System.Drawing.PointF)
-        Animation6.SlideCoeff = CType(resources.GetObject("Animation6.SlideCoeff"), System.Drawing.PointF)
-        Animation6.TimeCoeff = 0!
-        Animation6.TransparencyCoeff = 0!
-        Me.tranNhaCC.DefaultAnimation = Animation6
-        '
-        'tranChucVu
-        '
-        Me.tranChucVu.AnimationType = BunifuAnimatorNS.AnimationType.Custom
-        Me.tranChucVu.Cursor = Nothing
-        Animation5.AnimateOnlyDifferences = True
-        Animation5.BlindCoeff = CType(resources.GetObject("Animation5.BlindCoeff"), System.Drawing.PointF)
-        Animation5.LeafCoeff = 0!
-        Animation5.MaxTime = 1.0!
-        Animation5.MinTime = 0!
-        Animation5.MosaicCoeff = CType(resources.GetObject("Animation5.MosaicCoeff"), System.Drawing.PointF)
-        Animation5.MosaicShift = CType(resources.GetObject("Animation5.MosaicShift"), System.Drawing.PointF)
-        Animation5.MosaicSize = 0
-        Animation5.Padding = New System.Windows.Forms.Padding(0)
-        Animation5.RotateCoeff = 0!
-        Animation5.RotateLimit = 0!
-        Animation5.ScaleCoeff = CType(resources.GetObject("Animation5.ScaleCoeff"), System.Drawing.PointF)
-        Animation5.SlideCoeff = CType(resources.GetObject("Animation5.SlideCoeff"), System.Drawing.PointF)
-        Animation5.TimeCoeff = 0!
-        Animation5.TransparencyCoeff = 0!
-        Me.tranChucVu.DefaultAnimation = Animation5
-        '
-        'tranKhachhang
-        '
-        Me.tranKhachhang.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide
-        Me.tranKhachhang.Cursor = Nothing
         Animation7.AnimateOnlyDifferences = True
         Animation7.BlindCoeff = CType(resources.GetObject("Animation7.BlindCoeff"), System.Drawing.PointF)
-        Animation7.LeafCoeff = 0!
+        Animation7.LeafCoeff = 1.0!
         Animation7.MaxTime = 1.0!
         Animation7.MinTime = 0!
         Animation7.MosaicCoeff = CType(resources.GetObject("Animation7.MosaicCoeff"), System.Drawing.PointF)
@@ -844,57 +804,16 @@ Partial Class Menuform
         Animation7.SlideCoeff = CType(resources.GetObject("Animation7.SlideCoeff"), System.Drawing.PointF)
         Animation7.TimeCoeff = 0!
         Animation7.TransparencyCoeff = 0!
-        Me.tranKhachhang.DefaultAnimation = Animation7
+        Me.tranpanel.DefaultAnimation = Animation7
+        Me.tranpanel.TimeStep = 0.01!
         '
-        'tranNhanVien
+        'tranNhaCC
         '
-        Me.tranNhanVien.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide
-        Me.tranNhanVien.Cursor = Nothing
-        Animation8.AnimateOnlyDifferences = True
-        Animation8.BlindCoeff = CType(resources.GetObject("Animation8.BlindCoeff"), System.Drawing.PointF)
-        Animation8.LeafCoeff = 0!
-        Animation8.MaxTime = 1.0!
-        Animation8.MinTime = 0!
-        Animation8.MosaicCoeff = CType(resources.GetObject("Animation8.MosaicCoeff"), System.Drawing.PointF)
-        Animation8.MosaicShift = CType(resources.GetObject("Animation8.MosaicShift"), System.Drawing.PointF)
-        Animation8.MosaicSize = 0
-        Animation8.Padding = New System.Windows.Forms.Padding(0)
-        Animation8.RotateCoeff = 0!
-        Animation8.RotateLimit = 0!
-        Animation8.ScaleCoeff = CType(resources.GetObject("Animation8.ScaleCoeff"), System.Drawing.PointF)
-        Animation8.SlideCoeff = CType(resources.GetObject("Animation8.SlideCoeff"), System.Drawing.PointF)
-        Animation8.TimeCoeff = 0!
-        Animation8.TransparencyCoeff = 0!
-        Me.tranNhanVien.DefaultAnimation = Animation8
-        '
-        'tranTaiKhoan
-        '
-        Me.tranTaiKhoan.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide
-        Me.tranTaiKhoan.Cursor = Nothing
-        Animation3.AnimateOnlyDifferences = True
-        Animation3.BlindCoeff = CType(resources.GetObject("Animation3.BlindCoeff"), System.Drawing.PointF)
-        Animation3.LeafCoeff = 0!
-        Animation3.MaxTime = 1.0!
-        Animation3.MinTime = 0!
-        Animation3.MosaicCoeff = CType(resources.GetObject("Animation3.MosaicCoeff"), System.Drawing.PointF)
-        Animation3.MosaicShift = CType(resources.GetObject("Animation3.MosaicShift"), System.Drawing.PointF)
-        Animation3.MosaicSize = 0
-        Animation3.Padding = New System.Windows.Forms.Padding(0)
-        Animation3.RotateCoeff = 0!
-        Animation3.RotateLimit = 0!
-        Animation3.ScaleCoeff = CType(resources.GetObject("Animation3.ScaleCoeff"), System.Drawing.PointF)
-        Animation3.SlideCoeff = CType(resources.GetObject("Animation3.SlideCoeff"), System.Drawing.PointF)
-        Animation3.TimeCoeff = 0!
-        Animation3.TransparencyCoeff = 0!
-        Me.tranTaiKhoan.DefaultAnimation = Animation3
-        '
-        'tranHDB
-        '
-        Me.tranHDB.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide
-        Me.tranHDB.Cursor = Nothing
+        Me.tranNhaCC.AnimationType = BunifuAnimatorNS.AnimationType.Leaf
+        Me.tranNhaCC.Cursor = Nothing
         Animation4.AnimateOnlyDifferences = True
         Animation4.BlindCoeff = CType(resources.GetObject("Animation4.BlindCoeff"), System.Drawing.PointF)
-        Animation4.LeafCoeff = 0!
+        Animation4.LeafCoeff = 1.0!
         Animation4.MaxTime = 1.0!
         Animation4.MinTime = 0!
         Animation4.MosaicCoeff = CType(resources.GetObject("Animation4.MosaicCoeff"), System.Drawing.PointF)
@@ -907,12 +826,33 @@ Partial Class Menuform
         Animation4.SlideCoeff = CType(resources.GetObject("Animation4.SlideCoeff"), System.Drawing.PointF)
         Animation4.TimeCoeff = 0!
         Animation4.TransparencyCoeff = 0!
-        Me.tranHDB.DefaultAnimation = Animation4
+        Me.tranNhaCC.DefaultAnimation = Animation4
         '
-        'tranHDN
+        'tranChucVu
         '
-        Me.tranHDN.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide
-        Me.tranHDN.Cursor = Nothing
+        Me.tranChucVu.AnimationType = BunifuAnimatorNS.AnimationType.Custom
+        Me.tranChucVu.Cursor = Nothing
+        Animation2.AnimateOnlyDifferences = True
+        Animation2.BlindCoeff = CType(resources.GetObject("Animation2.BlindCoeff"), System.Drawing.PointF)
+        Animation2.LeafCoeff = 0!
+        Animation2.MaxTime = 1.0!
+        Animation2.MinTime = 0!
+        Animation2.MosaicCoeff = CType(resources.GetObject("Animation2.MosaicCoeff"), System.Drawing.PointF)
+        Animation2.MosaicShift = CType(resources.GetObject("Animation2.MosaicShift"), System.Drawing.PointF)
+        Animation2.MosaicSize = 0
+        Animation2.Padding = New System.Windows.Forms.Padding(0)
+        Animation2.RotateCoeff = 0!
+        Animation2.RotateLimit = 0!
+        Animation2.ScaleCoeff = CType(resources.GetObject("Animation2.ScaleCoeff"), System.Drawing.PointF)
+        Animation2.SlideCoeff = CType(resources.GetObject("Animation2.SlideCoeff"), System.Drawing.PointF)
+        Animation2.TimeCoeff = 0!
+        Animation2.TransparencyCoeff = 0!
+        Me.tranChucVu.DefaultAnimation = Animation2
+        '
+        'tranKhachhang
+        '
+        Me.tranKhachhang.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide
+        Me.tranKhachhang.Cursor = Nothing
         Animation9.AnimateOnlyDifferences = True
         Animation9.BlindCoeff = CType(resources.GetObject("Animation9.BlindCoeff"), System.Drawing.PointF)
         Animation9.LeafCoeff = 0!
@@ -928,12 +868,117 @@ Partial Class Menuform
         Animation9.SlideCoeff = CType(resources.GetObject("Animation9.SlideCoeff"), System.Drawing.PointF)
         Animation9.TimeCoeff = 0!
         Animation9.TransparencyCoeff = 0!
-        Me.tranHDN.DefaultAnimation = Animation9
+        Me.tranKhachhang.DefaultAnimation = Animation9
+        '
+        'tranNhanVien
+        '
+        Me.tranNhanVien.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide
+        Me.tranNhanVien.Cursor = Nothing
+        Animation3.AnimateOnlyDifferences = True
+        Animation3.BlindCoeff = CType(resources.GetObject("Animation3.BlindCoeff"), System.Drawing.PointF)
+        Animation3.LeafCoeff = 0!
+        Animation3.MaxTime = 1.0!
+        Animation3.MinTime = 0!
+        Animation3.MosaicCoeff = CType(resources.GetObject("Animation3.MosaicCoeff"), System.Drawing.PointF)
+        Animation3.MosaicShift = CType(resources.GetObject("Animation3.MosaicShift"), System.Drawing.PointF)
+        Animation3.MosaicSize = 0
+        Animation3.Padding = New System.Windows.Forms.Padding(0)
+        Animation3.RotateCoeff = 0!
+        Animation3.RotateLimit = 0!
+        Animation3.ScaleCoeff = CType(resources.GetObject("Animation3.ScaleCoeff"), System.Drawing.PointF)
+        Animation3.SlideCoeff = CType(resources.GetObject("Animation3.SlideCoeff"), System.Drawing.PointF)
+        Animation3.TimeCoeff = 0!
+        Animation3.TransparencyCoeff = 0!
+        Me.tranNhanVien.DefaultAnimation = Animation3
+        '
+        'tranTaiKhoan
+        '
+        Me.tranTaiKhoan.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide
+        Me.tranTaiKhoan.Cursor = Nothing
+        Animation5.AnimateOnlyDifferences = True
+        Animation5.BlindCoeff = CType(resources.GetObject("Animation5.BlindCoeff"), System.Drawing.PointF)
+        Animation5.LeafCoeff = 0!
+        Animation5.MaxTime = 1.0!
+        Animation5.MinTime = 0!
+        Animation5.MosaicCoeff = CType(resources.GetObject("Animation5.MosaicCoeff"), System.Drawing.PointF)
+        Animation5.MosaicShift = CType(resources.GetObject("Animation5.MosaicShift"), System.Drawing.PointF)
+        Animation5.MosaicSize = 0
+        Animation5.Padding = New System.Windows.Forms.Padding(0)
+        Animation5.RotateCoeff = 0!
+        Animation5.RotateLimit = 0!
+        Animation5.ScaleCoeff = CType(resources.GetObject("Animation5.ScaleCoeff"), System.Drawing.PointF)
+        Animation5.SlideCoeff = CType(resources.GetObject("Animation5.SlideCoeff"), System.Drawing.PointF)
+        Animation5.TimeCoeff = 0!
+        Animation5.TransparencyCoeff = 0!
+        Me.tranTaiKhoan.DefaultAnimation = Animation5
+        '
+        'tranHDB
+        '
+        Me.tranHDB.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide
+        Me.tranHDB.Cursor = Nothing
+        Animation8.AnimateOnlyDifferences = True
+        Animation8.BlindCoeff = CType(resources.GetObject("Animation8.BlindCoeff"), System.Drawing.PointF)
+        Animation8.LeafCoeff = 0!
+        Animation8.MaxTime = 1.0!
+        Animation8.MinTime = 0!
+        Animation8.MosaicCoeff = CType(resources.GetObject("Animation8.MosaicCoeff"), System.Drawing.PointF)
+        Animation8.MosaicShift = CType(resources.GetObject("Animation8.MosaicShift"), System.Drawing.PointF)
+        Animation8.MosaicSize = 0
+        Animation8.Padding = New System.Windows.Forms.Padding(0)
+        Animation8.RotateCoeff = 0!
+        Animation8.RotateLimit = 0!
+        Animation8.ScaleCoeff = CType(resources.GetObject("Animation8.ScaleCoeff"), System.Drawing.PointF)
+        Animation8.SlideCoeff = CType(resources.GetObject("Animation8.SlideCoeff"), System.Drawing.PointF)
+        Animation8.TimeCoeff = 0!
+        Animation8.TransparencyCoeff = 0!
+        Me.tranHDB.DefaultAnimation = Animation8
+        '
+        'tranHDN
+        '
+        Me.tranHDN.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide
+        Me.tranHDN.Cursor = Nothing
+        Animation11.AnimateOnlyDifferences = True
+        Animation11.BlindCoeff = CType(resources.GetObject("Animation11.BlindCoeff"), System.Drawing.PointF)
+        Animation11.LeafCoeff = 0!
+        Animation11.MaxTime = 1.0!
+        Animation11.MinTime = 0!
+        Animation11.MosaicCoeff = CType(resources.GetObject("Animation11.MosaicCoeff"), System.Drawing.PointF)
+        Animation11.MosaicShift = CType(resources.GetObject("Animation11.MosaicShift"), System.Drawing.PointF)
+        Animation11.MosaicSize = 0
+        Animation11.Padding = New System.Windows.Forms.Padding(0)
+        Animation11.RotateCoeff = 0!
+        Animation11.RotateLimit = 0!
+        Animation11.ScaleCoeff = CType(resources.GetObject("Animation11.ScaleCoeff"), System.Drawing.PointF)
+        Animation11.SlideCoeff = CType(resources.GetObject("Animation11.SlideCoeff"), System.Drawing.PointF)
+        Animation11.TimeCoeff = 0!
+        Animation11.TransparencyCoeff = 0!
+        Me.tranHDN.DefaultAnimation = Animation11
         '
         'tranHome
         '
         Me.tranHome.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide
         Me.tranHome.Cursor = Nothing
+        Animation6.AnimateOnlyDifferences = True
+        Animation6.BlindCoeff = CType(resources.GetObject("Animation6.BlindCoeff"), System.Drawing.PointF)
+        Animation6.LeafCoeff = 0!
+        Animation6.MaxTime = 1.0!
+        Animation6.MinTime = 0!
+        Animation6.MosaicCoeff = CType(resources.GetObject("Animation6.MosaicCoeff"), System.Drawing.PointF)
+        Animation6.MosaicShift = CType(resources.GetObject("Animation6.MosaicShift"), System.Drawing.PointF)
+        Animation6.MosaicSize = 0
+        Animation6.Padding = New System.Windows.Forms.Padding(0)
+        Animation6.RotateCoeff = 0!
+        Animation6.RotateLimit = 0!
+        Animation6.ScaleCoeff = CType(resources.GetObject("Animation6.ScaleCoeff"), System.Drawing.PointF)
+        Animation6.SlideCoeff = CType(resources.GetObject("Animation6.SlideCoeff"), System.Drawing.PointF)
+        Animation6.TimeCoeff = 0!
+        Animation6.TransparencyCoeff = 0!
+        Me.tranHome.DefaultAnimation = Animation6
+        '
+        'ChucVu
+        '
+        Me.ChucVu.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide
+        Me.ChucVu.Cursor = Nothing
         Animation10.AnimateOnlyDifferences = True
         Animation10.BlindCoeff = CType(resources.GetObject("Animation10.BlindCoeff"), System.Drawing.PointF)
         Animation10.LeafCoeff = 0!
@@ -949,39 +994,80 @@ Partial Class Menuform
         Animation10.SlideCoeff = CType(resources.GetObject("Animation10.SlideCoeff"), System.Drawing.PointF)
         Animation10.TimeCoeff = 0!
         Animation10.TransparencyCoeff = 0!
-        Me.tranHome.DefaultAnimation = Animation10
+        Me.ChucVu.DefaultAnimation = Animation10
         '
         'Home1
         '
         Me.tranlogo.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranTaiKhoan.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDB.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
         Me.tranHome.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDB.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
         Me.Home1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Home1.Location = New System.Drawing.Point(0, 0)
         Me.Home1.Name = "Home1"
         Me.Home1.Size = New System.Drawing.Size(887, 676)
-        Me.Home1.TabIndex = 8
+        Me.Home1.TabIndex = 11
+        '
+        'ChucVu1
+        '
+        Me.ChucVu1.BackColor = System.Drawing.Color.FromArgb(CType(CType(190, Byte), Integer), CType(CType(177, Byte), Integer), CType(CType(156, Byte), Integer))
+        Me.tranlogo.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranChucVu.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhanVien.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDB.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ChucVu1.Location = New System.Drawing.Point(0, 0)
+        Me.ChucVu1.Name = "ChucVu1"
+        Me.ChucVu1.Size = New System.Drawing.Size(887, 676)
+        Me.ChucVu1.TabIndex = 10
+        '
+        'Taikhoan1
+        '
+        Me.tranlogo.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranChucVu.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhanVien.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDB.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
+        Me.Taikhoan1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Taikhoan1.Location = New System.Drawing.Point(0, 0)
+        Me.Taikhoan1.Name = "Taikhoan1"
+        Me.Taikhoan1.Size = New System.Drawing.Size(887, 676)
+        Me.Taikhoan1.TabIndex = 9
         '
         'CuaHang1
         '
         Me.CuaHang1.BackColor = System.Drawing.Color.FromArgb(CType(CType(190, Byte), Integer), CType(CType(177, Byte), Integer), CType(CType(156, Byte), Integer))
         Me.tranlogo.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranTaiKhoan.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDB.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
         Me.tranHome.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDB.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
         Me.CuaHang1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CuaHang1.Location = New System.Drawing.Point(0, 0)
         Me.CuaHang1.Name = "CuaHang1"
@@ -991,15 +1077,16 @@ Partial Class Menuform
         'HoaDonBan1
         '
         Me.tranlogo.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranTaiKhoan.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDB.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
         Me.tranHome.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDB.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
         Me.HoaDonBan1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.HoaDonBan1.Location = New System.Drawing.Point(0, 0)
         Me.HoaDonBan1.Name = "HoaDonBan1"
@@ -1009,15 +1096,16 @@ Partial Class Menuform
         'HoaDonNhap1
         '
         Me.tranlogo.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranTaiKhoan.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDB.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
         Me.tranHome.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDB.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
         Me.HoaDonNhap1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.HoaDonNhap1.Location = New System.Drawing.Point(0, 0)
         Me.HoaDonNhap1.Name = "HoaDonNhap1"
@@ -1028,15 +1116,16 @@ Partial Class Menuform
         '
         Me.NhanVien1.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.tranlogo.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranTaiKhoan.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDB.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
         Me.tranHome.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDB.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
         Me.NhanVien1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.NhanVien1.Location = New System.Drawing.Point(0, 0)
         Me.NhanVien1.Name = "NhanVien1"
@@ -1048,15 +1137,16 @@ Partial Class Menuform
         '
         Me.KhachHangForm1.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer))
         Me.tranlogo.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranTaiKhoan.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDB.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
         Me.tranHome.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDB.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
         Me.KhachHangForm1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.KhachHangForm1.Location = New System.Drawing.Point(0, 0)
         Me.KhachHangForm1.Name = "KhachHangForm1"
@@ -1067,39 +1157,22 @@ Partial Class Menuform
         'NhaCCform1
         '
         Me.tranlogo.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranTaiKhoan.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDB.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
         Me.tranHome.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDB.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
         Me.NhaCCform1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.NhaCCform1.Location = New System.Drawing.Point(0, 0)
         Me.NhaCCform1.Name = "NhaCCform1"
         Me.NhaCCform1.Size = New System.Drawing.Size(887, 676)
         Me.NhaCCform1.TabIndex = 1
         Me.NhaCCform1.Visible = False
-        '
-        'Taikhoan1
-        '
-        Me.tranlogo.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranTaiKhoan.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDB.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranChucVu.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhanVien.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHome.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
-        Me.Taikhoan1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Taikhoan1.Location = New System.Drawing.Point(0, 0)
-        Me.Taikhoan1.Name = "Taikhoan1"
-        Me.Taikhoan1.Size = New System.Drawing.Size(887, 676)
-        Me.Taikhoan1.TabIndex = 9
         '
         'Menuform
         '
@@ -1110,16 +1183,17 @@ Partial Class Menuform
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.pnlMenu)
         Me.Controls.Add(Me.Panel1)
-        Me.tranHDB.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhanVien.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
         Me.tranTaiKhoan.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhanVien.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhaCC.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHome.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
         Me.tranlogo.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDB.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Menuform"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -1177,6 +1251,8 @@ Partial Class Menuform
     Friend WithEvents tranHome As BunifuAnimatorNS.BunifuTransition
     Friend WithEvents CuaHang1 As CuaHang
     Friend WithEvents btnCuaHang As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents Home1 As Home
     Friend WithEvents Taikhoan1 As Taikhoan
+    Friend WithEvents ChucVu1 As ChucVu
+    Friend WithEvents ChucVu As BunifuAnimatorNS.BunifuTransition
+    Friend WithEvents Home1 As Home
 End Class

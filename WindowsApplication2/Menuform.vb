@@ -55,7 +55,9 @@ Public Class Menuform
     End Sub
 
     Private Sub btnChucVu_Click(sender As Object, e As EventArgs) Handles btnChucVu.Click
-
+        ChucVu1.Visible = False
+        ChucVu1.BringToFront()
+        tranChucVu.ShowSync(ChucVu1)
     End Sub
 
     Private Sub btnNhanVien_Click(sender As Object, e As EventArgs) Handles btnNhanVien.Click
@@ -65,7 +67,9 @@ Public Class Menuform
     End Sub
 
     Private Sub btnTaiKhoan_Click(sender As Object, e As EventArgs) Handles btnTaiKhoan.Click
-
+        Taikhoan1.Visible = False
+        Taikhoan1.BringToFront()
+        tranTaiKhoan.ShowSync(Taikhoan1)
     End Sub
 
     Private Sub btnHoaDonBan_Click(sender As Object, e As EventArgs) Handles btnHoaDonBan.Click
@@ -81,15 +85,19 @@ Public Class Menuform
     End Sub
 
     Private Sub btnhome_Click(sender As Object, e As EventArgs) Handles btnhome.Click
-        'Home1.Visible = False
-        'Home1.BringToFront()
-        'tranHome.ShowSync(Home1)
+        Home1.Visible = False
+        Home1.BringToFront()
+        tranHome.ShowSync(Home1)
     End Sub
 
     Private Sub btnCuaHang_Click(sender As Object, e As EventArgs) Handles btnCuaHang.Click
         CuaHang1.Visible = False
         CuaHang1.BringToFront()
         CuaHang1.Show()
+    End Sub
+
+    Private Sub BunifuImageButton2_Click(sender As Object, e As EventArgs) Handles BunifuImageButton2.Click
+        Me.WindowState = FormWindowState.Minimized
     End Sub
 
     Private Sub Panel1_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel1.MouseMove

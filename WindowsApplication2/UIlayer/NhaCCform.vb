@@ -23,6 +23,13 @@ Public Class NhaCCform
         txtEmail.Text = ""
         txtMaNhaCC.Focus()
     End Sub
+    Private Sub nameDGV()
+        dgvNhaCC.Columns("ID_nhaCC").HeaderText = "ID supplier"
+        dgvNhaCC.Columns("Ten_nhaCC").HeaderText = "Name supplier"
+        dgvNhaCC.Columns("DT_nhaCC").HeaderText = "Phone number"
+        dgvNhaCC.Columns("DC_nhaCC").HeaderText = "Address"
+        dgvNhaCC.Columns("Email_nhaCC").HeaderText = "Email"
+    End Sub
     Private Sub KTEmty()
         If (String.IsNullOrEmpty(txtDiaChi.Text)) Then
             lbAdd.Text = "Address is not NULL"
@@ -45,6 +52,7 @@ Public Class NhaCCform
         Clear()
         ClearLb()
         showData()
+        nameDGV()
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
@@ -97,5 +105,25 @@ Public Class NhaCCform
             Clear()
             MessageBox.Show("Add success !")
         End If
+    End Sub
+
+    Private Sub txtMaNhaCC_Click(sender As Object, e As EventArgs) Handles txtMaNhaCC.Click
+        ClearLb()
+    End Sub
+
+    Private Sub txtDiaChi_Click(sender As Object, e As EventArgs) Handles txtDiaChi.Click
+        ClearLb()
+    End Sub
+
+    Private Sub txtDienThoai_Click(sender As Object, e As EventArgs) Handles txtDienThoai.Click
+        ClearLb()
+    End Sub
+
+    Private Sub txtEmail_Click(sender As Object, e As EventArgs) Handles txtEmail.Click
+        ClearLb()
+    End Sub
+
+    Private Sub txtTenNhaCC_Click(sender As Object, e As EventArgs) Handles txtTenNhaCC.Click
+        ClearLb()
     End Sub
 End Class

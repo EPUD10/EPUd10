@@ -91,6 +91,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UIlayer\ChucVu.Designer.vb">
+      <DependentUpon>ChucVu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIlayer\ChucVu.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="UIlayer\HoaDonBan.Designer.vb">
       <DependentUpon>HoaDonBan.vb</DependentUpon>
     </Compile>
@@ -168,6 +174,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="UIlayer\ChucVu.resx">
+      <DependentUpon>ChucVu.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UIlayer\HoaDonBan.resx">
       <DependentUpon>HoaDonBan.vb</DependentUpon>
     </EmbeddedResource>
