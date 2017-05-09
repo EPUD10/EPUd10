@@ -68,7 +68,7 @@ Partial Class Menuform
         Me.tranHDN = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.tranHome = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.ChucVu = New BunifuAnimatorNS.BunifuTransition(Me.components)
-        Me.Home1 = New WindowsApplication2.Home()
+        Me.HoaDonBan2 = New WindowsApplication2.HoaDonBan()
         Me.ChucVu1 = New WindowsApplication2.ChucVu()
         Me.Taikhoan1 = New WindowsApplication2.Taikhoan()
         Me.CuaHang1 = New WindowsApplication2.CuaHang()
@@ -77,6 +77,8 @@ Partial Class Menuform
         Me.NhanVien1 = New WindowsApplication2.NhanVien()
         Me.KhachHangForm1 = New WindowsApplication2.KhachHangForm()
         Me.NhaCCform1 = New WindowsApplication2.NhaCCform()
+        Me.HoaDonNhap2 = New WindowsApplication2.HoaDonNhap()
+        Me.Home1 = New WindowsApplication2.Home()
         Me.Panel1.SuspendLayout()
         CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -761,6 +763,8 @@ Partial Class Menuform
         'Panel3
         '
         Me.Panel3.Controls.Add(Me.Home1)
+        Me.Panel3.Controls.Add(Me.HoaDonNhap2)
+        Me.Panel3.Controls.Add(Me.HoaDonBan2)
         Me.Panel3.Controls.Add(Me.ChucVu1)
         Me.Panel3.Controls.Add(Me.Taikhoan1)
         Me.Panel3.Controls.Add(Me.CuaHang1)
@@ -996,24 +1000,25 @@ Partial Class Menuform
         Animation10.TransparencyCoeff = 0!
         Me.ChucVu.DefaultAnimation = Animation10
         '
-        'Home1
+        'HoaDonBan2
         '
-        Me.tranlogo.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranChucVu.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhanVien.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranTaiKhoan.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHome.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDB.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.ChucVu.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.Home1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Home1.Location = New System.Drawing.Point(0, 0)
-        Me.Home1.Name = "Home1"
-        Me.Home1.Size = New System.Drawing.Size(887, 676)
-        Me.Home1.TabIndex = 11
+        Me.HoaDonBan2.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.tranlogo.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranChucVu.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhanVien.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDB.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
+        Me.HoaDonBan2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.HoaDonBan2.Location = New System.Drawing.Point(0, 0)
+        Me.HoaDonBan2.Name = "HoaDonBan2"
+        Me.HoaDonBan2.Size = New System.Drawing.Size(887, 676)
+        Me.HoaDonBan2.TabIndex = 11
         '
         'ChucVu1
         '
@@ -1037,6 +1042,7 @@ Partial Class Menuform
         '
         'Taikhoan1
         '
+        Me.Taikhoan1.BackColor = System.Drawing.Color.Silver
         Me.tranlogo.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
@@ -1076,6 +1082,7 @@ Partial Class Menuform
         '
         'HoaDonBan1
         '
+        Me.HoaDonBan1.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.tranlogo.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
@@ -1095,6 +1102,7 @@ Partial Class Menuform
         '
         'HoaDonNhap1
         '
+        Me.HoaDonNhap1.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.tranlogo.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
         Me.tranChucVu.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
         Me.tranNhanVien.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
@@ -1173,6 +1181,45 @@ Partial Class Menuform
         Me.NhaCCform1.Size = New System.Drawing.Size(887, 676)
         Me.NhaCCform1.TabIndex = 1
         Me.NhaCCform1.Visible = False
+        '
+        'HoaDonNhap2
+        '
+        Me.HoaDonNhap2.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.tranlogo.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranChucVu.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhanVien.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDB.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
+        Me.HoaDonNhap2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.HoaDonNhap2.Location = New System.Drawing.Point(0, 0)
+        Me.HoaDonNhap2.Name = "HoaDonNhap2"
+        Me.HoaDonNhap2.Size = New System.Drawing.Size(887, 676)
+        Me.HoaDonNhap2.TabIndex = 12
+        '
+        'Home1
+        '
+        Me.tranlogo.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranChucVu.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhanVien.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDB.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.Home1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Home1.Location = New System.Drawing.Point(0, 0)
+        Me.Home1.Name = "Home1"
+        Me.Home1.Size = New System.Drawing.Size(887, 676)
+        Me.Home1.TabIndex = 13
         '
         'Menuform
         '
@@ -1254,5 +1301,7 @@ Partial Class Menuform
     Friend WithEvents Taikhoan1 As Taikhoan
     Friend WithEvents ChucVu1 As ChucVu
     Friend WithEvents ChucVu As BunifuAnimatorNS.BunifuTransition
+    Friend WithEvents HoaDonBan2 As HoaDonBan
     Friend WithEvents Home1 As Home
+    Friend WithEvents HoaDonNhap2 As HoaDonNhap
 End Class
