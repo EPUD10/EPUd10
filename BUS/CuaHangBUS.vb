@@ -6,6 +6,9 @@ Public Class CuaHangBUS
     Public Function LoadData() As DataTable
         Return cls.LoadData()
     End Function
+    Public Function checkID(ByVal CH As CuaHangEntyti) As DataTable
+        Return cls.checkID(CH)
+    End Function
     Public Function Add(ByVal CH As CuaHangEntyti) As Integer
         Return cls.Add(CH)
     End Function

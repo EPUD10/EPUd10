@@ -56,19 +56,27 @@ Public Class NhaCCform
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-        If String.IsNullOrEmpty(txtDiaChi.Text) OrElse String.IsNullOrEmpty(txtDienThoai.Text) OrElse String.IsNullOrEmpty(txtEmail.Text) OrElse String.IsNullOrEmpty(txtMaNhaCC.Text) OrElse String.IsNullOrEmpty(txtTenNhaCC.Text) Then
-            KTEmty()
+        NCC.Ma = txtMaNhaCC.Text
+        If cls.checkID(NCC).Rows.Count > 0 Then
+            lbID.Text = "Duplicate data"
+            txtMaNhaCC.Text = ""
+            txtMaNhaCC.Focus()
         Else
-            NCC.Ma = txtMaNhaCC.Text
-            NCC.Ten = txtTenNhaCC.Text
-            NCC.DienThoai = txtDienThoai.Text
-            NCC.DiaChi = txtDiaChi.Text
-            NCC.Email = txtEmail.Text
-            cls.insert(NCC)
-            showData()
-            Clear()
-            MessageBox.Show("Add success !")
+            If String.IsNullOrEmpty(txtDiaChi.Text) OrElse String.IsNullOrEmpty(txtDienThoai.Text) OrElse String.IsNullOrEmpty(txtEmail.Text) OrElse String.IsNullOrEmpty(txtMaNhaCC.Text) OrElse String.IsNullOrEmpty(txtTenNhaCC.Text) Then
+                KTEmty()
+            Else
+                NCC.Ma = txtMaNhaCC.Text
+                NCC.Ten = txtTenNhaCC.Text
+                NCC.DienThoai = txtDienThoai.Text
+                NCC.DiaChi = txtDiaChi.Text
+                NCC.Email = txtEmail.Text
+                cls.insert(NCC)
+                showData()
+                Clear()
+                MessageBox.Show("Add success !")
+            End If
         End If
+
     End Sub
 
     Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
@@ -126,4 +134,6 @@ Public Class NhaCCform
     Private Sub txtTenNhaCC_Click(sender As Object, e As EventArgs) Handles txtTenNhaCC.Click
         ClearLb()
     End Sub
+
+
 End Class

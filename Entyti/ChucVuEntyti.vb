@@ -1,7 +1,7 @@
 ﻿Public Class ChucVuEntyti
     Private _id As String
     Private _name As String
-    Private _power As String 'thuôc tính : quyền hạn 
+    Private _power As String
 
     Public Property Id As String
         Get

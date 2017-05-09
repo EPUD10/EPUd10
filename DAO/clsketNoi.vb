@@ -49,4 +49,19 @@ Public Class clsketNoi
         End If
         Return kq
     End Function
+    Public Function checkID(ByVal sql As String, ByVal Name() As String, ByVal Values() As Object, ByVal _soluong As Integer) As DataTable
+        Dim i As Integer
+        cmd = New SqlCommand(sql, con)
+        cmd.CommandType = CommandType.StoredProcedure
+        If con.State = ConnectionState.Closed Then
+            con.Open()
+        End If
+        For i = 0 To _soluong
+            cmd.Parameters.AddWithValue(Name(i), Values(i))
+        Next
+        da = New SqlDataAdapter(cmd)
+        Dim dt As New DataTable
+        da.Fill(dt)
+        Return dt
+    End Function
 End Class

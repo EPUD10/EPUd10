@@ -26,6 +26,7 @@ Partial Class NhaCCform
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NhaCCform))
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.BunifuCustomLabel7 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.dgvNhaCC = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.txtSearch = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
@@ -60,7 +61,8 @@ Partial Class NhaCCform
         '
         'Panel3
         '
-        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer))
+        Me.Panel3.BackColor = System.Drawing.Color.PowderBlue
+        Me.Panel3.Controls.Add(Me.BunifuCustomLabel7)
         Me.Panel3.Controls.Add(Me.dgvNhaCC)
         Me.Panel3.Controls.Add(Me.Panel2)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
@@ -68,6 +70,17 @@ Partial Class NhaCCform
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(752, 734)
         Me.Panel3.TabIndex = 3
+        '
+        'BunifuCustomLabel7
+        '
+        Me.BunifuCustomLabel7.AutoSize = True
+        Me.BunifuCustomLabel7.Font = New System.Drawing.Font("Modern No. 20", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.BunifuCustomLabel7.Location = New System.Drawing.Point(70, 23)
+        Me.BunifuCustomLabel7.Name = "BunifuCustomLabel7"
+        Me.BunifuCustomLabel7.Size = New System.Drawing.Size(438, 50)
+        Me.BunifuCustomLabel7.TabIndex = 16
+        Me.BunifuCustomLabel7.Text = "Information Supplier"
         '
         'dgvNhaCC
         '
@@ -92,11 +105,11 @@ Partial Class NhaCCform
         Me.dgvNhaCC.EnableHeadersVisualStyles = False
         Me.dgvNhaCC.HeaderBgColor = System.Drawing.Color.Silver
         Me.dgvNhaCC.HeaderForeColor = System.Drawing.Color.Black
-        Me.dgvNhaCC.Location = New System.Drawing.Point(0, 106)
+        Me.dgvNhaCC.Location = New System.Drawing.Point(6, 209)
         Me.dgvNhaCC.Name = "dgvNhaCC"
         Me.dgvNhaCC.ReadOnly = True
         Me.dgvNhaCC.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.dgvNhaCC.Size = New System.Drawing.Size(669, 513)
+        Me.dgvNhaCC.Size = New System.Drawing.Size(669, 450)
         Me.dgvNhaCC.TabIndex = 1
         '
         'Panel2
@@ -106,7 +119,7 @@ Partial Class NhaCCform
         Me.Panel2.Controls.Add(Me.btnSearch)
         Me.Panel2.Controls.Add(Me.btnUpdate)
         Me.Panel2.Controls.Add(Me.btnRemove)
-        Me.Panel2.Location = New System.Drawing.Point(6, 21)
+        Me.Panel2.Location = New System.Drawing.Point(22, 129)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(576, 59)
         Me.Panel2.TabIndex = 0
@@ -224,7 +237,7 @@ Partial Class NhaCCform
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.Lavender
         Me.Panel1.Controls.Add(Me.lbEmail)
         Me.Panel1.Controls.Add(Me.lbPhone)
         Me.Panel1.Controls.Add(Me.lbAdd)
@@ -457,6 +470,7 @@ Partial Class NhaCCform
         Me.Name = "NhaCCform"
         Me.Size = New System.Drawing.Size(963, 734)
         Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
         CType(Me.dgvNhaCC, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
@@ -493,4 +507,5 @@ Partial Class NhaCCform
     Friend WithEvents lbAdd As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents lbName As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents lbID As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuCustomLabel7 As Bunifu.Framework.UI.BunifuCustomLabel
 End Class

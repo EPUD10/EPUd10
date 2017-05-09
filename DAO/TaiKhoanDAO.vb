@@ -8,6 +8,15 @@ Public Class TaiKhoanDAO
     Public Function LoadData() As DataTable
         Return con.getData("dbo.sp_LoadTaiKhoan")
     End Function
+    Public Function LoadID(tk As TaiKhoanEntyti) As DataTable
+        _soluong = 0
+        Dim Name(_soluong) As String
+        Dim Values(_soluong) As Object
+        sql = "dbo.sp_checkIDTK"
+        Name(0) = "@ma"
+        Values(0) = tk.Ma
+        Return con.checkID(sql, Name, Values, _soluong)
+    End Function
     Public Function Add(ByVal tk As TaiKhoanEntyti) As Integer
         _soluong = 2
         Dim Name(_soluong) As String

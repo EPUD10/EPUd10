@@ -6,6 +6,9 @@ Public Class AccountBUS
     Public Function load() As DataTable
         Return cls.LoadData()
     End Function
+    Public Function LoadID(tk As TaiKhoanEntyti) As DataTable
+        Return cls.LoadID(tk)
+    End Function
     Public Function Add(ByVal tk As TaiKhoanEntyti) As Integer
         Return cls.Add(tk)
     End Function
@@ -18,9 +21,4 @@ Public Class AccountBUS
     Public Function Search(ByVal tk As TaiKhoanEntyti) As Integer
         Return cls.Search(tk)
     End Function
-    Public Function áda()
-
-    End Function
-
-
 End Class

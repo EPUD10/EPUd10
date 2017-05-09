@@ -39,20 +39,31 @@ Public Class Taikhoan
         clear()
         Showdata()
         dgv()
-    End Sub
 
+    End Sub
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-        If String.IsNullOrEmpty(txtTaiKhoan.Text) OrElse String.IsNullOrEmpty(txtMatKhau.Text) OrElse String.IsNullOrEmpty(txtGhiChu.Text) Then
-            ktEmty()
-        Else
+        Try
             TK.Ma = txtTaiKhoan.Text
-            TK.Ten = txtMatKhau.Text
-            TK.Ghichu = txtGhiChu.Text
-            cls.Add(TK)
-            Showdata()
-            clear()
-            MessageBox.Show("Add success !")
-        End If
+            If (cls.LoadID(TK).Rows.Count) > 0 Then
+                lbTaiKhoan.Text = "Duplicate data"
+                txtTaiKhoan.Text = ""
+                txtTaiKhoan.Focus()
+            Else
+                If String.IsNullOrEmpty(txtTaiKhoan.Text) OrElse String.IsNullOrEmpty(txtMatKhau.Text) OrElse String.IsNullOrEmpty(txtGhiChu.Text) Then
+                    ktEmty()
+                Else
+                    TK.Ma = txtTaiKhoan.Text
+                    TK.Ten = txtMatKhau.Text
+                    TK.Ghichu = txtGhiChu.Text
+                    cls.Add(TK)
+                    Showdata()
+                    clear()
+                    MessageBox.Show("Add success !")
+                End If
+            End If
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
     End Sub
 
     Private Sub txtTaiKhoan_Click(sender As Object, e As EventArgs) Handles txtTaiKhoan.Click
@@ -101,4 +112,6 @@ Public Class Taikhoan
         Showdata()
         clear()
     End Sub
+
+
 End Class

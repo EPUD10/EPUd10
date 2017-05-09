@@ -7,6 +7,9 @@ Public Class NhaCCBUS
     Public Function LoadData() As DataTable
         Return cls.LoadData()
     End Function
+    Public Function checkID(ByVal NCC As NhaCCEntyti) As DataTable
+        Return cls.checkID(NCC)
+    End Function
     Public Function insert(ByVal NCC As NhaCCEntyti) As Integer
         Return cls.insert(NCC)
     End Function

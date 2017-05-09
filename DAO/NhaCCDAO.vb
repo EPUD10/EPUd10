@@ -6,6 +6,15 @@ Public Class NhaCCDAO
     Public Function LoadData() As DataTable
         Return con.getData("dbo.sp_loadNhacCC")
     End Function
+    Public Function checkID(ByVal NCC As NhaCCEntyti) As DataTable
+        _soluong = 0
+        Dim sql As String = "sp_checkIDNCC"
+        Dim Name(_soluong) As String
+        Dim Values(_soluong) As Object
+        Name(0) = "@ma"
+        Values(0) = NCC.Ma
+        Return con.checkID(sql, Name, Values, _soluong)
+    End Function
     Public Function insert(ByVal NCC As NhaCCEntyti) As Integer
         _soluong = 4
         Dim sql As String = "dbo.sp_insertNCC"

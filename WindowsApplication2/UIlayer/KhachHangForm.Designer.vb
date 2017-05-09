@@ -27,6 +27,11 @@ Partial Class KhachHangForm
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(KhachHangForm))
         Me.dgvKhach = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lbEmail = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbphone = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbaddress = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbName = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.lbID = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.datetime = New System.Windows.Forms.DateTimePicker()
         Me.rbtnu = New System.Windows.Forms.RadioButton()
         Me.rbtNam = New System.Windows.Forms.RadioButton()
@@ -50,11 +55,7 @@ Partial Class KhachHangForm
         Me.btnSearch = New Bunifu.Framework.UI.BunifuImageButton()
         Me.txtSearch = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.BunifuCustomLabel8 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.lbID = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.lbName = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.lbaddress = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.lbphone = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.lbEmail = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel9 = New Bunifu.Framework.UI.BunifuCustomLabel()
         CType(Me.dgvKhach, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -82,16 +83,15 @@ Partial Class KhachHangForm
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvKhach.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvKhach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvKhach.Dock = System.Windows.Forms.DockStyle.Top
         Me.dgvKhach.DoubleBuffered = True
         Me.dgvKhach.EnableHeadersVisualStyles = False
         Me.dgvKhach.HeaderBgColor = System.Drawing.Color.Silver
         Me.dgvKhach.HeaderForeColor = System.Drawing.Color.Black
-        Me.dgvKhach.Location = New System.Drawing.Point(0, 0)
+        Me.dgvKhach.Location = New System.Drawing.Point(0, 92)
         Me.dgvKhach.Name = "dgvKhach"
         Me.dgvKhach.ReadOnly = True
         Me.dgvKhach.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.dgvKhach.Size = New System.Drawing.Size(887, 273)
+        Me.dgvKhach.Size = New System.Drawing.Size(887, 181)
         Me.dgvKhach.TabIndex = 0
         '
         'Panel1
@@ -121,6 +121,56 @@ Partial Class KhachHangForm
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(840, 199)
         Me.Panel1.TabIndex = 20
+        '
+        'lbEmail
+        '
+        Me.lbEmail.AutoSize = True
+        Me.lbEmail.ForeColor = System.Drawing.Color.Red
+        Me.lbEmail.Location = New System.Drawing.Point(578, 169)
+        Me.lbEmail.Name = "lbEmail"
+        Me.lbEmail.Size = New System.Drawing.Size(104, 13)
+        Me.lbEmail.TabIndex = 39
+        Me.lbEmail.Text = "BunifuCustomLabel9"
+        '
+        'lbphone
+        '
+        Me.lbphone.AutoSize = True
+        Me.lbphone.ForeColor = System.Drawing.Color.Red
+        Me.lbphone.Location = New System.Drawing.Point(689, 78)
+        Me.lbphone.Name = "lbphone"
+        Me.lbphone.Size = New System.Drawing.Size(104, 13)
+        Me.lbphone.TabIndex = 38
+        Me.lbphone.Text = "BunifuCustomLabel9"
+        '
+        'lbaddress
+        '
+        Me.lbaddress.AutoSize = True
+        Me.lbaddress.ForeColor = System.Drawing.Color.Red
+        Me.lbaddress.Location = New System.Drawing.Point(468, 78)
+        Me.lbaddress.Name = "lbaddress"
+        Me.lbaddress.Size = New System.Drawing.Size(104, 13)
+        Me.lbaddress.TabIndex = 37
+        Me.lbaddress.Text = "BunifuCustomLabel9"
+        '
+        'lbName
+        '
+        Me.lbName.AutoSize = True
+        Me.lbName.ForeColor = System.Drawing.Color.Red
+        Me.lbName.Location = New System.Drawing.Point(247, 78)
+        Me.lbName.Name = "lbName"
+        Me.lbName.Size = New System.Drawing.Size(104, 13)
+        Me.lbName.TabIndex = 36
+        Me.lbName.Text = "BunifuCustomLabel9"
+        '
+        'lbID
+        '
+        Me.lbID.AutoSize = True
+        Me.lbID.ForeColor = System.Drawing.Color.Red
+        Me.lbID.Location = New System.Drawing.Point(26, 78)
+        Me.lbID.Name = "lbID"
+        Me.lbID.Size = New System.Drawing.Size(104, 13)
+        Me.lbID.TabIndex = 35
+        Me.lbID.Text = "BunifuCustomLabel9"
         '
         'datetime
         '
@@ -471,61 +521,23 @@ Partial Class KhachHangForm
         Me.BunifuCustomLabel8.TabIndex = 22
         Me.BunifuCustomLabel8.Text = "Search"
         '
-        'lbID
+        'BunifuCustomLabel9
         '
-        Me.lbID.AutoSize = True
-        Me.lbID.ForeColor = System.Drawing.Color.Red
-        Me.lbID.Location = New System.Drawing.Point(26, 78)
-        Me.lbID.Name = "lbID"
-        Me.lbID.Size = New System.Drawing.Size(104, 13)
-        Me.lbID.TabIndex = 35
-        Me.lbID.Text = "BunifuCustomLabel9"
-        '
-        'lbName
-        '
-        Me.lbName.AutoSize = True
-        Me.lbName.ForeColor = System.Drawing.Color.Red
-        Me.lbName.Location = New System.Drawing.Point(247, 78)
-        Me.lbName.Name = "lbName"
-        Me.lbName.Size = New System.Drawing.Size(104, 13)
-        Me.lbName.TabIndex = 36
-        Me.lbName.Text = "BunifuCustomLabel9"
-        '
-        'lbaddress
-        '
-        Me.lbaddress.AutoSize = True
-        Me.lbaddress.ForeColor = System.Drawing.Color.Red
-        Me.lbaddress.Location = New System.Drawing.Point(468, 78)
-        Me.lbaddress.Name = "lbaddress"
-        Me.lbaddress.Size = New System.Drawing.Size(104, 13)
-        Me.lbaddress.TabIndex = 37
-        Me.lbaddress.Text = "BunifuCustomLabel9"
-        '
-        'lbphone
-        '
-        Me.lbphone.AutoSize = True
-        Me.lbphone.ForeColor = System.Drawing.Color.Red
-        Me.lbphone.Location = New System.Drawing.Point(689, 78)
-        Me.lbphone.Name = "lbphone"
-        Me.lbphone.Size = New System.Drawing.Size(104, 13)
-        Me.lbphone.TabIndex = 38
-        Me.lbphone.Text = "BunifuCustomLabel9"
-        '
-        'lbEmail
-        '
-        Me.lbEmail.AutoSize = True
-        Me.lbEmail.ForeColor = System.Drawing.Color.Red
-        Me.lbEmail.Location = New System.Drawing.Point(578, 169)
-        Me.lbEmail.Name = "lbEmail"
-        Me.lbEmail.Size = New System.Drawing.Size(104, 13)
-        Me.lbEmail.TabIndex = 39
-        Me.lbEmail.Text = "BunifuCustomLabel9"
+        Me.BunifuCustomLabel9.AutoSize = True
+        Me.BunifuCustomLabel9.Font = New System.Drawing.Font("Modern No. 20", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.BunifuCustomLabel9.Location = New System.Drawing.Point(228, 14)
+        Me.BunifuCustomLabel9.Name = "BunifuCustomLabel9"
+        Me.BunifuCustomLabel9.Size = New System.Drawing.Size(453, 50)
+        Me.BunifuCustomLabel9.TabIndex = 23
+        Me.BunifuCustomLabel9.Text = "Information Customer"
         '
         'KhachHangForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer))
+        Me.Controls.Add(Me.BunifuCustomLabel9)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
@@ -540,6 +552,7 @@ Partial Class KhachHangForm
         Me.Panel3.PerformLayout()
         CType(Me.btnSearch, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -573,4 +586,5 @@ Partial Class KhachHangForm
     Friend WithEvents lbphone As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents lbaddress As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents lbName As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuCustomLabel9 As Bunifu.Framework.UI.BunifuCustomLabel
 End Class

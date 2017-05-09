@@ -52,18 +52,25 @@ Public Class CuaHang
         End If
     End Sub
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-        If String.IsNullOrEmpty(txtMaCH.Text) OrElse String.IsNullOrEmpty(txtName.Text) OrElse String.IsNullOrEmpty(txtDT.Text) OrElse String.IsNullOrEmpty(txtEmail.Text) OrElse String.IsNullOrEmpty(txtDC.Text) Then
-            boolEmty()
+        CH.Ma = txtMaCH.Text
+        If (cls.checkID(CH).Rows.Count > 0) Then
+            lbID.Text = "Duplicate data"
+            txtMaCH.Text = ""
+            txtMaCH.Focus()
         Else
-            CH.Ma = txtMaCH.Text
-            CH.Ten = txtName.Text
-            CH.Email = txtEmail.Text
-            CH.DienThoai = txtDT.Text
-            CH.DiaChi = txtDC.Text
-            cls.Add(CH)
-            showData()
-            Clear()
-            MessageBox.Show("Add success !!!")
+            If String.IsNullOrEmpty(txtMaCH.Text) OrElse String.IsNullOrEmpty(txtName.Text) OrElse String.IsNullOrEmpty(txtDT.Text) OrElse String.IsNullOrEmpty(txtEmail.Text) OrElse String.IsNullOrEmpty(txtDC.Text) Then
+                boolEmty()
+            Else
+                CH.Ma = txtMaCH.Text
+                CH.Ten = txtName.Text
+                CH.Email = txtEmail.Text
+                CH.DienThoai = txtDT.Text
+                CH.DiaChi = txtDC.Text
+                cls.Add(CH)
+                showData()
+                Clear()
+                MessageBox.Show("Add success !!!")
+            End If
         End If
     End Sub
 

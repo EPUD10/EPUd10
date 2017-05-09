@@ -1,4 +1,4 @@
-﻿Imports DAO
+﻿
 Imports Entyti
 
 Public Class CuaHangDAO
@@ -7,6 +7,15 @@ Public Class CuaHangDAO
     Private sql As String
     Public Function LoadData() As DataTable
         Return cls.getData("sp_LoadCH")
+    End Function
+    Public Function checkID(ByVal CH As CuaHangEntyti) As DataTable
+        _soluong = 0
+        Dim Name(_soluong) As String
+        Dim values(_soluong) As Object
+        sql = "sp_checkIDCH"
+        Name(0) = "@ma"
+        values(0) = CH.Ma
+        Return cls.checkID(sql, Name, values, _soluong)
     End Function
     Public Function Add(ByVal CH As CuaHangEntyti) As Integer
         _soluong = 4
