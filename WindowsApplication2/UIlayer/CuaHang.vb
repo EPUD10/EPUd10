@@ -86,26 +86,6 @@ Public Class CuaHang
         End If
     End Sub
 
-    Private Sub txtDC_Click(sender As Object, e As EventArgs) Handles txtDC.Click
-        Emtylabel()
-    End Sub
-
-    Private Sub txtDT_Click(sender As Object, e As EventArgs) Handles txtDT.Click
-        Emtylabel()
-    End Sub
-
-    Private Sub txtEmail_Click(sender As Object, e As EventArgs) Handles txtEmail.Click
-        Emtylabel()
-    End Sub
-
-    Private Sub txtMaCH_Click(sender As Object, e As EventArgs) Handles txtMaCH.Click
-        Emtylabel()
-    End Sub
-
-    Private Sub txtName_Click(sender As Object, e As EventArgs) Handles txtName.Click
-        Emtylabel()
-    End Sub
-
     Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
         CH.Ma = txtMaCH.Text
         cls.Remove(CH)
@@ -129,5 +109,25 @@ Public Class CuaHang
             Clear()
             MessageBox.Show("Update success !!!")
         End If
+    End Sub
+
+    Private Sub txtDC_Click(sender As Object, e As EventArgs) Handles txtDC.Click
+        Emtylabel()
+    End Sub
+
+    Private Sub txtDT_Click(sender As Object, e As EventArgs) Handles txtDT.Click
+        Emtylabel()
+    End Sub
+
+    Private Sub txtEmail_Click(sender As Object, e As EventArgs) Handles txtEmail.Click
+        Emtylabel()
+    End Sub
+
+    Private Sub txtMaCH_Click(sender As Object, e As EventArgs) Handles txtMaCH.Click
+        Emtylabel()
+    End Sub
+
+    Private Sub txtName_Click(sender As Object, e As EventArgs) Handles txtName.Click
+        Emtylabel()
     End Sub
 End Class

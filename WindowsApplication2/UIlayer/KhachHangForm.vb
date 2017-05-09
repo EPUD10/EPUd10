@@ -120,11 +120,11 @@ Public Class KhachHangForm
         End If
     End Sub
 
-    Private Sub txtEmail_Click(sender As Object, e As EventArgs) Handles txtEmail.Click
+    Private Sub txtAddress_Click(sender As Object, e As EventArgs) Handles txtAddress.Click
         lbEmty()
     End Sub
 
-    Private Sub txtAddress_Click(sender As Object, e As EventArgs) Handles txtAddress.Click
+    Private Sub txtEmail_Click(sender As Object, e As EventArgs) Handles txtEmail.Click
         lbEmty()
     End Sub
 

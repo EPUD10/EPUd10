@@ -80,15 +80,15 @@ Public Class ChucVu
         MessageBox.Show("Update success")
     End Sub
 
-    Private Sub lbID_Click(sender As Object, e As EventArgs) Handles lbID.Click
+    Private Sub txtID_Click(sender As Object, e As EventArgs) Handles txtID.Click
         emtylb()
     End Sub
 
-    Private Sub lbName_Click(sender As Object, e As EventArgs) Handles lbName.Click
+    Private Sub txtName_Click(sender As Object, e As EventArgs) Handles txtName.Click
         emtylb()
     End Sub
 
-    Private Sub lbNote_Click(sender As Object, e As EventArgs) Handles lbNote.Click
+    Private Sub txtNote_Click(sender As Object, e As EventArgs) Handles txtNote.Click
         emtylb()
     End Sub
 End Class

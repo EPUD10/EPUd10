@@ -25,18 +25,13 @@ Partial Class CuaHang
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CuaHang))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.txtEmail = New Bunifu.Framework.UI.BunifuMetroTextbox()
-        Me.txtDT = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.btnUpdate = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnRemove = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.btnAdd = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.txtDC = New Bunifu.Framework.UI.BunifuMetroTextbox()
-        Me.txtName = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.BunifuCustomLabel6 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel4 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.txtMaCH = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.btnSearch = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.txtSearch = New Bunifu.Framework.UI.BunifuMetroTextbox()
@@ -48,44 +43,13 @@ Partial Class CuaHang
         Me.lbEmail = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.lbAdd = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel5 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.txtMaCH = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.txtName = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.txtDT = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.txtEmail = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.txtDC = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         CType(Me.dgvCH, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'txtEmail
-        '
-        Me.txtEmail.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer))
-        Me.txtEmail.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(160, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.txtEmail.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtEmail.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(160, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.txtEmail.BorderThickness = 1
-        Me.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtEmail.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.txtEmail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.txtEmail.isPassword = False
-        Me.txtEmail.Location = New System.Drawing.Point(274, 230)
-        Me.txtEmail.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(152, 28)
-        Me.txtEmail.TabIndex = 49
-        Me.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
-        'txtDT
-        '
-        Me.txtDT.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer))
-        Me.txtDT.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(160, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.txtDT.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtDT.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(160, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.txtDT.BorderThickness = 1
-        Me.txtDT.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtDT.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.txtDT.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.txtDT.isPassword = False
-        Me.txtDT.Location = New System.Drawing.Point(274, 131)
-        Me.txtDT.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtDT.Name = "txtDT"
-        Me.txtDT.Size = New System.Drawing.Size(152, 28)
-        Me.txtDT.TabIndex = 48
-        Me.txtDT.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'BunifuCustomLabel3
         '
@@ -214,42 +178,6 @@ Partial Class CuaHang
         Me.btnAdd.Textcolor = System.Drawing.Color.White
         Me.btnAdd.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
-        'txtDC
-        '
-        Me.txtDC.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer))
-        Me.txtDC.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(160, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.txtDC.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtDC.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(160, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.txtDC.BorderThickness = 1
-        Me.txtDC.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtDC.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.txtDC.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.txtDC.isPassword = False
-        Me.txtDC.Location = New System.Drawing.Point(500, 131)
-        Me.txtDC.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtDC.Name = "txtDC"
-        Me.txtDC.Size = New System.Drawing.Size(165, 28)
-        Me.txtDC.TabIndex = 38
-        Me.txtDC.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
-        'txtName
-        '
-        Me.txtName.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer))
-        Me.txtName.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(160, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.txtName.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtName.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(160, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.txtName.BorderThickness = 1
-        Me.txtName.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtName.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.txtName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.txtName.isPassword = False
-        Me.txtName.Location = New System.Drawing.Point(35, 225)
-        Me.txtName.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(152, 28)
-        Me.txtName.TabIndex = 36
-        Me.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
         'BunifuCustomLabel6
         '
         Me.BunifuCustomLabel6.AutoSize = True
@@ -271,24 +199,6 @@ Partial Class CuaHang
         Me.BunifuCustomLabel4.Size = New System.Drawing.Size(59, 18)
         Me.BunifuCustomLabel4.TabIndex = 33
         Me.BunifuCustomLabel4.Text = "Address"
-        '
-        'txtMaCH
-        '
-        Me.txtMaCH.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer))
-        Me.txtMaCH.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(160, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.txtMaCH.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtMaCH.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(160, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.txtMaCH.BorderThickness = 1
-        Me.txtMaCH.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtMaCH.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.txtMaCH.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.txtMaCH.isPassword = False
-        Me.txtMaCH.Location = New System.Drawing.Point(35, 131)
-        Me.txtMaCH.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtMaCH.Name = "txtMaCH"
-        Me.txtMaCH.Size = New System.Drawing.Size(152, 28)
-        Me.txtMaCH.TabIndex = 31
-        Me.txtMaCH.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'BunifuCustomLabel1
         '
@@ -458,11 +368,56 @@ Partial Class CuaHang
         Me.BunifuCustomLabel5.TabIndex = 59
         Me.BunifuCustomLabel5.Text = "Information Store"
         '
+        'txtMaCH
+        '
+        Me.txtMaCH.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtMaCH.Location = New System.Drawing.Point(35, 139)
+        Me.txtMaCH.Name = "txtMaCH"
+        Me.txtMaCH.Size = New System.Drawing.Size(179, 20)
+        Me.txtMaCH.TabIndex = 60
+        '
+        'txtName
+        '
+        Me.txtName.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtName.Location = New System.Drawing.Point(35, 238)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(179, 20)
+        Me.txtName.TabIndex = 61
+        '
+        'txtDT
+        '
+        Me.txtDT.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtDT.Location = New System.Drawing.Point(274, 139)
+        Me.txtDT.Name = "txtDT"
+        Me.txtDT.Size = New System.Drawing.Size(179, 20)
+        Me.txtDT.TabIndex = 62
+        '
+        'txtEmail
+        '
+        Me.txtEmail.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtEmail.Location = New System.Drawing.Point(274, 238)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(179, 20)
+        Me.txtEmail.TabIndex = 63
+        '
+        'txtDC
+        '
+        Me.txtDC.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtDC.Location = New System.Drawing.Point(500, 139)
+        Me.txtDC.Name = "txtDC"
+        Me.txtDC.Size = New System.Drawing.Size(179, 20)
+        Me.txtDC.TabIndex = 64
+        '
         'CuaHang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(190, Byte), Integer), CType(CType(177, Byte), Integer), CType(CType(156, Byte), Integer))
+        Me.Controls.Add(Me.txtDC)
+        Me.Controls.Add(Me.txtEmail)
+        Me.Controls.Add(Me.txtDT)
+        Me.Controls.Add(Me.txtName)
+        Me.Controls.Add(Me.txtMaCH)
         Me.Controls.Add(Me.BunifuCustomLabel5)
         Me.Controls.Add(Me.lbAdd)
         Me.Controls.Add(Me.lbEmail)
@@ -473,18 +428,13 @@ Partial Class CuaHang
         Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.txtSearch)
         Me.Controls.Add(Me.BunifuCustomLabel11)
-        Me.Controls.Add(Me.txtEmail)
-        Me.Controls.Add(Me.txtDT)
         Me.Controls.Add(Me.BunifuCustomLabel3)
         Me.Controls.Add(Me.BunifuCustomLabel2)
         Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.btnRemove)
         Me.Controls.Add(Me.btnAdd)
-        Me.Controls.Add(Me.txtDC)
-        Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.BunifuCustomLabel6)
         Me.Controls.Add(Me.BunifuCustomLabel4)
-        Me.Controls.Add(Me.txtMaCH)
         Me.Controls.Add(Me.BunifuCustomLabel1)
         Me.Name = "CuaHang"
         Me.Size = New System.Drawing.Size(887, 683)
@@ -493,18 +443,13 @@ Partial Class CuaHang
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents txtEmail As Bunifu.Framework.UI.BunifuMetroTextbox
-    Friend WithEvents txtDT As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents BunifuCustomLabel3 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel2 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents btnUpdate As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents btnRemove As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents btnAdd As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents txtDC As Bunifu.Framework.UI.BunifuMetroTextbox
-    Friend WithEvents txtName As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents BunifuCustomLabel6 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel4 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents txtMaCH As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
     Protected Friend WithEvents btnSearch As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents txtSearch As Bunifu.Framework.UI.BunifuMetroTextbox
@@ -516,4 +461,9 @@ Partial Class CuaHang
     Friend WithEvents lbEmail As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents lbAdd As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel5 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents txtMaCH As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents txtName As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents txtDT As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents txtEmail As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents txtDC As WindowsFormsControlLibrary1.BunifuCustomTextbox
 End Class

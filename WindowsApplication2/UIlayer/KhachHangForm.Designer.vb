@@ -35,17 +35,12 @@ Partial Class KhachHangForm
         Me.datetime = New System.Windows.Forms.DateTimePicker()
         Me.rbtnu = New System.Windows.Forms.RadioButton()
         Me.rbtNam = New System.Windows.Forms.RadioButton()
-        Me.txtPhoneNumber = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.BunifuCustomLabel7 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.txtEmail = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.BunifuCustomLabel6 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel5 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel4 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.txtAddress = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.txtNameCus = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.txtIDCustomer = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btnUpdate = New Bunifu.Framework.UI.BunifuFlatButton()
@@ -56,6 +51,11 @@ Partial Class KhachHangForm
         Me.txtSearch = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.BunifuCustomLabel8 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel9 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.txtIDCustomer = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.txtNameCus = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.txtAddress = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.txtPhoneNumber = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.txtEmail = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         CType(Me.dgvKhach, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -97,6 +97,11 @@ Partial Class KhachHangForm
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Controls.Add(Me.txtEmail)
+        Me.Panel1.Controls.Add(Me.txtPhoneNumber)
+        Me.Panel1.Controls.Add(Me.txtAddress)
+        Me.Panel1.Controls.Add(Me.txtNameCus)
+        Me.Panel1.Controls.Add(Me.txtIDCustomer)
         Me.Panel1.Controls.Add(Me.lbEmail)
         Me.Panel1.Controls.Add(Me.lbphone)
         Me.Panel1.Controls.Add(Me.lbaddress)
@@ -105,17 +110,12 @@ Partial Class KhachHangForm
         Me.Panel1.Controls.Add(Me.datetime)
         Me.Panel1.Controls.Add(Me.rbtnu)
         Me.Panel1.Controls.Add(Me.rbtNam)
-        Me.Panel1.Controls.Add(Me.txtPhoneNumber)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel7)
-        Me.Panel1.Controls.Add(Me.txtEmail)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel6)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel5)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel4)
-        Me.Panel1.Controls.Add(Me.txtAddress)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel3)
-        Me.Panel1.Controls.Add(Me.txtNameCus)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel2)
-        Me.Panel1.Controls.Add(Me.txtIDCustomer)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel1)
         Me.Panel1.Location = New System.Drawing.Point(20, 365)
         Me.Panel1.Name = "Panel1"
@@ -201,23 +201,6 @@ Partial Class KhachHangForm
         Me.rbtNam.Text = "Nam"
         Me.rbtNam.UseVisualStyleBackColor = True
         '
-        'txtPhoneNumber
-        '
-        Me.txtPhoneNumber.BorderColorFocused = System.Drawing.Color.Blue
-        Me.txtPhoneNumber.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtPhoneNumber.BorderColorMouseHover = System.Drawing.Color.Blue
-        Me.txtPhoneNumber.BorderThickness = 1
-        Me.txtPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtPhoneNumber.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.txtPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.txtPhoneNumber.isPassword = False
-        Me.txtPhoneNumber.Location = New System.Drawing.Point(687, 38)
-        Me.txtPhoneNumber.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtPhoneNumber.Name = "txtPhoneNumber"
-        Me.txtPhoneNumber.Size = New System.Drawing.Size(146, 22)
-        Me.txtPhoneNumber.TabIndex = 31
-        Me.txtPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
         'BunifuCustomLabel7
         '
         Me.BunifuCustomLabel7.AutoSize = True
@@ -227,23 +210,6 @@ Partial Class KhachHangForm
         Me.BunifuCustomLabel7.Size = New System.Drawing.Size(91, 15)
         Me.BunifuCustomLabel7.TabIndex = 30
         Me.BunifuCustomLabel7.Text = "Phone Number"
-        '
-        'txtEmail
-        '
-        Me.txtEmail.BorderColorFocused = System.Drawing.Color.Blue
-        Me.txtEmail.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtEmail.BorderColorMouseHover = System.Drawing.Color.Blue
-        Me.txtEmail.BorderThickness = 1
-        Me.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtEmail.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.txtEmail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.txtEmail.isPassword = False
-        Me.txtEmail.Location = New System.Drawing.Point(579, 129)
-        Me.txtEmail.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(146, 22)
-        Me.txtEmail.TabIndex = 29
-        Me.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'BunifuCustomLabel6
         '
@@ -275,23 +241,6 @@ Partial Class KhachHangForm
         Me.BunifuCustomLabel4.TabIndex = 26
         Me.BunifuCustomLabel4.Text = "Sex"
         '
-        'txtAddress
-        '
-        Me.txtAddress.BorderColorFocused = System.Drawing.Color.Blue
-        Me.txtAddress.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtAddress.BorderColorMouseHover = System.Drawing.Color.Blue
-        Me.txtAddress.BorderThickness = 1
-        Me.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtAddress.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.txtAddress.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.txtAddress.isPassword = False
-        Me.txtAddress.Location = New System.Drawing.Point(466, 38)
-        Me.txtAddress.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtAddress.Name = "txtAddress"
-        Me.txtAddress.Size = New System.Drawing.Size(146, 22)
-        Me.txtAddress.TabIndex = 25
-        Me.txtAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
         'BunifuCustomLabel3
         '
         Me.BunifuCustomLabel3.AutoSize = True
@@ -302,23 +251,6 @@ Partial Class KhachHangForm
         Me.BunifuCustomLabel3.TabIndex = 24
         Me.BunifuCustomLabel3.Text = "Address"
         '
-        'txtNameCus
-        '
-        Me.txtNameCus.BorderColorFocused = System.Drawing.Color.Blue
-        Me.txtNameCus.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtNameCus.BorderColorMouseHover = System.Drawing.Color.Blue
-        Me.txtNameCus.BorderThickness = 1
-        Me.txtNameCus.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtNameCus.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.txtNameCus.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.txtNameCus.isPassword = False
-        Me.txtNameCus.Location = New System.Drawing.Point(245, 38)
-        Me.txtNameCus.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtNameCus.Name = "txtNameCus"
-        Me.txtNameCus.Size = New System.Drawing.Size(146, 22)
-        Me.txtNameCus.TabIndex = 23
-        Me.txtNameCus.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
         'BunifuCustomLabel2
         '
         Me.BunifuCustomLabel2.AutoSize = True
@@ -328,23 +260,6 @@ Partial Class KhachHangForm
         Me.BunifuCustomLabel2.Size = New System.Drawing.Size(97, 15)
         Me.BunifuCustomLabel2.TabIndex = 22
         Me.BunifuCustomLabel2.Text = "Name Customer"
-        '
-        'txtIDCustomer
-        '
-        Me.txtIDCustomer.BorderColorFocused = System.Drawing.Color.Blue
-        Me.txtIDCustomer.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtIDCustomer.BorderColorMouseHover = System.Drawing.Color.Blue
-        Me.txtIDCustomer.BorderThickness = 1
-        Me.txtIDCustomer.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtIDCustomer.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.txtIDCustomer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.txtIDCustomer.isPassword = False
-        Me.txtIDCustomer.Location = New System.Drawing.Point(24, 38)
-        Me.txtIDCustomer.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtIDCustomer.Name = "txtIDCustomer"
-        Me.txtIDCustomer.Size = New System.Drawing.Size(146, 22)
-        Me.txtIDCustomer.TabIndex = 21
-        Me.txtIDCustomer.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'BunifuCustomLabel1
         '
@@ -532,6 +447,46 @@ Partial Class KhachHangForm
         Me.BunifuCustomLabel9.TabIndex = 23
         Me.BunifuCustomLabel9.Text = "Information Customer"
         '
+        'txtIDCustomer
+        '
+        Me.txtIDCustomer.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtIDCustomer.Location = New System.Drawing.Point(29, 40)
+        Me.txtIDCustomer.Name = "txtIDCustomer"
+        Me.txtIDCustomer.Size = New System.Drawing.Size(135, 20)
+        Me.txtIDCustomer.TabIndex = 40
+        '
+        'txtNameCus
+        '
+        Me.txtNameCus.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtNameCus.Location = New System.Drawing.Point(250, 40)
+        Me.txtNameCus.Name = "txtNameCus"
+        Me.txtNameCus.Size = New System.Drawing.Size(135, 20)
+        Me.txtNameCus.TabIndex = 41
+        '
+        'txtAddress
+        '
+        Me.txtAddress.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtAddress.Location = New System.Drawing.Point(471, 40)
+        Me.txtAddress.Name = "txtAddress"
+        Me.txtAddress.Size = New System.Drawing.Size(135, 20)
+        Me.txtAddress.TabIndex = 42
+        '
+        'txtPhoneNumber
+        '
+        Me.txtPhoneNumber.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtPhoneNumber.Location = New System.Drawing.Point(692, 40)
+        Me.txtPhoneNumber.Name = "txtPhoneNumber"
+        Me.txtPhoneNumber.Size = New System.Drawing.Size(135, 20)
+        Me.txtPhoneNumber.TabIndex = 43
+        '
+        'txtEmail
+        '
+        Me.txtEmail.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtEmail.Location = New System.Drawing.Point(581, 133)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(160, 20)
+        Me.txtEmail.TabIndex = 44
+        '
         'KhachHangForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -561,17 +516,12 @@ Partial Class KhachHangForm
     Friend WithEvents datetime As DateTimePicker
     Friend WithEvents rbtnu As RadioButton
     Friend WithEvents rbtNam As RadioButton
-    Friend WithEvents txtPhoneNumber As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents BunifuCustomLabel7 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents txtEmail As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents BunifuCustomLabel6 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel5 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel4 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents txtAddress As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents BunifuCustomLabel3 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents txtNameCus As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents BunifuCustomLabel2 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents txtIDCustomer As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents btnUpdate As Bunifu.Framework.UI.BunifuFlatButton
@@ -587,4 +537,9 @@ Partial Class KhachHangForm
     Friend WithEvents lbaddress As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents lbName As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel9 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents txtIDCustomer As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents txtEmail As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents txtPhoneNumber As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents txtAddress As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents txtNameCus As WindowsFormsControlLibrary1.BunifuCustomTextbox
 End Class
