@@ -4,6 +4,7 @@ Imports Entyti
 Public Class NhanVien
     Private cls As New NhanVienBUS
     Private NV As New NhanVienEntyti
+    Private check As New KiemTraBUS
     Private Sub ClearText()
         txtDC.Text = ""
         txtDT.Text = ""
@@ -96,28 +97,40 @@ Public Class NhanVien
                 txtMaNhanVien.Text = ""
                 txtMaNhanVien.Focus()
             Else
-                If (String.IsNullOrEmpty(txtMaNhanVien.Text)) OrElse (String.IsNullOrEmpty(txtName.Text)) OrElse (String.IsNullOrEmpty(txtDT.Text)) OrElse (String.IsNullOrEmpty(txtDC.Text)) OrElse (String.IsNullOrEmpty(txtEmail.Text)) Then
-                    BoolLb()
+                If Check.CheckMail(txtEmail.Text) = False Then
+                    lbEmail.Text = "Email is invalid"
+                    txtEmail.Text = ""
+                    txtEmail.Focus()
                 Else
-                    NV.IdNV = txtMaNhanVien.Text()
-                    NV.Name = txtName.Text()
-                    NV.Phone = txtDT.Text()
-                    NV.IdCV = cmbChucVu.SelectedValue
-                    NV.IdCH = cmbCuaHang.SelectedValue()
-                    NV.Birth = dateNV.Value
-                    NV.Address = txtDC.Text()
-                    NV.Email = txtEmail.Text()
-                    If (rbtNam.Checked = True) Then
-                        NV.Sex = rbtNam.Text()
+                    If Check.CheckPhone(txtDT.Text) = False Then
+                        lbPhone.Text = "Phone is invalid"
+                        txtDT.Text = ""
+                        txtDT.Focus()
                     Else
-                        If rbtNu.Checked = True Then
-                            NV.Sex = rbtNu.Text()
+                        If (String.IsNullOrEmpty(txtMaNhanVien.Text)) OrElse (String.IsNullOrEmpty(txtName.Text)) OrElse (String.IsNullOrEmpty(txtDT.Text)) OrElse (String.IsNullOrEmpty(txtDC.Text)) OrElse (String.IsNullOrEmpty(txtEmail.Text)) Then
+                            BoolLb()
+                        Else
+                            NV.IdNV = txtMaNhanVien.Text()
+                            NV.Name = txtName.Text()
+                            NV.Phone = txtDT.Text()
+                            NV.IdCV = cmbChucVu.SelectedValue
+                            NV.IdCH = cmbCuaHang.SelectedValue()
+                            NV.Birth = dateNV.Value
+                            NV.Address = txtDC.Text()
+                            NV.Email = txtEmail.Text()
+                            If (rbtNam.Checked = True) Then
+                                NV.Sex = rbtNam.Text()
+                            Else
+                                If rbtNu.Checked = True Then
+                                    NV.Sex = rbtNu.Text()
+                                End If
+                            End If
+                            cls.Add(NV)
+                            ShowData()
+                            MessageBox.Show("Add success")
+
                         End If
                     End If
-                    cls.Add(NV)
-                    ShowData()
-                    MessageBox.Show("Add success")
-
                 End If
             End If
         Catch ex As Exception

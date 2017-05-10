@@ -4,6 +4,7 @@ Imports Entyti
 Public Class KhachHangForm
     Private cls As New KhachBUS
     Private KH As New KhachEntyti
+    Private check As New KiemTraBUS
     Private Sub lbEmty()
         lbID.Text = ""
         lbName.Text = ""
@@ -67,25 +68,37 @@ Public Class KhachHangForm
             txtIDCustomer.Text = ""
             txtIDCustomer.Focus()
         Else
-            If String.IsNullOrEmpty(txtIDCustomer.Text) OrElse String.IsNullOrEmpty(txtNameCus.Text) OrElse String.IsNullOrEmpty(txtEmail.Text) OrElse String.IsNullOrEmpty(txtPhoneNumber.Text) OrElse String.IsNullOrEmpty(txtAddress.Text) Then
-                BoolLb()
+            If Check.CheckMail(txtEmail.Text) = False Then
+                lbEmail.Text = "Email is invalid"
+                txtEmail.Text = ""
+                txtEmail.Focus()
             Else
-                KH.Id = txtIDCustomer.Text
-                KH.Name = txtNameCus.Text
-                KH.Phone = txtPhoneNumber.Text
-                KH.Email = txtEmail.Text
-                KH.Birth = datetime.Value
-                KH.Add = txtAddress.Text
-                If rbtNam.Checked Then
-                    KH.Sex = rbtNam.Text
-                ElseIf rbtnu.Checked Then
-                    KH.Sex = rbtnu.Text
-                End If
-                cls.ADD(KH)
-                showData()
-                MessageBox.Show("insert success")
-                txtEmty()
+                If check.CheckPhone(txtPhoneNumber.Text) = False Then
+                    lbphone.Text = "Phone is invalid"
+                    txtPhoneNumber.Text = ""
+                    txtPhoneNumber.Focus()
+                Else
+                    If String.IsNullOrEmpty(txtIDCustomer.Text) OrElse String.IsNullOrEmpty(txtNameCus.Text) OrElse String.IsNullOrEmpty(txtEmail.Text) OrElse String.IsNullOrEmpty(txtPhoneNumber.Text) OrElse String.IsNullOrEmpty(txtAddress.Text) Then
+                        BoolLb()
+                    Else
+                        KH.Id = txtIDCustomer.Text
+                        KH.Name = txtNameCus.Text
+                        KH.Phone = txtPhoneNumber.Text
+                        KH.Email = txtEmail.Text
+                        KH.Birth = datetime.Value
+                        KH.Add = txtAddress.Text
+                        If rbtNam.Checked Then
+                            KH.Sex = rbtNam.Text
+                        ElseIf rbtnu.Checked Then
+                            KH.Sex = rbtnu.Text
+                        End If
+                        cls.ADD(KH)
+                        showData()
+                        MessageBox.Show("insert success")
+                        txtEmty()
 
+                    End If
+                End If
             End If
         End If
     End Sub

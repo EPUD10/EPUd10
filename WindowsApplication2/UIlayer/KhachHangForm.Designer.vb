@@ -27,6 +27,11 @@ Partial Class KhachHangForm
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(KhachHangForm))
         Me.dgvKhach = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.txtEmail = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.txtPhoneNumber = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.txtAddress = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.txtNameCus = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.txtIDCustomer = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.lbEmail = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.lbphone = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.lbaddress = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -51,11 +56,6 @@ Partial Class KhachHangForm
         Me.txtSearch = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.BunifuCustomLabel8 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel9 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.txtIDCustomer = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.txtNameCus = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.txtAddress = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.txtPhoneNumber = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.txtEmail = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         CType(Me.dgvKhach, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -121,6 +121,46 @@ Partial Class KhachHangForm
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(840, 199)
         Me.Panel1.TabIndex = 20
+        '
+        'txtEmail
+        '
+        Me.txtEmail.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtEmail.Location = New System.Drawing.Point(581, 133)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(160, 20)
+        Me.txtEmail.TabIndex = 44
+        '
+        'txtPhoneNumber
+        '
+        Me.txtPhoneNumber.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtPhoneNumber.Location = New System.Drawing.Point(692, 40)
+        Me.txtPhoneNumber.Name = "txtPhoneNumber"
+        Me.txtPhoneNumber.Size = New System.Drawing.Size(135, 20)
+        Me.txtPhoneNumber.TabIndex = 43
+        '
+        'txtAddress
+        '
+        Me.txtAddress.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtAddress.Location = New System.Drawing.Point(471, 40)
+        Me.txtAddress.Name = "txtAddress"
+        Me.txtAddress.Size = New System.Drawing.Size(135, 20)
+        Me.txtAddress.TabIndex = 42
+        '
+        'txtNameCus
+        '
+        Me.txtNameCus.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtNameCus.Location = New System.Drawing.Point(250, 40)
+        Me.txtNameCus.Name = "txtNameCus"
+        Me.txtNameCus.Size = New System.Drawing.Size(135, 20)
+        Me.txtNameCus.TabIndex = 41
+        '
+        'txtIDCustomer
+        '
+        Me.txtIDCustomer.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtIDCustomer.Location = New System.Drawing.Point(29, 40)
+        Me.txtIDCustomer.Name = "txtIDCustomer"
+        Me.txtIDCustomer.Size = New System.Drawing.Size(135, 20)
+        Me.txtIDCustomer.TabIndex = 40
         '
         'lbEmail
         '
@@ -446,46 +486,6 @@ Partial Class KhachHangForm
         Me.BunifuCustomLabel9.Size = New System.Drawing.Size(453, 50)
         Me.BunifuCustomLabel9.TabIndex = 23
         Me.BunifuCustomLabel9.Text = "Information Customer"
-        '
-        'txtIDCustomer
-        '
-        Me.txtIDCustomer.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtIDCustomer.Location = New System.Drawing.Point(29, 40)
-        Me.txtIDCustomer.Name = "txtIDCustomer"
-        Me.txtIDCustomer.Size = New System.Drawing.Size(135, 20)
-        Me.txtIDCustomer.TabIndex = 40
-        '
-        'txtNameCus
-        '
-        Me.txtNameCus.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtNameCus.Location = New System.Drawing.Point(250, 40)
-        Me.txtNameCus.Name = "txtNameCus"
-        Me.txtNameCus.Size = New System.Drawing.Size(135, 20)
-        Me.txtNameCus.TabIndex = 41
-        '
-        'txtAddress
-        '
-        Me.txtAddress.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtAddress.Location = New System.Drawing.Point(471, 40)
-        Me.txtAddress.Name = "txtAddress"
-        Me.txtAddress.Size = New System.Drawing.Size(135, 20)
-        Me.txtAddress.TabIndex = 42
-        '
-        'txtPhoneNumber
-        '
-        Me.txtPhoneNumber.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtPhoneNumber.Location = New System.Drawing.Point(692, 40)
-        Me.txtPhoneNumber.Name = "txtPhoneNumber"
-        Me.txtPhoneNumber.Size = New System.Drawing.Size(135, 20)
-        Me.txtPhoneNumber.TabIndex = 43
-        '
-        'txtEmail
-        '
-        Me.txtEmail.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtEmail.Location = New System.Drawing.Point(581, 133)
-        Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(160, 20)
-        Me.txtEmail.TabIndex = 44
         '
         'KhachHangForm
         '

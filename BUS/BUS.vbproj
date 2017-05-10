@@ -67,6 +67,7 @@
     <Compile Include="ChucVuBUS.vb" />
     <Compile Include="CuaHangBUS.vb" />
     <Compile Include="KhachBUS.vb" />
+    <Compile Include="KiemTraBUS.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

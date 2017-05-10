@@ -5,6 +5,7 @@ Imports Entyti
 Public Class NhaCCform
     Private cls As New NhaCCBUS
     Private NCC As New NhaCCEntyti
+    Private check As New KiemTraBUS
     Private Sub showData()
         dgvNhaCC.DataSource = cls.LoadData
     End Sub
@@ -64,21 +65,32 @@ Public Class NhaCCform
             txtMaNhaCC.Text = ""
             txtMaNhaCC.Focus()
         Else
-            If String.IsNullOrEmpty(txtDiaChi.Text) OrElse String.IsNullOrEmpty(txtDienThoai.Text) OrElse String.IsNullOrEmpty(txtEmail.Text) OrElse String.IsNullOrEmpty(txtMaNhaCC.Text) OrElse String.IsNullOrEmpty(txtTenNhaCC.Text) Then
-                KTEmty()
+            If Check.CheckMail(txtEmail.Text) = False Then
+                lbEmail.Text = "Email is invalid"
+                txtEmail.Text = ""
+                txtEmail.Focus()
             Else
-                NCC.Ma = txtMaNhaCC.Text
-                NCC.Ten = txtTenNhaCC.Text
-                NCC.DienThoai = txtDienThoai.Text
-                NCC.DiaChi = txtDiaChi.Text
-                NCC.Email = txtEmail.Text
-                cls.insert(NCC)
-                showData()
-                Clear()
-                MessageBox.Show("Add success !")
+                If check.CheckPhone(txtDienThoai.Text) = False Then
+                    lbPhone.Text = "Phone is invalid"
+                    txtDienThoai.Text = ""
+                    txtDienThoai.Focus()
+                Else
+                    If String.IsNullOrEmpty(txtDiaChi.Text) OrElse String.IsNullOrEmpty(txtDienThoai.Text) OrElse String.IsNullOrEmpty(txtEmail.Text) OrElse String.IsNullOrEmpty(txtMaNhaCC.Text) OrElse String.IsNullOrEmpty(txtTenNhaCC.Text) Then
+                        KTEmty()
+                    Else
+                        NCC.Ma = txtMaNhaCC.Text
+                        NCC.Ten = txtTenNhaCC.Text
+                        NCC.DienThoai = txtDienThoai.Text
+                        NCC.DiaChi = txtDiaChi.Text
+                        NCC.Email = txtEmail.Text
+                        cls.insert(NCC)
+                        showData()
+                        Clear()
+                        MessageBox.Show("Add success !")
+                    End If
+                End If
             End If
         End If
-
     End Sub
 
     Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click

@@ -3,6 +3,7 @@ Imports Entyti
 Public Class CuaHang
     Private cls As New CuaHangBUS
     Private CH As New CuaHangEntyti
+    Private Check As New KiemTraBUS
     Public Sub showData()
         dgvCH.DataSource = cls.LoadData()
     End Sub
@@ -60,18 +61,30 @@ Public Class CuaHang
             txtMaCH.Text = ""
             txtMaCH.Focus()
         Else
-            If String.IsNullOrEmpty(txtMaCH.Text) OrElse String.IsNullOrEmpty(txtName.Text) OrElse String.IsNullOrEmpty(txtDT.Text) OrElse String.IsNullOrEmpty(txtEmail.Text) OrElse String.IsNullOrEmpty(txtDC.Text) Then
-                boolEmty()
+            If Check.CheckMail(txtEmail.Text) = False Then
+                lbEmail.Text = "Email is invalid"
+                txtEmail.Text = ""
+                txtEmail.Focus()
             Else
-                CH.Ma = txtMaCH.Text
-                CH.Ten = txtName.Text
-                CH.Email = txtEmail.Text
-                CH.DienThoai = txtDT.Text
-                CH.DiaChi = txtDC.Text
-                cls.Add(CH)
-                showData()
-                Clear()
-                MessageBox.Show("Add success !!!")
+                If Check.CheckPhone(txtDT.Text) = False Then
+                    lbPhone.Text = "Phone is invalid"
+                    txtDT.Text = ""
+                    txtDT.Focus()
+                Else
+                    If String.IsNullOrEmpty(txtMaCH.Text) OrElse String.IsNullOrEmpty(txtName.Text) OrElse String.IsNullOrEmpty(txtDT.Text) OrElse String.IsNullOrEmpty(txtEmail.Text) OrElse String.IsNullOrEmpty(txtDC.Text) Then
+                        boolEmty()
+                    Else
+                        CH.Ma = txtMaCH.Text
+                        CH.Ten = txtName.Text
+                        CH.Email = txtEmail.Text
+                        CH.DienThoai = txtDT.Text
+                        CH.DiaChi = txtDC.Text
+                        cls.Add(CH)
+                        showData()
+                        Clear()
+                        MessageBox.Show("Add success !!!")
+                    End If
+                End If
             End If
         End If
     End Sub
