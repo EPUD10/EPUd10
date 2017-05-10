@@ -161,4 +161,12 @@ Public Class CuaHang
     Private Sub txtName_Click(sender As Object, e As EventArgs) Handles txtName.Click
         Emtylabel()
     End Sub
+
+    Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
+        Clear()
+        txtMaCH.Enabled = True
+        btnAdd.Enabled = True
+        btnRemove.Enabled = False
+        btnUpdate.Enabled = False
+    End Sub
 End Class

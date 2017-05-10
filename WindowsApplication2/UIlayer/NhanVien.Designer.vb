@@ -22,10 +22,15 @@ Partial Class NhanVien
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NhanVien))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NhanVien))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtEmail = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.txtName = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.txtDC = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.txtDT = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.txtMaNhanVien = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.lbAdd = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.lbEmail = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.lbName = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -53,17 +58,14 @@ Partial Class NhanVien
         Me.btnSearch = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.dgvNhanVien = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.BunifuCustomLabel10 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.txtMaNhanVien = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.txtDT = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.txtDC = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.txtName = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.txtEmail = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.btnReset = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dgvNhanVien, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnReset)
         Me.GroupBox1.Controls.Add(Me.txtEmail)
         Me.GroupBox1.Controls.Add(Me.txtName)
         Me.GroupBox1.Controls.Add(Me.txtDC)
@@ -99,6 +101,51 @@ Partial Class NhanVien
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Add data"
+        '
+        'txtEmail
+        '
+        Me.txtEmail.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtEmail.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEmail.Location = New System.Drawing.Point(265, 140)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(143, 21)
+        Me.txtEmail.TabIndex = 39
+        '
+        'txtName
+        '
+        Me.txtName.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtName.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtName.Location = New System.Drawing.Point(26, 140)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(143, 21)
+        Me.txtName.TabIndex = 38
+        '
+        'txtDC
+        '
+        Me.txtDC.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtDC.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDC.Location = New System.Drawing.Point(497, 65)
+        Me.txtDC.Name = "txtDC"
+        Me.txtDC.Size = New System.Drawing.Size(143, 21)
+        Me.txtDC.TabIndex = 37
+        '
+        'txtDT
+        '
+        Me.txtDT.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtDT.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDT.Location = New System.Drawing.Point(265, 65)
+        Me.txtDT.Name = "txtDT"
+        Me.txtDT.Size = New System.Drawing.Size(143, 21)
+        Me.txtDT.TabIndex = 36
+        '
+        'txtMaNhanVien
+        '
+        Me.txtMaNhanVien.BorderColor = System.Drawing.Color.SeaGreen
+        Me.txtMaNhanVien.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMaNhanVien.Location = New System.Drawing.Point(28, 65)
+        Me.txtMaNhanVien.Name = "txtMaNhanVien"
+        Me.txtMaNhanVien.Size = New System.Drawing.Size(143, 21)
+        Me.txtMaNhanVien.TabIndex = 35
         '
         'lbAdd
         '
@@ -216,7 +263,7 @@ Partial Class NhanVien
         Me.btnUpdate.IconVisible = True
         Me.btnUpdate.IconZoom = 40.0R
         Me.btnUpdate.IsTab = False
-        Me.btnUpdate.Location = New System.Drawing.Point(700, 204)
+        Me.btnUpdate.Location = New System.Drawing.Point(700, 150)
         Me.btnUpdate.Margin = New System.Windows.Forms.Padding(12, 11, 12, 11)
         Me.btnUpdate.Name = "btnUpdate"
         Me.btnUpdate.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(116, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(109, Byte), Integer))
@@ -251,7 +298,7 @@ Partial Class NhanVien
         Me.btnRemove.IconVisible = True
         Me.btnRemove.IconZoom = 40.0R
         Me.btnRemove.IsTab = False
-        Me.btnRemove.Location = New System.Drawing.Point(700, 138)
+        Me.btnRemove.Location = New System.Drawing.Point(700, 93)
         Me.btnRemove.Margin = New System.Windows.Forms.Padding(12, 11, 12, 11)
         Me.btnRemove.Name = "btnRemove"
         Me.btnRemove.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(39, Byte), Integer))
@@ -286,7 +333,7 @@ Partial Class NhanVien
         Me.btnAdd.IconVisible = True
         Me.btnAdd.IconZoom = 40.0R
         Me.btnAdd.IsTab = False
-        Me.btnAdd.Location = New System.Drawing.Point(700, 77)
+        Me.btnAdd.Location = New System.Drawing.Point(700, 31)
         Me.btnAdd.Margin = New System.Windows.Forms.Padding(6)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(113, Byte), Integer), CType(CType(128, Byte), Integer))
@@ -522,50 +569,40 @@ Partial Class NhanVien
         Me.BunifuCustomLabel10.TabIndex = 24
         Me.BunifuCustomLabel10.Text = "Information Salesman"
         '
-        'txtMaNhanVien
+        'btnReset
         '
-        Me.txtMaNhanVien.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtMaNhanVien.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMaNhanVien.Location = New System.Drawing.Point(28, 65)
-        Me.txtMaNhanVien.Name = "txtMaNhanVien"
-        Me.txtMaNhanVien.Size = New System.Drawing.Size(143, 21)
-        Me.txtMaNhanVien.TabIndex = 35
-        '
-        'txtDT
-        '
-        Me.txtDT.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtDT.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDT.Location = New System.Drawing.Point(265, 65)
-        Me.txtDT.Name = "txtDT"
-        Me.txtDT.Size = New System.Drawing.Size(143, 21)
-        Me.txtDT.TabIndex = 36
-        '
-        'txtDC
-        '
-        Me.txtDC.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtDC.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDC.Location = New System.Drawing.Point(497, 65)
-        Me.txtDC.Name = "txtDC"
-        Me.txtDC.Size = New System.Drawing.Size(143, 21)
-        Me.txtDC.TabIndex = 37
-        '
-        'txtName
-        '
-        Me.txtName.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtName.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtName.Location = New System.Drawing.Point(26, 140)
-        Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(143, 21)
-        Me.txtName.TabIndex = 38
-        '
-        'txtEmail
-        '
-        Me.txtEmail.BorderColor = System.Drawing.Color.SeaGreen
-        Me.txtEmail.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEmail.Location = New System.Drawing.Point(265, 140)
-        Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(143, 21)
-        Me.txtEmail.TabIndex = 39
+        Me.btnReset.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnReset.BorderRadius = 0
+        Me.btnReset.ButtonText = "Reset"
+        Me.btnReset.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnReset.DisabledColor = System.Drawing.Color.Gray
+        Me.btnReset.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnReset.Iconimage = CType(resources.GetObject("btnReset.Iconimage"), System.Drawing.Image)
+        Me.btnReset.Iconimage_right = Nothing
+        Me.btnReset.Iconimage_right_Selected = Nothing
+        Me.btnReset.Iconimage_Selected = Nothing
+        Me.btnReset.IconMarginLeft = 0
+        Me.btnReset.IconMarginRight = 0
+        Me.btnReset.IconRightVisible = True
+        Me.btnReset.IconRightZoom = 0R
+        Me.btnReset.IconVisible = True
+        Me.btnReset.IconZoom = 40.0R
+        Me.btnReset.IsTab = False
+        Me.btnReset.Location = New System.Drawing.Point(700, 199)
+        Me.btnReset.Margin = New System.Windows.Forms.Padding(24, 20, 24, 20)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnReset.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnReset.OnHoverTextColor = System.Drawing.Color.White
+        Me.btnReset.selected = False
+        Me.btnReset.Size = New System.Drawing.Size(105, 27)
+        Me.btnReset.TabIndex = 40
+        Me.btnReset.Text = "Reset"
+        Me.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btnReset.Textcolor = System.Drawing.Color.White
+        Me.btnReset.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'NhanVien
         '
@@ -620,4 +657,5 @@ Partial Class NhanVien
     Friend WithEvents txtDC As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents txtDT As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents txtMaNhanVien As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents btnReset As Bunifu.Framework.UI.BunifuFlatButton
 End Class

@@ -122,4 +122,12 @@ Public Class ChucVu
     Private Sub txtNote_Click(sender As Object, e As EventArgs) Handles txtNote.Click
         emtylb()
     End Sub
+
+    Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
+        enyTxt()
+        txtID.Enabled = True
+        btnADD.Enabled = True
+        btnRemove.Enabled = False
+        btnUpdate.Enabled = False
+    End Sub
 End Class

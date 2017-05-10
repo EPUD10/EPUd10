@@ -201,4 +201,12 @@ Public Class NhanVien
     Private Sub txtName_Click(sender As Object, e As EventArgs) Handles txtName.Click
         ClearLB()
     End Sub
+
+    Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
+        ClearText()
+        txtMaNhanVien.Enabled = True
+        btnAdd.Enabled = True
+        btnRemove.Enabled = False
+        btnUpdate.Enabled = False
+    End Sub
 End Class

@@ -164,4 +164,12 @@ Public Class NhaCCform
     Private Sub txtTenNhaCC_Click(sender As Object, e As EventArgs) Handles txtTenNhaCC.Click
         ClearLb()
     End Sub
+
+    Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
+        Clear()
+        txtMaNhaCC.Enabled = True
+        btnAdd.Enabled = True
+        btnRemove.Enabled = False
+        btnUpdate.Enabled = False
+    End Sub
 End Class

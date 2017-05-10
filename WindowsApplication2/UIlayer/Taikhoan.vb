@@ -134,5 +134,11 @@ Public Class Taikhoan
         clear()
     End Sub
 
-
+    Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
+        clear()
+        btnAdd.Enabled = True
+        txtTaiKhoan.Enabled = True
+        btnRemove.Enabled = False
+        btnUpdate.Enabled = False
+    End Sub
 End Class

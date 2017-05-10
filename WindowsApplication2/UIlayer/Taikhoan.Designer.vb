@@ -22,9 +22,9 @@ Partial Class Taikhoan
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Taikhoan))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Taikhoan))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lbNote = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.lbMatKhau = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -44,6 +44,7 @@ Partial Class Taikhoan
         Me.btnRemove = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.dgvTaiKhoan = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.BunifuCustomLabel5 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.btnReset = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.dgvTaiKhoan, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -52,6 +53,7 @@ Partial Class Taikhoan
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Gray
+        Me.Panel1.Controls.Add(Me.btnReset)
         Me.Panel1.Controls.Add(Me.lbNote)
         Me.Panel1.Controls.Add(Me.lbMatKhau)
         Me.Panel1.Controls.Add(Me.lbTaiKhoan)
@@ -121,7 +123,7 @@ Partial Class Taikhoan
         Me.btnAdd.IconVisible = True
         Me.btnAdd.IconZoom = 40.0R
         Me.btnAdd.IsTab = False
-        Me.btnAdd.Location = New System.Drawing.Point(16, 537)
+        Me.btnAdd.Location = New System.Drawing.Point(16, 496)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnAdd.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
@@ -367,6 +369,40 @@ Partial Class Taikhoan
         Me.BunifuCustomLabel5.TabIndex = 16
         Me.BunifuCustomLabel5.Text = "Information Account"
         '
+        'btnReset
+        '
+        Me.btnReset.Activecolor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(38, Byte), Integer))
+        Me.btnReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnReset.BorderRadius = 0
+        Me.btnReset.ButtonText = "Reset"
+        Me.btnReset.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnReset.DisabledColor = System.Drawing.Color.Gray
+        Me.btnReset.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnReset.Iconimage = CType(resources.GetObject("btnReset.Iconimage"), System.Drawing.Image)
+        Me.btnReset.Iconimage_right = Nothing
+        Me.btnReset.Iconimage_right_Selected = Nothing
+        Me.btnReset.Iconimage_Selected = Nothing
+        Me.btnReset.IconMarginLeft = 0
+        Me.btnReset.IconMarginRight = 0
+        Me.btnReset.IconRightVisible = True
+        Me.btnReset.IconRightZoom = 0R
+        Me.btnReset.IconVisible = True
+        Me.btnReset.IconZoom = 40.0R
+        Me.btnReset.IsTab = False
+        Me.btnReset.Location = New System.Drawing.Point(16, 543)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnReset.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnReset.OnHoverTextColor = System.Drawing.Color.White
+        Me.btnReset.selected = False
+        Me.btnReset.Size = New System.Drawing.Size(168, 28)
+        Me.btnReset.TabIndex = 16
+        Me.btnReset.Text = "Reset"
+        Me.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btnReset.Textcolor = System.Drawing.Color.White
+        Me.btnReset.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
         'Taikhoan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -407,4 +443,5 @@ Partial Class Taikhoan
     Friend WithEvents lbMatKhau As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents lbTaiKhoan As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel5 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents btnReset As Bunifu.Framework.UI.BunifuFlatButton
 End Class

@@ -56,6 +56,7 @@ Partial Class KhachHangForm
         Me.txtSearch = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.BunifuCustomLabel8 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel9 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.btnReset = New Bunifu.Framework.UI.BunifuFlatButton()
         CType(Me.dgvKhach, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -314,6 +315,7 @@ Partial Class KhachHangForm
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(58, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.btnReset)
         Me.Panel2.Controls.Add(Me.btnUpdate)
         Me.Panel2.Controls.Add(Me.btnRemove)
         Me.Panel2.Controls.Add(Me.btnadd)
@@ -343,7 +345,7 @@ Partial Class KhachHangForm
         Me.btnUpdate.IconVisible = True
         Me.btnUpdate.IconZoom = 40.0R
         Me.btnUpdate.IsTab = False
-        Me.btnUpdate.Location = New System.Drawing.Point(635, 28)
+        Me.btnUpdate.Location = New System.Drawing.Point(444, 28)
         Me.btnUpdate.Name = "btnUpdate"
         Me.btnUpdate.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btnUpdate.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
@@ -377,7 +379,7 @@ Partial Class KhachHangForm
         Me.btnRemove.IconVisible = True
         Me.btnRemove.IconZoom = 40.0R
         Me.btnRemove.IsTab = False
-        Me.btnRemove.Location = New System.Drawing.Point(377, 28)
+        Me.btnRemove.Location = New System.Drawing.Point(238, 28)
         Me.btnRemove.Name = "btnRemove"
         Me.btnRemove.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btnRemove.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
@@ -411,7 +413,7 @@ Partial Class KhachHangForm
         Me.btnadd.IconVisible = True
         Me.btnadd.IconZoom = 40.0R
         Me.btnadd.IsTab = False
-        Me.btnadd.Location = New System.Drawing.Point(119, 28)
+        Me.btnadd.Location = New System.Drawing.Point(58, 28)
         Me.btnadd.Name = "btnadd"
         Me.btnadd.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(239, Byte), Integer))
         Me.btnadd.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
@@ -487,6 +489,40 @@ Partial Class KhachHangForm
         Me.BunifuCustomLabel9.TabIndex = 23
         Me.BunifuCustomLabel9.Text = "Information Customer"
         '
+        'btnReset
+        '
+        Me.btnReset.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnReset.BorderRadius = 0
+        Me.btnReset.ButtonText = "Reset"
+        Me.btnReset.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnReset.DisabledColor = System.Drawing.Color.Gray
+        Me.btnReset.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnReset.Iconimage = CType(resources.GetObject("btnReset.Iconimage"), System.Drawing.Image)
+        Me.btnReset.Iconimage_right = Nothing
+        Me.btnReset.Iconimage_right_Selected = Nothing
+        Me.btnReset.Iconimage_Selected = Nothing
+        Me.btnReset.IconMarginLeft = 0
+        Me.btnReset.IconMarginRight = 0
+        Me.btnReset.IconRightVisible = True
+        Me.btnReset.IconRightZoom = 0R
+        Me.btnReset.IconVisible = True
+        Me.btnReset.IconZoom = 40.0R
+        Me.btnReset.IsTab = False
+        Me.btnReset.Location = New System.Drawing.Point(645, 28)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnReset.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnReset.OnHoverTextColor = System.Drawing.Color.White
+        Me.btnReset.selected = False
+        Me.btnReset.Size = New System.Drawing.Size(106, 32)
+        Me.btnReset.TabIndex = 3
+        Me.btnReset.Text = "Reset"
+        Me.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btnReset.Textcolor = System.Drawing.Color.White
+        Me.btnReset.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
         'KhachHangForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -542,4 +578,5 @@ Partial Class KhachHangForm
     Friend WithEvents txtPhoneNumber As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents txtAddress As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents txtNameCus As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Friend WithEvents btnReset As Bunifu.Framework.UI.BunifuFlatButton
 End Class

@@ -189,4 +189,12 @@ Public Class KhachHangForm
     Private Sub txtPhoneNumber_Click(sender As Object, e As EventArgs) Handles txtPhoneNumber.Click
         lbEmty()
     End Sub
+
+    Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
+        txtEmty()
+        txtIDCustomer.Enabled = True
+        btnadd.Enabled = True
+        btnRemove.Enabled = False
+        btnUpdate.Enabled = False
+    End Sub
 End Class

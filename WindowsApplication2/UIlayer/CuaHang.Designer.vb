@@ -48,6 +48,7 @@ Partial Class CuaHang
         Me.txtDT = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.txtEmail = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.txtDC = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
+        Me.btnReset = New Bunifu.Framework.UI.BunifuFlatButton()
         CType(Me.dgvCH, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -94,7 +95,7 @@ Partial Class CuaHang
         Me.btnUpdate.IconVisible = True
         Me.btnUpdate.IconZoom = 40.0R
         Me.btnUpdate.IsTab = False
-        Me.btnUpdate.Location = New System.Drawing.Point(698, 131)
+        Me.btnUpdate.Location = New System.Drawing.Point(712, 99)
         Me.btnUpdate.Margin = New System.Windows.Forms.Padding(12, 11, 12, 11)
         Me.btnUpdate.Name = "btnUpdate"
         Me.btnUpdate.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(116, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(109, Byte), Integer))
@@ -129,7 +130,7 @@ Partial Class CuaHang
         Me.btnRemove.IconVisible = True
         Me.btnRemove.IconZoom = 40.0R
         Me.btnRemove.IsTab = False
-        Me.btnRemove.Location = New System.Drawing.Point(698, 230)
+        Me.btnRemove.Location = New System.Drawing.Point(712, 160)
         Me.btnRemove.Margin = New System.Windows.Forms.Padding(12, 11, 12, 11)
         Me.btnRemove.Name = "btnRemove"
         Me.btnRemove.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(39, Byte), Integer))
@@ -232,7 +233,7 @@ Partial Class CuaHang
         Me.btnSearch.IconVisible = True
         Me.btnSearch.IconZoom = 40.0R
         Me.btnSearch.IsTab = False
-        Me.btnSearch.Location = New System.Drawing.Point(701, 317)
+        Me.btnSearch.Location = New System.Drawing.Point(712, 317)
         Me.btnSearch.Margin = New System.Windows.Forms.Padding(6)
         Me.btnSearch.Name = "btnSearch"
         Me.btnSearch.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(249, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(47, Byte), Integer))
@@ -408,11 +409,47 @@ Partial Class CuaHang
         Me.txtDC.Size = New System.Drawing.Size(179, 20)
         Me.txtDC.TabIndex = 64
         '
+        'btnReset
+        '
+        Me.btnReset.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnReset.BorderRadius = 0
+        Me.btnReset.ButtonText = "Reset"
+        Me.btnReset.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnReset.DisabledColor = System.Drawing.Color.Gray
+        Me.btnReset.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnReset.Iconimage = CType(resources.GetObject("btnReset.Iconimage"), System.Drawing.Image)
+        Me.btnReset.Iconimage_right = Nothing
+        Me.btnReset.Iconimage_right_Selected = Nothing
+        Me.btnReset.Iconimage_Selected = Nothing
+        Me.btnReset.IconMarginLeft = 0
+        Me.btnReset.IconMarginRight = 0
+        Me.btnReset.IconRightVisible = True
+        Me.btnReset.IconRightZoom = 0R
+        Me.btnReset.IconVisible = True
+        Me.btnReset.IconZoom = 40.0R
+        Me.btnReset.IsTab = False
+        Me.btnReset.Location = New System.Drawing.Point(712, 230)
+        Me.btnReset.Margin = New System.Windows.Forms.Padding(6)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnReset.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnReset.OnHoverTextColor = System.Drawing.Color.White
+        Me.btnReset.selected = False
+        Me.btnReset.Size = New System.Drawing.Size(105, 28)
+        Me.btnReset.TabIndex = 65
+        Me.btnReset.Text = "Reset"
+        Me.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btnReset.Textcolor = System.Drawing.Color.White
+        Me.btnReset.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
         'CuaHang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(190, Byte), Integer), CType(CType(177, Byte), Integer), CType(CType(156, Byte), Integer))
+        Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.txtDC)
         Me.Controls.Add(Me.txtEmail)
         Me.Controls.Add(Me.txtDT)
@@ -466,4 +503,5 @@ Partial Class CuaHang
     Friend WithEvents txtDT As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents txtEmail As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents txtDC As WindowsFormsControlLibrary1.BunifuCustomTextbox
+    Protected Friend WithEvents btnReset As Bunifu.Framework.UI.BunifuFlatButton
 End Class
