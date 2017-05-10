@@ -39,7 +39,8 @@ Public Class Taikhoan
         clear()
         Showdata()
         dgv()
-
+        btnRemove.Enabled = False
+        btnUpdate.Enabled = False
     End Sub
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         Try
@@ -79,11 +80,19 @@ Public Class Taikhoan
     End Sub
 
     Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
-        TK.Ma = txtTaiKhoan.Text
-        cls.Delete(TK)
-        Showdata()
-        MessageBox.Show("Delete success !")
-        clear()
+        Try
+            TK.Ma = txtTaiKhoan.Text
+            cls.Delete(TK)
+            Showdata()
+            MessageBox.Show("Delete success !")
+            clear()
+            btnAdd.Enabled = True
+            txtTaiKhoan.Enabled = True
+            btnRemove.Enabled = False
+            btnUpdate.Enabled = False
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
     End Sub
 
     Private Sub dgvTaiKhoan_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvTaiKhoan.CellClick
@@ -93,17 +102,29 @@ Public Class Taikhoan
             txtTaiKhoan.Text = row.Cells("ID_nv").Value.ToString
             txtMatKhau.Text = row.Cells("MK_nv").Value.ToString
             txtGhiChu.Text = row.Cells("GhiChu_nv").Value.ToString
+            btnAdd.Enabled = False
+            txtTaiKhoan.Enabled = False
+            btnRemove.Enabled = True
+            btnUpdate.Enabled = True
         End If
     End Sub
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
-        TK.Ma = txtTaiKhoan.Text
-        TK.Ten = txtMatKhau.Text
-        TK.Ghichu = txtGhiChu.Text
-        cls.Update(TK)
-        Showdata()
-        MessageBox.Show("Update success !!!")
-        clear()
+        Try
+            TK.Ma = txtTaiKhoan.Text
+            TK.Ten = txtMatKhau.Text
+            TK.Ghichu = txtGhiChu.Text
+            cls.Update(TK)
+            Showdata()
+            MessageBox.Show("Update success !!!")
+            clear()
+            btnAdd.Enabled = True
+            txtTaiKhoan.Enabled = True
+            btnRemove.Enabled = False
+            btnUpdate.Enabled = False
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
     End Sub
 
     Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click

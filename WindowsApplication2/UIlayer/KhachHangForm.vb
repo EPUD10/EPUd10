@@ -12,6 +12,13 @@ Public Class KhachHangForm
         lbaddress.Text = ""
         rbtNam.Checked = True
     End Sub
+    Private Sub txtEmty()
+        txtAddress.Text = ""
+        txtEmail.Text = ""
+        txtIDCustomer.Text = ""
+        txtNameCus.Text = ""
+        txtPhoneNumber.Text = ""
+    End Sub
     Private Sub BoolLb()
         If String.IsNullOrEmpty(txtIDCustomer.Text) Then
             lbID.Text = "ID is not NULL"
@@ -30,13 +37,17 @@ Public Class KhachHangForm
         End If
     End Sub
     Private Sub NameDGV()
-        dgvKhach.Columns("ID_kh").HeaderText = "ID customer"
-        dgvKhach.Columns("Ten_kh").HeaderText = "Name customer"
-        dgvKhach.Columns("DC_kh").HeaderText = "Address"
-        dgvKhach.Columns("DT_kh").HeaderText = "Phone number"
-        dgvKhach.Columns("GT_kh").HeaderText = "Sex"
-        dgvKhach.Columns("Email_kh").HeaderText = "Email"
-        dgvKhach.Columns("Date_kh").HeaderText = "Date of birth"
+        Try
+            dgvKhach.Columns("ID_kh").HeaderText = "ID customer"
+            dgvKhach.Columns("Ten_kh").HeaderText = "Name customer"
+            dgvKhach.Columns("DC_kh").HeaderText = "Address"
+            dgvKhach.Columns("DT_kh").HeaderText = "Phone number"
+            dgvKhach.Columns("GT_kh").HeaderText = "Sex"
+            dgvKhach.Columns("Email_kh").HeaderText = "Email"
+            dgvKhach.Columns("Date_kh").HeaderText = "Date of birth"
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
     End Sub
     Public Sub showData()
         dgvKhach.DataSource = cls.LoadData()
@@ -45,6 +56,8 @@ Public Class KhachHangForm
         lbEmty()
         showData()
         NameDGV()
+        btnRemove.Enabled = False
+        btnUpdate.Enabled = False
     End Sub
 
     Private Sub btnadd_Click(sender As Object, e As EventArgs) Handles btnadd.Click
@@ -71,32 +84,52 @@ Public Class KhachHangForm
                 cls.ADD(KH)
                 showData()
                 MessageBox.Show("insert success")
+                txtEmty()
+
             End If
         End If
     End Sub
 
     Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
-        KH.Id = txtIDCustomer.Text
-        cls.Dele(KH)
-        showData()
-        MessageBox.Show("Update success")
+        Try
+            KH.Id = txtIDCustomer.Text
+            cls.Dele(KH)
+            showData()
+            MessageBox.Show("Remove success")
+            txtEmty()
+            txtIDCustomer.Enabled = True
+            btnadd.Enabled = True
+            btnRemove.Enabled = False
+            btnUpdate.Enabled = False
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
     End Sub
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
-        KH.Id = txtIDCustomer.Text
-        KH.Name = txtNameCus.Text
-        KH.Phone = txtPhoneNumber.Text
-        KH.Email = txtEmail.Text
-        KH.Birth = datetime.Value
-        KH.Add = txtAddress.Text
-        If rbtNam.Checked Then
-            KH.Sex = rbtNam.Text
-        ElseIf rbtnu.Checked Then
-            KH.Sex = rbtnu.Text
-        End If
-        cls.Update(KH)
-        showData()
-        MessageBox.Show("Update success")
+        Try
+            KH.Id = txtIDCustomer.Text
+            KH.Name = txtNameCus.Text
+            KH.Phone = txtPhoneNumber.Text
+            KH.Email = txtEmail.Text
+            KH.Birth = datetime.Value
+            KH.Add = txtAddress.Text
+            If rbtNam.Checked Then
+                KH.Sex = rbtNam.Text
+            ElseIf rbtnu.Checked Then
+                KH.Sex = rbtnu.Text
+            End If
+            cls.Update(KH)
+            showData()
+            MessageBox.Show("Update success")
+            txtEmty()
+            txtIDCustomer.Enabled = True
+            btnadd.Enabled = True
+            btnRemove.Enabled = False
+            btnUpdate.Enabled = False
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
     End Sub
 
     Private Sub dgvKhach_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvKhach.CellClick
@@ -117,6 +150,10 @@ Public Class KhachHangForm
             '    End If
             'End If
             ' MessageBox.Show(StrComp(row.Cells("GT_kh").Value.ToString, rbtNam.Text).ToString)
+            txtIDCustomer.Enabled = False
+            btnadd.Enabled = False
+            btnRemove.Enabled = True
+            btnUpdate.Enabled = True
         End If
     End Sub
 

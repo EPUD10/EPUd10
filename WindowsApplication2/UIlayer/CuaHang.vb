@@ -33,6 +33,8 @@ Public Class CuaHang
         Clear()
         showData()
         dgv()
+        btnRemove.Enabled = False
+        btnUpdate.Enabled = False
     End Sub
     Public Sub boolEmty()
         If String.IsNullOrEmpty(txtMaCH.Text) Then
@@ -83,32 +85,48 @@ Public Class CuaHang
             txtDT.Text = row.Cells("DT_CHang").Value.ToString
             txtEmail.Text = row.Cells("Email_CHang").Value.ToString
             txtName.Text = row.Cells("Ten_CHang").Value.ToString
+            txtMaCH.Enabled = False
+            btnAdd.Enabled = False
+            btnRemove.Enabled = True
+            btnUpdate.Enabled = True
         End If
     End Sub
 
     Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
-        CH.Ma = txtMaCH.Text
-        cls.Remove(CH)
-        showData()
-        MessageBox.Show("Remove success !")
-        Clear()
+        Try
+            CH.Ma = txtMaCH.Text
+            cls.Remove(CH)
+            showData()
+            MessageBox.Show("Remove success !")
+            Clear()
+            btnAdd.Enabled = True
+            txtMaCH.Enabled = True
+            btnRemove.Enabled = False
+            btnUpdate.Enabled = False
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
     End Sub
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
-        If String.IsNullOrEmpty(txtMaCH.Text) OrElse String.IsNullOrEmpty(txtName.Text) OrElse String.IsNullOrEmpty(txtDT.Text) OrElse String.IsNullOrEmpty(txtEmail.Text) OrElse String.IsNullOrEmpty(txtDC.Text) Then
-            boolEmty()
-        Else
+        Try
+
             CH.Ma = txtMaCH.Text
             CH.Ten = txtName.Text
             CH.Email = txtEmail.Text
-            CH.DienThoai = Integer.Parse(txtDT.Text)
-            MessageBox.Show(Integer.Parse(txtDT.Text))
+            CH.DienThoai = txtDT.Text
             CH.DiaChi = txtDC.Text
             cls.Update(CH)
             showData()
             Clear()
             MessageBox.Show("Update success !!!")
-        End If
+            btnAdd.Enabled = True
+            txtMaCH.Enabled = True
+            btnRemove.Enabled = False
+            btnUpdate.Enabled = False
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
     End Sub
 
     Private Sub txtDC_Click(sender As Object, e As EventArgs) Handles txtDC.Click

@@ -1,7 +1,30 @@
 ﻿
+Imports Bunifu.Framework.UI
+
 Public Class Menuform
     Dim x, y As Integer
     Dim newpoint As Point
+    Private Sub emtyItem(ByVal formabc As Control)
+        Try
+            Dim ctrl As Control
+            For Each ctrl In formabc.Controls
+                If TypeOf ctrl Is TextBox Then
+                    ctrl.Text = ""
+                    ctrl.Enabled = True
+                End If
+                If TypeOf ctrl Is BunifuFlatButton Then
+                    If ctrl.Enabled = False Then
+                        ctrl.Enabled = True
+                    End If
+                End If
+                If ctrl.HasChildren Then
+                    emtyItem(ctrl)
+                End If
+            Next
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
+    End Sub
     Private Sub BunifuImageButton1_Click(sender As Object, e As EventArgs) Handles BunifuImageButton1.Click
         Try
             Me.Close()
@@ -30,56 +53,52 @@ Public Class Menuform
         y = Control.MousePosition.Y - Me.Location.Y
     End Sub
 
-    Private Sub btnKhach_Click(sender As Object, e As EventArgs)
-        KhachHangForm1.Visible = False
-        KhachHangForm1.BringToFront()
-        tranKhachhang.ShowSync(KhachHangForm1)
-    End Sub
-
-    Private Sub btnNhaCC_Click(sender As Object, e As EventArgs)
-        NhaCCform1.Visible = False
-        NhaCCform1.BringToFront()
-        tranNhaCC.ShowSync(NhaCCform1)
-    End Sub
-
     Private Sub btnKhach_Click_1(sender As Object, e As EventArgs) Handles btnKhach.Click
         KhachHangForm1.Visible = False
+        emtyItem(KhachHangForm1)
         KhachHangForm1.BringToFront()
         tranKhachhang.ShowSync(KhachHangForm1)
+
     End Sub
 
     Private Sub btnNhaCC_Click_1(sender As Object, e As EventArgs) Handles btnNhaCC.Click
         NhaCCform1.Visible = False
+        emtyItem(NhaCCform1)
         NhaCCform1.BringToFront()
         tranNhaCC.ShowSync(NhaCCform1)
     End Sub
 
     Private Sub btnChucVu_Click(sender As Object, e As EventArgs) Handles btnChucVu.Click
         ChucVu1.Visible = False
+        emtyItem(ChucVu1)
         ChucVu1.BringToFront()
         tranChucVu.ShowSync(ChucVu1)
     End Sub
 
     Private Sub btnNhanVien_Click(sender As Object, e As EventArgs) Handles btnNhanVien.Click
         NhanVien1.Visible = False
+        emtyItem(NhanVien1)
         NhanVien1.BringToFront()
         tranNhanVien.ShowSync(NhanVien1)
     End Sub
 
     Private Sub btnTaiKhoan_Click(sender As Object, e As EventArgs) Handles btnTaiKhoan.Click
         Taikhoan1.Visible = False
+        emtyItem(Taikhoan1)
         Taikhoan1.BringToFront()
         tranTaiKhoan.ShowSync(Taikhoan1)
     End Sub
 
     Private Sub btnHoaDonBan_Click(sender As Object, e As EventArgs) Handles btnHoaDonBan.Click
         HoaDonBan1.Visible = False
+        emtyItem(HoaDonBan1)
         HoaDonBan1.BringToFront()
         tranHDN.ShowSync(HoaDonBan1)
     End Sub
 
     Private Sub btnHoaDonNhap_Click(sender As Object, e As EventArgs) Handles btnHoaDonNhap.Click
         HoaDonNhap1.Visible = False
+        emtyItem(HoaDonNhap1)
         HoaDonNhap1.BringToFront()
         tranHDN.ShowSync(HoaDonNhap1)
     End Sub
@@ -92,6 +111,7 @@ Public Class Menuform
 
     Private Sub btnCuaHang_Click(sender As Object, e As EventArgs) Handles btnCuaHang.Click
         CuaHang1.Visible = False
+        emtyItem(CuaHang1)
         CuaHang1.BringToFront()
         CuaHang1.Show()
     End Sub
@@ -109,5 +129,4 @@ Public Class Menuform
             Application.DoEvents()
         End If
     End Sub
-
 End Class

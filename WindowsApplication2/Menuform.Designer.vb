@@ -57,6 +57,17 @@ Partial Class Menuform
         Me.tranlogo = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Home1 = New WindowsApplication2.Home()
+        Me.HoaDonNhap2 = New WindowsApplication2.HoaDonNhap()
+        Me.HoaDonBan2 = New WindowsApplication2.HoaDonBan()
+        Me.ChucVu1 = New WindowsApplication2.ChucVu()
+        Me.Taikhoan1 = New WindowsApplication2.Taikhoan()
+        Me.CuaHang1 = New WindowsApplication2.CuaHang()
+        Me.HoaDonBan1 = New WindowsApplication2.HoaDonBan()
+        Me.HoaDonNhap1 = New WindowsApplication2.HoaDonNhap()
+        Me.NhanVien1 = New WindowsApplication2.NhanVien()
+        Me.KhachHangForm1 = New WindowsApplication2.KhachHangForm()
+        Me.NhaCCform1 = New WindowsApplication2.NhaCCform()
         Me.tranpanel = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.tranNhaCC = New BunifuAnimatorNS.BunifuTransition(Me.components)
@@ -68,17 +79,6 @@ Partial Class Menuform
         Me.tranHDN = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.tranHome = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.ChucVu = New BunifuAnimatorNS.BunifuTransition(Me.components)
-        Me.HoaDonBan2 = New WindowsApplication2.HoaDonBan()
-        Me.ChucVu1 = New WindowsApplication2.ChucVu()
-        Me.Taikhoan1 = New WindowsApplication2.Taikhoan()
-        Me.CuaHang1 = New WindowsApplication2.CuaHang()
-        Me.HoaDonBan1 = New WindowsApplication2.HoaDonBan()
-        Me.HoaDonNhap1 = New WindowsApplication2.HoaDonNhap()
-        Me.NhanVien1 = New WindowsApplication2.NhanVien()
-        Me.KhachHangForm1 = New WindowsApplication2.KhachHangForm()
-        Me.NhaCCform1 = New WindowsApplication2.NhaCCform()
-        Me.HoaDonNhap2 = New WindowsApplication2.HoaDonNhap()
-        Me.Home1 = New WindowsApplication2.Home()
         Me.Panel1.SuspendLayout()
         CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -789,6 +789,227 @@ Partial Class Menuform
         Me.Panel3.Size = New System.Drawing.Size(887, 676)
         Me.Panel3.TabIndex = 0
         '
+        'Home1
+        '
+        Me.tranlogo.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranChucVu.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhanVien.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDB.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
+        Me.Home1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Home1.Location = New System.Drawing.Point(0, 0)
+        Me.Home1.Name = "Home1"
+        Me.Home1.Size = New System.Drawing.Size(887, 676)
+        Me.Home1.TabIndex = 13
+        '
+        'HoaDonNhap2
+        '
+        Me.HoaDonNhap2.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.tranlogo.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranChucVu.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhanVien.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDB.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
+        Me.HoaDonNhap2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.HoaDonNhap2.Location = New System.Drawing.Point(0, 0)
+        Me.HoaDonNhap2.Name = "HoaDonNhap2"
+        Me.HoaDonNhap2.Size = New System.Drawing.Size(887, 676)
+        Me.HoaDonNhap2.TabIndex = 12
+        '
+        'HoaDonBan2
+        '
+        Me.HoaDonBan2.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.tranlogo.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranChucVu.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhanVien.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDB.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
+        Me.HoaDonBan2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.HoaDonBan2.Location = New System.Drawing.Point(0, 0)
+        Me.HoaDonBan2.Name = "HoaDonBan2"
+        Me.HoaDonBan2.Size = New System.Drawing.Size(887, 676)
+        Me.HoaDonBan2.TabIndex = 11
+        '
+        'ChucVu1
+        '
+        Me.ChucVu1.BackColor = System.Drawing.Color.FromArgb(CType(CType(190, Byte), Integer), CType(CType(177, Byte), Integer), CType(CType(156, Byte), Integer))
+        Me.tranlogo.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranChucVu.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhanVien.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDB.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ChucVu1.Location = New System.Drawing.Point(0, 0)
+        Me.ChucVu1.Name = "ChucVu1"
+        Me.ChucVu1.Size = New System.Drawing.Size(887, 676)
+        Me.ChucVu1.TabIndex = 10
+        '
+        'Taikhoan1
+        '
+        Me.Taikhoan1.BackColor = System.Drawing.Color.Silver
+        Me.tranlogo.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranChucVu.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhanVien.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDB.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
+        Me.Taikhoan1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Taikhoan1.Location = New System.Drawing.Point(0, 0)
+        Me.Taikhoan1.Name = "Taikhoan1"
+        Me.Taikhoan1.Size = New System.Drawing.Size(887, 676)
+        Me.Taikhoan1.TabIndex = 9
+        '
+        'CuaHang1
+        '
+        Me.CuaHang1.BackColor = System.Drawing.Color.FromArgb(CType(CType(190, Byte), Integer), CType(CType(177, Byte), Integer), CType(CType(156, Byte), Integer))
+        Me.tranlogo.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranChucVu.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhanVien.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDB.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
+        Me.CuaHang1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CuaHang1.Location = New System.Drawing.Point(0, 0)
+        Me.CuaHang1.Name = "CuaHang1"
+        Me.CuaHang1.Size = New System.Drawing.Size(887, 676)
+        Me.CuaHang1.TabIndex = 1
+        '
+        'HoaDonBan1
+        '
+        Me.HoaDonBan1.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.tranlogo.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranChucVu.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhanVien.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDB.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
+        Me.HoaDonBan1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.HoaDonBan1.Location = New System.Drawing.Point(0, 0)
+        Me.HoaDonBan1.Name = "HoaDonBan1"
+        Me.HoaDonBan1.Size = New System.Drawing.Size(887, 676)
+        Me.HoaDonBan1.TabIndex = 7
+        '
+        'HoaDonNhap1
+        '
+        Me.HoaDonNhap1.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.tranlogo.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranChucVu.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhanVien.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDB.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
+        Me.HoaDonNhap1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.HoaDonNhap1.Location = New System.Drawing.Point(0, 0)
+        Me.HoaDonNhap1.Name = "HoaDonNhap1"
+        Me.HoaDonNhap1.Size = New System.Drawing.Size(887, 676)
+        Me.HoaDonNhap1.TabIndex = 6
+        '
+        'NhanVien1
+        '
+        Me.NhanVien1.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(56, Byte), Integer))
+        Me.tranlogo.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranChucVu.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhanVien.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDB.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
+        Me.NhanVien1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.NhanVien1.Location = New System.Drawing.Point(0, 0)
+        Me.NhanVien1.Name = "NhanVien1"
+        Me.NhanVien1.Size = New System.Drawing.Size(887, 676)
+        Me.NhanVien1.TabIndex = 4
+        Me.NhanVien1.Visible = False
+        '
+        'KhachHangForm1
+        '
+        Me.KhachHangForm1.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer))
+        Me.tranlogo.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranChucVu.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhanVien.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDB.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
+        Me.KhachHangForm1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.KhachHangForm1.Location = New System.Drawing.Point(0, 0)
+        Me.KhachHangForm1.Name = "KhachHangForm1"
+        Me.KhachHangForm1.Size = New System.Drawing.Size(887, 676)
+        Me.KhachHangForm1.TabIndex = 2
+        Me.KhachHangForm1.Visible = False
+        '
+        'NhaCCform1
+        '
+        Me.tranlogo.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranChucVu.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhanVien.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranNhaCC.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranTaiKhoan.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHome.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranpanel.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDB.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranKhachhang.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
+        Me.ChucVu.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
+        Me.tranHDN.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
+        Me.NhaCCform1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.NhaCCform1.Location = New System.Drawing.Point(0, 0)
+        Me.NhaCCform1.Name = "NhaCCform1"
+        Me.NhaCCform1.Size = New System.Drawing.Size(887, 676)
+        Me.NhaCCform1.TabIndex = 1
+        Me.NhaCCform1.Visible = False
+        '
         'tranpanel
         '
         Me.tranpanel.AnimationType = BunifuAnimatorNS.AnimationType.Leaf
@@ -999,227 +1220,6 @@ Partial Class Menuform
         Animation10.TimeCoeff = 0!
         Animation10.TransparencyCoeff = 0!
         Me.ChucVu.DefaultAnimation = Animation10
-        '
-        'HoaDonBan2
-        '
-        Me.HoaDonBan2.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.tranlogo.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
-        Me.tranChucVu.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhanVien.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
-        Me.tranTaiKhoan.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHome.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDB.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
-        Me.ChucVu.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.HoaDonBan2, BunifuAnimatorNS.DecorationType.None)
-        Me.HoaDonBan2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.HoaDonBan2.Location = New System.Drawing.Point(0, 0)
-        Me.HoaDonBan2.Name = "HoaDonBan2"
-        Me.HoaDonBan2.Size = New System.Drawing.Size(887, 676)
-        Me.HoaDonBan2.TabIndex = 11
-        '
-        'ChucVu1
-        '
-        Me.ChucVu1.BackColor = System.Drawing.Color.FromArgb(CType(CType(190, Byte), Integer), CType(CType(177, Byte), Integer), CType(CType(156, Byte), Integer))
-        Me.tranlogo.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranChucVu.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhanVien.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranTaiKhoan.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHome.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDB.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
-        Me.ChucVu.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.ChucVu1, BunifuAnimatorNS.DecorationType.None)
-        Me.ChucVu1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ChucVu1.Location = New System.Drawing.Point(0, 0)
-        Me.ChucVu1.Name = "ChucVu1"
-        Me.ChucVu1.Size = New System.Drawing.Size(887, 676)
-        Me.ChucVu1.TabIndex = 10
-        '
-        'Taikhoan1
-        '
-        Me.Taikhoan1.BackColor = System.Drawing.Color.Silver
-        Me.tranlogo.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranChucVu.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhanVien.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranTaiKhoan.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHome.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDB.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
-        Me.ChucVu.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.Taikhoan1, BunifuAnimatorNS.DecorationType.None)
-        Me.Taikhoan1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Taikhoan1.Location = New System.Drawing.Point(0, 0)
-        Me.Taikhoan1.Name = "Taikhoan1"
-        Me.Taikhoan1.Size = New System.Drawing.Size(887, 676)
-        Me.Taikhoan1.TabIndex = 9
-        '
-        'CuaHang1
-        '
-        Me.CuaHang1.BackColor = System.Drawing.Color.FromArgb(CType(CType(190, Byte), Integer), CType(CType(177, Byte), Integer), CType(CType(156, Byte), Integer))
-        Me.tranlogo.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranChucVu.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhanVien.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranTaiKhoan.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHome.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDB.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
-        Me.ChucVu.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.CuaHang1, BunifuAnimatorNS.DecorationType.None)
-        Me.CuaHang1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CuaHang1.Location = New System.Drawing.Point(0, 0)
-        Me.CuaHang1.Name = "CuaHang1"
-        Me.CuaHang1.Size = New System.Drawing.Size(887, 676)
-        Me.CuaHang1.TabIndex = 1
-        '
-        'HoaDonBan1
-        '
-        Me.HoaDonBan1.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.tranlogo.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranChucVu.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhanVien.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranTaiKhoan.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHome.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDB.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
-        Me.ChucVu.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.HoaDonBan1, BunifuAnimatorNS.DecorationType.None)
-        Me.HoaDonBan1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.HoaDonBan1.Location = New System.Drawing.Point(0, 0)
-        Me.HoaDonBan1.Name = "HoaDonBan1"
-        Me.HoaDonBan1.Size = New System.Drawing.Size(887, 676)
-        Me.HoaDonBan1.TabIndex = 7
-        '
-        'HoaDonNhap1
-        '
-        Me.HoaDonNhap1.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.tranlogo.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranChucVu.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhanVien.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranTaiKhoan.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHome.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDB.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
-        Me.ChucVu.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.HoaDonNhap1, BunifuAnimatorNS.DecorationType.None)
-        Me.HoaDonNhap1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.HoaDonNhap1.Location = New System.Drawing.Point(0, 0)
-        Me.HoaDonNhap1.Name = "HoaDonNhap1"
-        Me.HoaDonNhap1.Size = New System.Drawing.Size(887, 676)
-        Me.HoaDonNhap1.TabIndex = 6
-        '
-        'NhanVien1
-        '
-        Me.NhanVien1.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.tranlogo.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranChucVu.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhanVien.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranTaiKhoan.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHome.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDB.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
-        Me.ChucVu.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.NhanVien1, BunifuAnimatorNS.DecorationType.None)
-        Me.NhanVien1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.NhanVien1.Location = New System.Drawing.Point(0, 0)
-        Me.NhanVien1.Name = "NhanVien1"
-        Me.NhanVien1.Size = New System.Drawing.Size(887, 676)
-        Me.NhanVien1.TabIndex = 4
-        Me.NhanVien1.Visible = False
-        '
-        'KhachHangForm1
-        '
-        Me.KhachHangForm1.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer))
-        Me.tranlogo.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranChucVu.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhanVien.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranTaiKhoan.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHome.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDB.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.ChucVu.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.KhachHangForm1, BunifuAnimatorNS.DecorationType.None)
-        Me.KhachHangForm1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.KhachHangForm1.Location = New System.Drawing.Point(0, 0)
-        Me.KhachHangForm1.Name = "KhachHangForm1"
-        Me.KhachHangForm1.Size = New System.Drawing.Size(887, 676)
-        Me.KhachHangForm1.TabIndex = 2
-        Me.KhachHangForm1.Visible = False
-        '
-        'NhaCCform1
-        '
-        Me.tranlogo.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranChucVu.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhanVien.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranTaiKhoan.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHome.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDB.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
-        Me.ChucVu.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.NhaCCform1, BunifuAnimatorNS.DecorationType.None)
-        Me.NhaCCform1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.NhaCCform1.Location = New System.Drawing.Point(0, 0)
-        Me.NhaCCform1.Name = "NhaCCform1"
-        Me.NhaCCform1.Size = New System.Drawing.Size(887, 676)
-        Me.NhaCCform1.TabIndex = 1
-        Me.NhaCCform1.Visible = False
-        '
-        'HoaDonNhap2
-        '
-        Me.HoaDonNhap2.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.tranlogo.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
-        Me.tranChucVu.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhanVien.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
-        Me.tranTaiKhoan.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHome.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDB.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
-        Me.ChucVu.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.HoaDonNhap2, BunifuAnimatorNS.DecorationType.None)
-        Me.HoaDonNhap2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.HoaDonNhap2.Location = New System.Drawing.Point(0, 0)
-        Me.HoaDonNhap2.Name = "HoaDonNhap2"
-        Me.HoaDonNhap2.Size = New System.Drawing.Size(887, 676)
-        Me.HoaDonNhap2.TabIndex = 12
-        '
-        'Home1
-        '
-        Me.tranlogo.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranChucVu.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhanVien.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranNhaCC.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranTaiKhoan.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHome.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranpanel.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDB.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranKhachhang.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.ChucVu.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.tranHDN.SetDecoration(Me.Home1, BunifuAnimatorNS.DecorationType.None)
-        Me.Home1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Home1.Location = New System.Drawing.Point(0, 0)
-        Me.Home1.Name = "Home1"
-        Me.Home1.Size = New System.Drawing.Size(887, 676)
-        Me.Home1.TabIndex = 13
         '
         'Menuform
         '

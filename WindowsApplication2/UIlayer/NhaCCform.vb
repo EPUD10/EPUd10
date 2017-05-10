@@ -53,6 +53,8 @@ Public Class NhaCCform
         ClearLb()
         showData()
         nameDGV()
+        btnRemove.Enabled = False
+        btnUpdate.Enabled = False
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
@@ -80,11 +82,19 @@ Public Class NhaCCform
     End Sub
 
     Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
-        NCC.Ma = txtMaNhaCC.Text
-        cls.Remove(NCC)
-        showData()
-        Clear()
-        MessageBox.Show("Remove success !")
+        Try
+            NCC.Ma = txtMaNhaCC.Text
+            cls.Remove(NCC)
+            showData()
+            Clear()
+            MessageBox.Show("Remove success !")
+            btnAdd.Enabled = True
+            txtMaNhaCC.Enabled = True
+            btnRemove.Enabled = False
+            btnUpdate.Enabled = False
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
     End Sub
 
     Private Sub dgvNhaCC_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvNhaCC.CellClick
@@ -96,13 +106,15 @@ Public Class NhaCCform
             txtDienThoai.Text = row.Cells("DT_nhaCC").Value.ToString
             txtDiaChi.Text = row.Cells("DC_nhaCC").Value.ToString
             txtEmail.Text = row.Cells("Email_nhaCC").Value.ToString
+            btnAdd.Enabled = False
+            txtMaNhaCC.Enabled = False
+            btnRemove.Enabled = True
+            btnUpdate.Enabled = True
         End If
     End Sub
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
-        If String.IsNullOrEmpty(txtDiaChi.Text) OrElse String.IsNullOrEmpty(txtDienThoai.Text) OrElse String.IsNullOrEmpty(txtEmail.Text) OrElse String.IsNullOrEmpty(txtMaNhaCC.Text) OrElse String.IsNullOrEmpty(txtTenNhaCC.Text) Then
-            KTEmty()
-        Else
+        Try
             NCC.Ma = txtMaNhaCC.Text
             NCC.Ten = txtTenNhaCC.Text
             NCC.DienThoai = txtDienThoai.Text
@@ -111,8 +123,14 @@ Public Class NhaCCform
             cls.Update(NCC)
             showData()
             Clear()
-            MessageBox.Show("Add success !")
-        End If
+            MessageBox.Show("Update success !")
+            btnAdd.Enabled = True
+            txtMaNhaCC.Enabled = True
+            btnRemove.Enabled = False
+            btnUpdate.Enabled = False
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
     End Sub
 
     Private Sub txtMaNhaCC_Click(sender As Object, e As EventArgs) Handles txtMaNhaCC.Click
@@ -134,6 +152,4 @@ Public Class NhaCCform
     Private Sub txtTenNhaCC_Click(sender As Object, e As EventArgs) Handles txtTenNhaCC.Click
         ClearLb()
     End Sub
-
-
 End Class

@@ -50,6 +50,8 @@ Public Class NhanVien
         NameDGV()
         loadCMBCH()
         loadCMBCV()
+        btnRemove.Enabled = False
+        btnUpdate.Enabled = False
     End Sub
 
     Private Sub dgvNhanVien_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvNhanVien.CellClick
@@ -63,6 +65,10 @@ Public Class NhanVien
             txtName.Text = row.Cells("Ten_nv").Value.ToString
             'cmbCuaHang.DisplayMember() = "Ten_CHang"
             'cmbChucVu.DisplayMember() = "Ten_cv"
+            btnAdd.Enabled = False
+            txtMaNhanVien.Text = False
+            btnRemove.Enabled = True
+            btnUpdate.Enabled = True
         End If
     End Sub
     Private Sub BoolLb()
@@ -111,6 +117,7 @@ Public Class NhanVien
                     cls.Add(NV)
                     ShowData()
                     MessageBox.Show("Add success")
+
                 End If
             End If
         Catch ex As Exception
@@ -119,31 +126,47 @@ Public Class NhanVien
     End Sub
 
     Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
-        NV.IdNV = txtMaNhanVien.Text()
-        cls.Delete(NV)
-        ShowData()
-        MessageBox.Show("Delete success")
+        Try
+            NV.IdNV = txtMaNhanVien.Text()
+            cls.Delete(NV)
+            ShowData()
+            MessageBox.Show("Delete success")
+            btnAdd.Enabled = True
+            txtMaNhanVien.Text = True
+            btnRemove.Enabled = False
+            btnUpdate.Enabled = False
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
     End Sub
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
-        NV.IdNV = txtMaNhanVien.Text()
-        NV.Name = txtName.Text()
-        NV.Phone = txtDT.Text()
-        NV.IdCV = cmbChucVu.SelectedValue
-        NV.IdCH = cmbCuaHang.SelectedValue()
-        NV.Birth = dateNV.Value
-        NV.Address = txtDC.Text()
-        NV.Email = txtEmail.Text()
-        If (rbtNam.Checked = True) Then
-            NV.Sex = rbtNam.Text()
-        Else
-            If rbtNu.Checked = True Then
-                NV.Sex = rbtNu.Text()
+        Try
+            NV.IdNV = txtMaNhanVien.Text()
+            NV.Name = txtName.Text()
+            NV.Phone = txtDT.Text()
+            NV.IdCV = cmbChucVu.SelectedValue
+            NV.IdCH = cmbCuaHang.SelectedValue()
+            NV.Birth = dateNV.Value
+            NV.Address = txtDC.Text()
+            NV.Email = txtEmail.Text()
+            If (rbtNam.Checked = True) Then
+                NV.Sex = rbtNam.Text()
+            Else
+                If rbtNu.Checked = True Then
+                    NV.Sex = rbtNu.Text()
+                End If
             End If
-        End If
-        cls.Update(NV)
-        ShowData()
-        MessageBox.Show("Update success")
+            cls.Update(NV)
+            ShowData()
+            MessageBox.Show("Update success")
+            btnAdd.Enabled = True
+            txtMaNhanVien.Text = True
+            btnRemove.Enabled = False
+            btnUpdate.Enabled = False
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
     End Sub
 
     Private Sub txtDC_Click(sender As Object, e As EventArgs) Handles txtDC.Click

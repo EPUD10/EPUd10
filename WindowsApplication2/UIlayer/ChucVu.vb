@@ -7,6 +7,11 @@ Public Class ChucVu
     Private Sub showData()
         dgvChucVu.DataSource = cls.LoadData()
     End Sub
+    Private Sub enyTxt()
+        txtID.Text = ""
+        txtName.Text = ""
+        txtNote.Text = ""
+    End Sub
     Private Sub nameDGV()
         dgvChucVu.Columns("ID_cv").HeaderText = "ID Regency"
         dgvChucVu.Columns("Ten_cv").HeaderText = "Name Regency"
@@ -32,6 +37,8 @@ Public Class ChucVu
         showData()
         nameDGV()
         emtylb()
+        btnRemove.Enabled = False
+        btnUpdate.Enabled = False
     End Sub
 
     Private Sub btnADD_Click(sender As Object, e As EventArgs) Handles btnADD.Click
@@ -49,6 +56,7 @@ Public Class ChucVu
                 CV.Power = txtNote.Text
                 cls.Insert(CV)
                 showData()
+                enyTxt()
                 MessageBox.Show("Insert success")
             End If
         End If
@@ -61,23 +69,46 @@ Public Class ChucVu
             txtID.Text = row.Cells("ID_cv").Value.ToString
             txtName.Text = row.Cells("Ten_cv").Value.ToString
             txtNote.Text = row.Cells("QuyenHan").Value.ToString
+            txtID.Enabled = False
+            btnADD.Enabled = False
+            btnUpdate.Enabled = True
+            btnRemove.Enabled = True
         End If
     End Sub
 
     Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
-        CV.Id = txtID.Text
-        cls.dele(CV)
-        showData()
-        MessageBox.Show("Delete success")
+        Try
+            CV.Id = txtID.Text
+            cls.dele(CV)
+            showData()
+            MessageBox.Show("Delete success")
+            enyTxt()
+            btnADD.Enabled = True
+            txtID.Enabled = True
+            btnRemove.Enabled = False
+            btnUpdate.Enabled = False
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
+
     End Sub
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
-        CV.Id = txtID.Text
-        CV.Name = txtName.Text
-        CV.Power = txtNote.Text
-        cls.update(CV)
-        showData()
-        MessageBox.Show("Update success")
+        Try
+            CV.Id = txtID.Text
+            CV.Name = txtName.Text
+            CV.Power = txtNote.Text
+            cls.update(CV)
+            showData()
+            MessageBox.Show("Update success")
+            enyTxt()
+            btnADD.Enabled = True
+            txtID.Enabled = True
+            btnRemove.Enabled = False
+            btnUpdate.Enabled = False
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
     End Sub
 
     Private Sub txtID_Click(sender As Object, e As EventArgs) Handles txtID.Click

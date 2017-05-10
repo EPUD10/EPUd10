@@ -52,11 +52,11 @@ Public Class CuaHangDAO
         values(0) = CH.Ma
         Name(1) = "@ten"
         values(1) = CH.Ten
-        Name(2) = "@dt"
+        Name(2) = "@phone"
         values(2) = CH.DienThoai
         Name(3) = "@dc"
         values(3) = CH.DiaChi
-        Name(4) = "@mail"
+        Name(4) = "@email"
         values(4) = CH.Email
         Return cls.Add(sql, Name, values, _soluong)
     End Function
