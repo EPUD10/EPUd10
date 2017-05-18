@@ -22,6 +22,24 @@ Public Class NhanVienDAO
         Value(0) = NV.IdNV
         Return cls.checkID(sql, Name, Value, _soluong)
     End Function
+    Public Function checkEmail(ByVal NV As NhanVienEntyti) As DataTable
+        _soluong = 0
+        sql = "sp_checkMailNV"
+        Dim Name(_soluong) As String
+        Dim Value(_soluong) As Object
+        Name(0) = "@email"
+        Value(0) = NV.Email
+        Return cls.checkID(sql, Name, Value, _soluong)
+    End Function
+    Public Function checkPhone(ByVal NV As NhanVienEntyti) As DataTable
+        _soluong = 0
+        sql = "sp_checkPhoneNV"
+        Dim Name(_soluong) As String
+        Dim Value(_soluong) As Object
+        Name(0) = "@phone"
+        Value(0) = NV.Phone
+        Return cls.checkID(sql, Name, Value, _soluong)
+    End Function
     Public Function Add(ByVal NV As NhanVienEntyti) As Integer
         _soluong = 8
         sql = "sp_insertNV"

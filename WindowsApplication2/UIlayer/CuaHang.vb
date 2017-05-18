@@ -123,20 +123,45 @@ Public Class CuaHang
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
         Try
-
-            CH.Ma = txtMaCH.Text
-            CH.Ten = txtName.Text
-            CH.Email = txtEmail.Text
-            CH.DienThoai = txtDT.Text
-            CH.DiaChi = txtDC.Text
-            cls.Update(CH)
-            showData()
-            Clear()
-            MessageBox.Show("Update success !!!")
-            btnAdd.Enabled = True
-            txtMaCH.Enabled = True
-            btnRemove.Enabled = False
-            btnUpdate.Enabled = False
+            If Check.CheckMail(txtEmail.Text) = False Then
+                lbEmail.Text = "Email is invalid"
+                txtEmail.Text = ""
+                txtEmail.Focus()
+            Else
+                If Check.CheckPhone(txtDT.Text) = False Then
+                    lbPhone.Text = "Phone is invalid"
+                    txtDT.Text = ""
+                    txtDT.Focus()
+                Else
+                    CH.Email = txtEmail.Text
+                    If (cls.checkEmail(CH).Rows.Count > 0) Then
+                        lbID.Text = "Duplicate data"
+                        txtEmail.Text = ""
+                        txtEmail.Focus()
+                    Else
+                        CH.DienThoai = txtDT.Text
+                        If (cls.checkPhone(CH).Rows.Count > 0) Then
+                            lbID.Text = "Duplicate data"
+                            txtDT.Text = ""
+                            txtDT.Focus()
+                        Else
+                            CH.Ma = txtMaCH.Text
+                            CH.Ten = txtName.Text
+                            CH.Email = txtEmail.Text
+                            CH.DienThoai = txtDT.Text
+                            CH.DiaChi = txtDC.Text
+                            cls.Update(CH)
+                            showData()
+                            Clear()
+                            MessageBox.Show("Update success !!!")
+                            btnAdd.Enabled = True
+                            txtMaCH.Enabled = True
+                            btnRemove.Enabled = False
+                            btnUpdate.Enabled = False
+                        End If
+                    End If
+                End If
+            End If
         Catch ex As Exception
             MessageBox.Show(ex.ToString)
         End Try

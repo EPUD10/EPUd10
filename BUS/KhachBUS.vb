@@ -10,6 +10,12 @@ Public Class KhachBUS
     Public Function checkID(ByVal KH As KhachEntyti) As DataTable
         Return cls.checkID(KH)
     End Function
+    Public Function checkEmail(ByVal KH As KhachEntyti) As DataTable
+        Return cls.checkEmail(KH)
+    End Function
+    Public Function checkPhone(ByVal KH As KhachEntyti) As DataTable
+        Return cls.checkPhone(KH)
+    End Function
     Public Function ADD(ByVal KH) As Integer
         Return cls.inserst(KH)
     End Function

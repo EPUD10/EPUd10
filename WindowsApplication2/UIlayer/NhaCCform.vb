@@ -127,19 +127,45 @@ Public Class NhaCCform
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
         Try
-            NCC.Ma = txtMaNhaCC.Text
-            NCC.Ten = txtTenNhaCC.Text
-            NCC.DienThoai = txtDienThoai.Text
-            NCC.DiaChi = txtDiaChi.Text
-            NCC.Email = txtEmail.Text
-            cls.Update(NCC)
-            showData()
-            Clear()
-            MessageBox.Show("Update success !")
-            btnAdd.Enabled = True
-            txtMaNhaCC.Enabled = True
-            btnRemove.Enabled = False
-            btnUpdate.Enabled = False
+            If check.CheckMail(txtEmail.Text) = False Then
+                lbEmail.Text = "Email is invalid"
+                txtEmail.Text = ""
+                txtEmail.Focus()
+            Else
+                If check.CheckPhone(txtDienThoai.Text) = False Then
+                    lbPhone.Text = "Phone is invalid"
+                    txtDienThoai.Text = ""
+                    txtDienThoai.Focus()
+                Else
+                    NCC.Email = txtEmail.Text
+                    If (cls.checkEmail(NCC).Rows.Count > 0) Then
+                        lbID.Text = "Duplicate data"
+                        txtEmail.Text = ""
+                        txtEmail.Focus()
+                    Else
+                        NCC.DienThoai = txtDienThoai.Text
+                        If (cls.checkPhone(NCC).Rows.Count > 0) Then
+                            lbID.Text = "Duplicate data"
+                            txtDienThoai.Text = ""
+                            txtDienThoai.Focus()
+                        Else
+                            NCC.Ma = txtMaNhaCC.Text
+                            NCC.Ten = txtTenNhaCC.Text
+                            NCC.DienThoai = txtDienThoai.Text
+                            NCC.DiaChi = txtDiaChi.Text
+                            NCC.Email = txtEmail.Text
+                            cls.Update(NCC)
+                            showData()
+                            Clear()
+                            MessageBox.Show("Update success !")
+                            btnAdd.Enabled = True
+                            txtMaNhaCC.Enabled = True
+                            btnRemove.Enabled = False
+                            btnUpdate.Enabled = False
+                        End If
+                    End If
+                End If
+            End If
         Catch ex As Exception
             MessageBox.Show(ex.ToString)
         End Try

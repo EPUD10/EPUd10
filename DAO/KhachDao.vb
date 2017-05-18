@@ -16,6 +16,24 @@ Public Class KhachDao
         Value(0) = KH.Id
         Return cls.checkID(sql, Name, Value, _soluong)
     End Function
+    Public Function checkEmail(ByVal KH As KhachEntyti) As DataTable
+        _soluong = 0
+        sql = "sp_checkMailKH"
+        Dim Name(_soluong) As String
+        Dim Value(_soluong) As Object
+        Name(0) = "@email"
+        Value(0) = KH.Email
+        Return cls.checkID(sql, Name, Value, _soluong)
+    End Function
+    Public Function checkPhone(ByVal KH As KhachEntyti) As DataTable
+        _soluong = 0
+        sql = "sp_checkPhoneKH"
+        Dim Name(_soluong) As String
+        Dim Value(_soluong) As Object
+        Name(0) = "@phone"
+        Value(0) = KH.Phone
+        Return cls.checkID(sql, Name, Value, _soluong)
+    End Function
     Public Function inserst(ByVal KH As KhachEntyti) As Integer
         _soluong = 6
         sql = "sp_insertKH"

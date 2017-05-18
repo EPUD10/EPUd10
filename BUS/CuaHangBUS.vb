@@ -9,6 +9,12 @@ Public Class CuaHangBUS
     Public Function checkID(ByVal CH As CuaHangEntyti) As DataTable
         Return cls.checkID(CH)
     End Function
+    Public Function checkPhone(ByVal CH As CuaHangEntyti) As DataTable
+        Return cls.checkPhone(CH)
+    End Function
+    Public Function checkEmail(ByVal CH As CuaHangEntyti) As DataTable
+        Return cls.checkMail(CH)
+    End Function
     Public Function Add(ByVal CH As CuaHangEntyti) As Integer
         Return cls.Add(CH)
     End Function

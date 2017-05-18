@@ -121,25 +121,51 @@ Public Class KhachHangForm
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
         Try
-            KH.Id = txtIDCustomer.Text
-            KH.Name = txtNameCus.Text
-            KH.Phone = txtPhoneNumber.Text
-            KH.Email = txtEmail.Text
-            KH.Birth = datetime.Value
-            KH.Add = txtAddress.Text
-            If rbtNam.Checked Then
-                KH.Sex = rbtNam.Text
-            ElseIf rbtnu.Checked Then
-                KH.Sex = rbtnu.Text
+            If check.CheckMail(txtEmail.Text) = False Then
+                lbEmail.Text = "Email is invalid"
+                txtEmail.Text = ""
+                txtEmail.Focus()
+            Else
+                If check.CheckPhone(txtPhoneNumber.Text) = False Then
+                    lbphone.Text = "Phone is invalid"
+                    txtPhoneNumber.Text = ""
+                    txtPhoneNumber.Focus()
+                Else
+                    KH.Email = txtEmail.Text
+                    If (cls.checkEmail(KH).Rows.Count > 0) Then
+                        lbID.Text = "Duplicate data"
+                        txtEmail.Text = ""
+                        txtEmail.Focus()
+                    Else
+                        KH.Phone = txtPhoneNumber.Text
+                        If (cls.checkPhone(KH).Rows.Count > 0) Then
+                            lbID.Text = "Duplicate data"
+                            txtPhoneNumber.Text = ""
+                            txtPhoneNumber.Focus()
+                        Else
+                            KH.Id = txtIDCustomer.Text
+                            KH.Name = txtNameCus.Text
+                            KH.Phone = txtPhoneNumber.Text
+                            KH.Email = txtEmail.Text
+                            KH.Birth = datetime.Value
+                            KH.Add = txtAddress.Text
+                            If rbtNam.Checked Then
+                                KH.Sex = rbtNam.Text
+                            ElseIf rbtnu.Checked Then
+                                KH.Sex = rbtnu.Text
+                            End If
+                            cls.Update(KH)
+                            showData()
+                            MessageBox.Show("Update success")
+                            txtEmty()
+                            txtIDCustomer.Enabled = True
+                            btnadd.Enabled = True
+                            btnRemove.Enabled = False
+                            btnUpdate.Enabled = False
+                        End If
+                    End If
+                End If
             End If
-            cls.Update(KH)
-            showData()
-            MessageBox.Show("Update success")
-            txtEmty()
-            txtIDCustomer.Enabled = True
-            btnadd.Enabled = True
-            btnRemove.Enabled = False
-            btnUpdate.Enabled = False
         Catch ex As Exception
             MessageBox.Show(ex.ToString)
         End Try

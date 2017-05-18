@@ -17,6 +17,9 @@ Public Class Menuform
                         ctrl.Enabled = True
                     End If
                 End If
+                If TypeOf ctrl Is ComboBox Then
+                    ctrl.Refresh()
+                End If
                 If ctrl.HasChildren Then
                     emtyItem(ctrl)
                 End If
@@ -24,6 +27,9 @@ Public Class Menuform
         Catch ex As Exception
             MessageBox.Show(ex.ToString)
         End Try
+    End Sub
+    Private Sub formLoad(ByVal form As Form)
+
     End Sub
     Private Sub BunifuImageButton1_Click(sender As Object, e As EventArgs) Handles BunifuImageButton1.Click
         Try
@@ -78,6 +84,7 @@ Public Class Menuform
     Private Sub btnNhanVien_Click(sender As Object, e As EventArgs) Handles btnNhanVien.Click
         NhanVien1.Visible = False
         emtyItem(NhanVien1)
+        NhanVien1.Refresh()
         NhanVien1.BringToFront()
         tranNhanVien.ShowSync(NhanVien1)
     End Sub

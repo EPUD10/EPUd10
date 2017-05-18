@@ -15,6 +15,24 @@ Public Class NhaCCDAO
         Values(0) = NCC.Ma
         Return con.checkID(sql, Name, Values, _soluong)
     End Function
+    Public Function checkEmail(ByVal NCC As NhaCCEntyti) As DataTable
+        _soluong = 0
+        Dim sql As String = "sp_checkMailNCC"
+        Dim Name(_soluong) As String
+        Dim Values(_soluong) As Object
+        Name(0) = "@email"
+        Values(0) = NCC.Email
+        Return con.checkID(sql, Name, Values, _soluong)
+    End Function
+    Public Function checkPhone(ByVal NCC As NhaCCEntyti) As DataTable
+        _soluong = 0
+        Dim sql As String = "sp_checkPhoneNCC"
+        Dim Name(_soluong) As String
+        Dim Values(_soluong) As Object
+        Name(0) = "@phone"
+        Values(0) = NCC.DienThoai
+        Return con.checkID(sql, Name, Values, _soluong)
+    End Function
     Public Function insert(ByVal NCC As NhaCCEntyti) As Integer
         _soluong = 4
         Dim sql As String = "dbo.sp_insertNCC"

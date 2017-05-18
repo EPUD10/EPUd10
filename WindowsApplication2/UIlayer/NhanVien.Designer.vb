@@ -22,10 +22,11 @@ Partial Class NhanVien
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NhanVien))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NhanVien))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnReset = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.txtEmail = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.txtName = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.txtDC = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
@@ -58,7 +59,6 @@ Partial Class NhanVien
         Me.btnSearch = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.dgvNhanVien = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.BunifuCustomLabel10 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.btnReset = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dgvNhanVien, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -101,6 +101,41 @@ Partial Class NhanVien
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Add data"
+        '
+        'btnReset
+        '
+        Me.btnReset.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnReset.BorderRadius = 0
+        Me.btnReset.ButtonText = "Reset"
+        Me.btnReset.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnReset.DisabledColor = System.Drawing.Color.Gray
+        Me.btnReset.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnReset.Iconimage = CType(resources.GetObject("btnReset.Iconimage"), System.Drawing.Image)
+        Me.btnReset.Iconimage_right = Nothing
+        Me.btnReset.Iconimage_right_Selected = Nothing
+        Me.btnReset.Iconimage_Selected = Nothing
+        Me.btnReset.IconMarginLeft = 0
+        Me.btnReset.IconMarginRight = 0
+        Me.btnReset.IconRightVisible = True
+        Me.btnReset.IconRightZoom = 0R
+        Me.btnReset.IconVisible = True
+        Me.btnReset.IconZoom = 40.0R
+        Me.btnReset.IsTab = False
+        Me.btnReset.Location = New System.Drawing.Point(700, 199)
+        Me.btnReset.Margin = New System.Windows.Forms.Padding(24, 20, 24, 20)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnReset.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnReset.OnHoverTextColor = System.Drawing.Color.White
+        Me.btnReset.selected = False
+        Me.btnReset.Size = New System.Drawing.Size(105, 27)
+        Me.btnReset.TabIndex = 40
+        Me.btnReset.Text = "Reset"
+        Me.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btnReset.Textcolor = System.Drawing.Color.White
+        Me.btnReset.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'txtEmail
         '
@@ -204,7 +239,7 @@ Partial Class NhanVien
         '
         'cmbChucVu
         '
-        Me.cmbChucVu.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbChucVu.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbChucVu.FormattingEnabled = True
         Me.cmbChucVu.Location = New System.Drawing.Point(492, 203)
         Me.cmbChucVu.Name = "cmbChucVu"
@@ -213,7 +248,7 @@ Partial Class NhanVien
         '
         'cmbCuaHang
         '
-        Me.cmbCuaHang.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbCuaHang.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbCuaHang.FormattingEnabled = True
         Me.cmbCuaHang.Location = New System.Drawing.Point(491, 138)
         Me.cmbCuaHang.Name = "cmbCuaHang"
@@ -568,41 +603,6 @@ Partial Class NhanVien
         Me.BunifuCustomLabel10.Size = New System.Drawing.Size(456, 50)
         Me.BunifuCustomLabel10.TabIndex = 24
         Me.BunifuCustomLabel10.Text = "Information Salesman"
-        '
-        'btnReset
-        '
-        Me.btnReset.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.btnReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnReset.BorderRadius = 0
-        Me.btnReset.ButtonText = "Reset"
-        Me.btnReset.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnReset.DisabledColor = System.Drawing.Color.Gray
-        Me.btnReset.Iconcolor = System.Drawing.Color.Transparent
-        Me.btnReset.Iconimage = CType(resources.GetObject("btnReset.Iconimage"), System.Drawing.Image)
-        Me.btnReset.Iconimage_right = Nothing
-        Me.btnReset.Iconimage_right_Selected = Nothing
-        Me.btnReset.Iconimage_Selected = Nothing
-        Me.btnReset.IconMarginLeft = 0
-        Me.btnReset.IconMarginRight = 0
-        Me.btnReset.IconRightVisible = True
-        Me.btnReset.IconRightZoom = 0R
-        Me.btnReset.IconVisible = True
-        Me.btnReset.IconZoom = 40.0R
-        Me.btnReset.IsTab = False
-        Me.btnReset.Location = New System.Drawing.Point(700, 199)
-        Me.btnReset.Margin = New System.Windows.Forms.Padding(24, 20, 24, 20)
-        Me.btnReset.Name = "btnReset"
-        Me.btnReset.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.btnReset.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.btnReset.OnHoverTextColor = System.Drawing.Color.White
-        Me.btnReset.selected = False
-        Me.btnReset.Size = New System.Drawing.Size(105, 27)
-        Me.btnReset.TabIndex = 40
-        Me.btnReset.Text = "Reset"
-        Me.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.btnReset.Textcolor = System.Drawing.Color.White
-        Me.btnReset.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'NhanVien
         '

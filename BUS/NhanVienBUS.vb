@@ -19,6 +19,12 @@ Public Class NhanVienBUS
     Public Function checkID(ByVal NV As NhanVienEntyti) As DataTable
         Return cls.checkID(NV)
     End Function
+    Public Function checkEmail(ByVal NV As NhanVienEntyti) As DataTable
+        Return cls.checkEmail(NV)
+    End Function
+    Public Function checkPhone(ByVal NV As NhanVienEntyti) As DataTable
+        Return cls.checkPhone(NV)
+    End Function
     Public Function Delete(ByVal NV As NhanVienEntyti) As Integer
         Return cls.remove(NV)
     End Function

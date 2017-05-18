@@ -17,6 +17,24 @@ Public Class CuaHangDAO
         values(0) = CH.Ma
         Return cls.checkID(sql, Name, values, _soluong)
     End Function
+    Public Function checkMail(ByVal CH As CuaHangEntyti) As DataTable
+        _soluong = 0
+        Dim Name(_soluong) As String
+        Dim values(_soluong) As Object
+        sql = "sp_checkMailCH"
+        Name(0) = "@email"
+        values(0) = CH.Email
+        Return cls.checkID(sql, Name, values, _soluong)
+    End Function
+    Public Function checkPhone(ByVal CH As CuaHangEntyti) As DataTable
+        _soluong = 0
+        Dim Name(_soluong) As String
+        Dim values(_soluong) As Object
+        sql = "sp_checkPhoneCH"
+        Name(0) = "@phone"
+        values(0) = CH.DienThoai
+        Return cls.checkID(sql, Name, values, _soluong)
+    End Function
     Public Function Add(ByVal CH As CuaHangEntyti) As Integer
         _soluong = 4
         Dim Name(_soluong) As String

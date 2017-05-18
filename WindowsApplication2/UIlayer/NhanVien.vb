@@ -155,28 +155,54 @@ Public Class NhanVien
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
         Try
-            NV.IdNV = txtMaNhanVien.Text()
-            NV.Name = txtName.Text()
-            NV.Phone = txtDT.Text()
-            NV.IdCV = cmbChucVu.SelectedValue
-            NV.IdCH = cmbCuaHang.SelectedValue()
-            NV.Birth = dateNV.Value
-            NV.Address = txtDC.Text()
-            NV.Email = txtEmail.Text()
-            If (rbtNam.Checked = True) Then
-                NV.Sex = rbtNam.Text()
+            If check.CheckMail(txtEmail.Text) = False Then
+                lbEmail.Text = "Email is invalid"
+                txtEmail.Text = ""
+                txtEmail.Focus()
             Else
-                If rbtNu.Checked = True Then
-                    NV.Sex = rbtNu.Text()
+                If check.CheckPhone(txtDT.Text) = False Then
+                    lbPhone.Text = "Phone is invalid"
+                    txtDT.Text = ""
+                    txtDT.Focus()
+                Else
+                    NV.Email = txtEmail.Text
+                    If (cls.checkEmail(NV).Rows.Count > 0) Then
+                        lbID.Text = "Duplicate data"
+                        txtEmail.Text = ""
+                        txtEmail.Focus()
+                    Else
+                        NV.Phone = txtDT.Text
+                        If (cls.checkPhone(NV).Rows.Count > 0) Then
+                            lbID.Text = "Duplicate data"
+                            txtDT.Text = ""
+                            txtDT.Focus()
+                        Else
+                            NV.IdNV = txtMaNhanVien.Text()
+                            NV.Name = txtName.Text()
+                            NV.Phone = txtDT.Text()
+                            NV.IdCV = cmbChucVu.SelectedValue
+                            NV.IdCH = cmbCuaHang.SelectedValue()
+                            NV.Birth = dateNV.Value
+                            NV.Address = txtDC.Text()
+                            NV.Email = txtEmail.Text()
+                            If (rbtNam.Checked = True) Then
+                                NV.Sex = rbtNam.Text()
+                            Else
+                                If rbtNu.Checked = True Then
+                                    NV.Sex = rbtNu.Text()
+                                End If
+                            End If
+                            cls.Update(NV)
+                            ShowData()
+                            MessageBox.Show("Update success")
+                            btnAdd.Enabled = True
+                            txtMaNhanVien.Text = True
+                            btnRemove.Enabled = False
+                            btnUpdate.Enabled = False
+                        End If
+                    End If
                 End If
             End If
-            cls.Update(NV)
-            ShowData()
-            MessageBox.Show("Update success")
-            btnAdd.Enabled = True
-            txtMaNhanVien.Text = True
-            btnRemove.Enabled = False
-            btnUpdate.Enabled = False
         Catch ex As Exception
             MessageBox.Show(ex.ToString)
         End Try
